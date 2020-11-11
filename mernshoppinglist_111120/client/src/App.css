@@ -1,0 +1,521 @@
+@font-face {
+  font-family: myNeonFont;
+  src: url("../src/cafe.ttf") format("truetype");
+}
+
+.remove-btn {
+  margin-right: 1rem;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
+}
+
+.jumboInner {
+  background-color: slateblue;
+  height: 15rem;
+}
+
+.jumboOuter {
+  background-color: maroon;
+}
+
+.jumboMajor {
+  margin-top: 1rem;
+  background-color: springgreen;
+  padding: 1rem 1rem 0.25rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.itom {
+  background-color: #4e4e4e;
+}
+
+#itemModal {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.modal .modal-content .menuModalDiv {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+
+.modal .modal-content .menuModalDiv .menuModalButtonDiv {
+  background-color: #e4cde4;
+}
+
+.modal .modal-content .menuModalDiv .list-item {
+  color: #4e4e4e;
+  background-color: #e4cde4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-rows: (2rem)[4];
+      grid-template-rows: repeat(4, 2rem);
+  font-family: "Andale Mono";
+  height: 8rem;
+}
+
+.modal .modal-content .menuModalDiv .list-item .itemButton {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #4e4e4e;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.modal .modal-content .menuModalDiv .menu-list-item {
+  color: #4e4e4e;
+  background-color: #e4cde4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-rows: (2rem)[4];
+      grid-template-rows: repeat(4, 2rem);
+  font-family: "Andale Mono";
+  height: 8rem;
+}
+
+.modal .modal-content .menuModalDiv .menu-list-item .itemButton {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #4e4e4e;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+@media screen and (min-width: 650px) {
+  .menuModalButton {
+    background-color: #585858;
+    border: none;
+    color: #e4cde4;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    -webkit-transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
+    transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
+    transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+    transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+    font-family: myNeonFont;
+    width: 5rem;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+  .menuModalButton:hover {
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    -webkit-box-shadow: 0px 0px 6px 6px #e4cde4;
+            box-shadow: 0px 0px 6px 6px #e4cde4;
+  }
+  .modal-dialog {
+    max-width: 1600px;
+    margin-top: 1.75rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .menu-list-item {
+    display: -ms-grid;
+    display: grid;
+  }
+  .menu-list-item .menu-itemName {
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 10;
+    font-size: 2.8rem;
+    font-family: myNeonFont;
+  }
+  .menu-list-item .menu-itemDesc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 10;
+    text-align: center;
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    font-size: 1.8rem;
+    font-family: myNeonFont;
+  }
+  .menu-list-item .menu-itemPrice {
+    display: -ms-grid;
+    display: grid;
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    -ms-grid-column: 11;
+        grid-column-start: 11;
+    grid-column-end: 12;
+    text-align: center;
+    font-size: 2rem;
+    font-family: myNeonFont;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 5px;
+  }
+  .shopping-item {
+    font-size: 1.2vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+    -ms-grid-rows: (1rem)[3];
+        grid-template-rows: repeat(3, 1rem);
+    width: 100%;
+  }
+  .shopping-itemButton {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .shopping-itemName {
+    color: #4e4e4e;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 1.1rem;
+    font-family: "Andale Mono";
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .shopping-itemDesc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 10;
+    text-align: left;
+    color: #4e4e4e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-family: "Andale Mono";
+  }
+  .shopping-itemPrice {
+    display: -ms-grid;
+    display: grid;
+    color: #4e4e4e;
+    -ms-grid-column: 10;
+        grid-column-start: 10;
+    grid-column-end: 11;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Andale Mono";
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .modal-content {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.modal-content {
+  background-color: #e4cde4;
+}
+
+.PrimaryMenuModal {
+  background-color: #e4cde4;
+}
+
+.PrimaryMenuModal .PrimaryMenuModalContainer {
+  margin-top: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  background-color: #e4cde4;
+}
+
+.PrimaryMenuModal .PrimaryMenuModalContainer .menuModalButtonDiv {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #e4cde4;
+}
+
+.PrimaryMenuModal .PrimaryMenuModalContainer .starterSection {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  margin-left: 200px;
+}
+
+.PrimaryMenuModal .PrimaryMenuModalContainer .mainSection {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.PrimaryMenuModal .PrimaryMenuModalContainer .dessertSection {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+@media screen and (max-width: 649px) {
+  .menuModalButton {
+    font-size: 2.1rem;
+    width: 15vw;
+    margin-left: 20px;
+  }
+  .modal-dialog {
+    margin-top: 1.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3vw;
+    font-family: myNeonFont;
+  }
+  .itemName {
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 10;
+    font-size: 2rem;
+    font-family: myNeonFont;
+  }
+  .itemDesc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 10;
+    text-align: left;
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+    font-family: myNeonFont;
+  }
+  .itemPrice {
+    display: -ms-grid;
+    display: grid;
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    -ms-grid-column: 11;
+        grid-column-start: 11;
+    grid-column-end: 12;
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: myNeonFont;
+    padding-top: 5px;
+  }
+  .shopping-item {
+    font-size: 1.2vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+    width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .shopping-itemButton {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .shopping-itemName {
+    color: #4e4e4e;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 1rem;
+    font-family: "Andale Mono";
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .shopping-itemDesc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 10;
+    text-align: left;
+    color: #4e4e4e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: "Andale Mono";
+  }
+  .shopping-itemPrice {
+    display: -ms-grid;
+    display: grid;
+    color: #4e4e4e;
+    -ms-grid-column: 10;
+        grid-column-start: 10;
+    grid-column-end: 11;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "Andale Mono";
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-itemName {
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 10;
+    font-size: 2.8rem;
+    font-family: myNeonFont;
+  }
+  .menu-itemDesc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 5;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 10;
+    text-align: left;
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    font-size: 1.5rem;
+    font-family: myNeonFont;
+  }
+  .menu-itemPrice {
+    display: -ms-grid;
+    display: grid;
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    -ms-grid-column: 11;
+        grid-column-start: 11;
+    grid-column-end: 12;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 1.8rem;
+    font-family: myNeonFont;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .menuModalButton {
+    font-size: 1.4rem;
+    width: 80px;
+    height: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .menu-list-item {
+    color: #4e4e4e;
+    background-color: #e4cde4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[11];
+        grid-template-columns: repeat(11, 1fr);
+    -ms-grid-rows: (1rem)[5];
+        grid-template-rows: repeat(5, 1rem);
+    font-family: "Andale Mono";
+    height: 6rem;
+  }
+  .modal-content {
+    width: 100%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=App.css.map */
