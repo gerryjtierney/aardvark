@@ -1,0 +1,265 @@
+@font-face {
+    font-family: myNeonFont;
+    src: url("../cafe.ttf") format("truetype");
+}
+
+@mixin myMixin(){
+    background-color: black;
+    z-index: 1;
+    opacity: 30%;
+}
+
+@mixin textMixin(){
+    font-size: 2.8vw;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+@mixin titleMixin(){
+    display: grid;
+    font-size: 5vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    border-bottom: 2px solid;
+}
+
+@mixin leftMixin{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    border-left: 2px solid;
+
+}
+
+@mixin rightMixin{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    border-right: 2px solid;
+}
+
+@mixin topMixin(){
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+
+@mixin middleMixin(){
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+@mixin bottomMixin(){
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+@mixin layoutMixin(){
+    display: grid;
+
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+$siteWhite: rgb(228, 205, 228);
+$siteWhite2: rgb(199, 184, 199);
+$siteWhiteBright:  rgb(255, 240, 255);
+$siteContrast: rgb(78, 78, 78);
+$siteContrast2: rgb(88, 88, 88);
+
+
+
+
+.PopupMenu{
+    font-family: myNeonFont;
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    background-color: $siteWhite;
+    color: $siteContrast;
+    z-index: 1;
+    
+
+    .PopupMenu-title{
+        font-size: 6.6vw;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        border-bottom: 2px solid;
+        
+        
+
+    }
+
+    .PopupMenu-close{
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 11;
+        grid-column-end: 12;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+
+
+        .PopupMenu-close-text{
+            background-color: $siteContrast;
+            color: $siteWhite;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 5;
+            grid-column-end: 6;
+            align-self: center;
+            font-size: 2.2vw;
+            border-radius: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+    }
+
+    .PopupMenu-starters{
+        @include topMixin();
+        @include leftMixin();
+        @include layoutMixin();
+        
+
+
+        .PopupMenu-starters-title{
+            @include titleMixin()
+        }
+
+        .PopupMenu-starters-text{
+            @include textMixin()     
+        }
+        
+    }
+
+    .PopupMenu-mains{
+
+        @include middleMixin();  
+        @include leftMixin();
+        @include layoutMixin();
+
+
+        .PopupMenu-mains-title{
+            @include titleMixin()
+        }
+
+        .PopupMenu-mains-text{
+            @include textMixin()
+        }
+        
+    }
+
+    .PopupMenu-desserts{
+        @include bottomMixin();
+        @include leftMixin();
+        @include layoutMixin();
+
+        .PopupMenu-desserts-title{
+            @include titleMixin()
+        }
+
+        .PopupMenu-desserts-text{
+            @include textMixin()     
+        }
+        
+    }
+
+    .PopupMenu-beers{
+
+        @include topMixin();
+        @include layoutMixin();
+        @include rightMixin();
+            
+
+
+        .PopupMenu-beers-title{
+            @include titleMixin()
+            
+        }
+
+        .PopupMenu-beers-text{
+            @include textMixin()   
+
+        }
+
+        
+    }
+
+    .PopupMenu-wines{
+        @include middleMixin();  
+        @include rightMixin();
+        @include layoutMixin();
+        
+        .PopupMenu-wines-title{
+            @include titleMixin()
+        }
+
+        .PopupMenu-wines-text{
+            @include textMixin()
+        }
+    }
+
+    .PopupMenu-cocktails{
+        @include bottomMixin();
+        @include rightMixin();
+        @include layoutMixin();
+
+        .PopupMenu-cocktails-title{
+            @include titleMixin()
+        }
+
+        .PopupMenu-cocktails-text{
+            @include textMixin()
+        }
+        
+    }
+
+    .PopupMenu-hotdrinks{
+        @include layoutMixin();
+
+        grid-row-start: 8;
+        grid-row-end: 10;
+        grid-column-start: 3;
+        grid-column-end: 11;
+        
+
+        .PopupMenu-hotdrinks-title{
+            @include titleMixin()
+            
+        }
+
+        .PopupMenu-hotdrinks-text{
+            @include textMixin()     
+            
+        }
+        
+    }
+
+
+
+};

@@ -8,6 +8,11 @@ import './App.css';
 
 import PrimaryMenuModal from "./components/PrimaryMenuModal"
 
+
+import TopThird from "./topThird/TopThird"
+import MiddleThird from "./middleThird/MiddleThird"
+import BottomThird from "./bottomThird/BottomThird"
+
 function App() {
   return (
     <Provider store={store}>
@@ -17,13 +22,16 @@ function App() {
 
 
 
-        
- 
-      <PrimaryMenuModal />
+
+
+          <PrimaryMenuModal />
+
+
+          <TopThird />
 
 
 
-          
+
 
         </Container>
       </div>
