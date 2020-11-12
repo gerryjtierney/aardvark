@@ -9,6 +9,11 @@ import './App.css';
 import PrimaryMenuModal from "./components/PrimaryMenuModal"
 
 
+import AppSub from "./AppSub.js";
+import PopupMenu from './popups/PopupMenu';
+import ContactScreen from './ContactScreen.js';
+
+
 import TopThird from "./topThird/TopThird"
 import MiddleThird from "./middleThird/MiddleThird"
 import BottomThird from "./bottomThird/BottomThird"
@@ -17,23 +22,12 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-
-        <Container>
-
-
-
-
-
-          <PrimaryMenuModal />
-
+        <div className="Overlay">
 
           <TopThird />
-
-
-
-
-
-        </Container>
+          <MiddleThird />
+          <BottomThird />
+        </div>
       </div>
     </Provider>
   );

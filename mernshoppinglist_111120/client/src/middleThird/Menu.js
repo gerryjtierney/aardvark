@@ -22,7 +22,7 @@ class Menu extends Component{
                 
                 
                 <div className="Menu-overlay"></div>
-                <div className="Menu-text" onClick={this.scrollUp}><Link to="/menu">What's cooking?</Link></div>
+                <div className="Menu-text" onClick={this.scrollUp}>What's cooking?</div>
                 
             </div>
         )
