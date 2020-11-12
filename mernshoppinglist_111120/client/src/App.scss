@@ -12,13 +12,6 @@ $siteContrast2: rgb(88, 88, 88);
 $roboFont: "Andale Mono";
 
 
-
-.remove-btn{
-    margin-right: 1rem;
-}
-
-
-
 .fade-enter{
     opacity: 0.01;
 }
@@ -39,53 +32,6 @@ $roboFont: "Andale Mono";
     transition: opacity 500ms ease-out;
     
 }
-
-
-
-
-
-
-
-
-
-
-.jumboInner{
-    background-color: slateblue;
-    height:15rem;
-}
-
-
-.jumboOuter{
-    background-color: maroon;
-}
-
-.jumboMajor{
-    margin-top: 1rem;
-    background-color: springgreen;
-    padding: 1rem 1rem 0.25rem 1rem;
-    margin-bottom: 1rem;
-}
-
-.itom{
-    background-color: $siteContrast;
-}
-
-
-#itemModal{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
-    Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,
-    "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",
-    "Noto Color Emoji";
-}
-
-
-
-
-
-
 
 
 
@@ -284,64 +230,7 @@ $roboFont: "Andale Mono";
 
     //shopping items
 
-    .shopping-item {
-        font-size: 1.2vw;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(3, 1rem);
-        width: 100%;
-      }
 
-      .shopping-itemButton{
-        grid-column-start: 1;
-        grid-column-end: 2;
-      }
-
-    .shopping-itemName{
-        color: $siteContrast;
-
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        text-align: left;
-        grid-column-start: 2;
-        grid-column-end: 5;
-        font-size: 1.1rem;
-        font-family: $roboFont;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }    
-
-
-    .shopping-itemDesc{                    
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 5;
-        grid-column-end: 10;
-        text-align: left;
-        color: $siteContrast;
-     
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        font-size: 1.1rem;
-        font-family: $roboFont;
-    }
-
-
-    .shopping-itemPrice{                    
-        display: grid;
-        color: $siteContrast;
-
-        grid-column-start: 10;
-        grid-column-end: 11;
-        text-align: center;
-        font-size: 1.4rem;
-        font-family: $roboFont;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
 
     .modal-content{
         width: 80%;
@@ -510,69 +399,7 @@ $roboFont: "Andale Mono";
         padding-top: 5px;
     }
 
-
-
-    //small shopping items
-
-    .shopping-item {
-        font-size: 1.2vw;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        width: 100%;
-        align-content: center;
-      }
-
-      .shopping-itemButton{
-        grid-column-start: 1;
-        grid-column-end: 2;
-      }
-
-    .shopping-itemName{
-        color: $siteContrast;
-
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        text-align: left;
-        grid-column-start: 2;
-        grid-column-end: 5;
-        font-size: 1rem;
-        font-family: $roboFont;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }    
-
-
-    .shopping-itemDesc{                    
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 5;
-        grid-column-end: 10;
-        text-align: left;
-        color: $siteContrast;
-     
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        font-size: 1rem;
-        font-family: $roboFont;
-    }
-
-
-    .shopping-itemPrice{                    
-        display: grid;
-        color: $siteContrast;
-
-        grid-column-start: 10;
-        grid-column-end: 11;
-        text-align: center;
-        font-size: 1.1rem;
-        font-family: $roboFont;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
+    
 
     //small menu items
     .menu-itemName{
@@ -652,29 +479,6 @@ $roboFont: "Andale Mono";
 
 
 
-
-
-
-
-
-
-@font-face {
-    font-family: myNeonFont;
-    src: url("./cafe.ttf") format("truetype");
-}
-
-@mixin myMixin(){
-    background-color: black;
-    z-index: 1;
-    opacity: 30%;
-}
-
-$siteWhite: rgb(228, 205, 228);
-$siteWhite2: rgb(199, 184, 199);
-$siteWhiteBright:  rgb(255, 240, 255);
-$siteContrast: rgb(78, 78, 78);
-$siteContrast2: rgb(88, 88, 88);
-
 .App{
     display: grid;
     grid-template-rows: repeat(13, 1fr);
@@ -1288,36 +1092,6 @@ $siteContrast2: rgb(88, 88, 88);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-//app from old katie's place
-
-@font-face {
-    font-family: myNeonFont;
-    src: url("./cafe.ttf") format("truetype");
-}
-
-@mixin myMixin(){
-    background-color: black;
-    z-index: 1;
-    opacity: 30%;
-}
-
-$siteWhite: rgb(228, 205, 228);
-$siteWhite2: rgb(199, 184, 199);
-$siteWhiteBright:  rgb(255, 240, 255);
-$siteContrast: rgb(78, 78, 78);
-$siteContrast2: rgb(88, 88, 88);
-
 .App{
     display: grid;
     grid-template-rows: repeat(13, 1fr);
@@ -1927,3 +1701,16 @@ $siteContrast2: rgb(88, 88, 88);
 
 }
 
+body{
+    line-height: 1;
+}
+
+#manualOverride{
+    color: $siteWhite;
+    text-decoration: none;
+}
+
+
+
+
+a:hover, a:active { text-decoration: none; color:$siteWhite }

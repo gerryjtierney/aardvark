@@ -13,6 +13,7 @@
   background-image: url("./images/pexels-negative-space-34650.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: black;
   z-index: 1;
 }
 
@@ -571,6 +572,15 @@ select:-webkit-autofill:focus {
 
 .BottomThird .Terms .Terms-info:hover {
   opacity: 0.6;
+}
+
+a {
+  color: #e4cde4;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
 }
 
 a {

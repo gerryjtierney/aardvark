@@ -23,6 +23,7 @@ $siteContrast2: rgb(88, 88, 88);
     background-image: url("./images/pexels-negative-space-34650.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: black;
     
 
     z-index: 1;
@@ -514,3 +515,14 @@ a{
     color: $siteWhite;
     text-decoration: none;
 }
+
+body{
+    line-height: 1;
+}
+
+a{
+    color: $siteWhite;
+    text-decoration: none;
+}
+
+

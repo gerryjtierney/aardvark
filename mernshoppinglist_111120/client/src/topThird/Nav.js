@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
+import PrimaryMenuModal from '../components/PrimaryMenuModal';
 
 
 
@@ -14,15 +15,15 @@ class Nav extends Component{
 
                 <div className="NavText">
 
-                        <div className="menu">
-                            <Link to="/menu">Menu</Link>
+                        <div className="menu" id="manualOverride">
+                            <PrimaryMenuModal />
                         </div>
 
                     <div className="book">Book</div>
 
                     <div className="rewards">Rewards</div>
 
-                        <div className="contact">
+                        <div className="contact" id="manualOverride">
                         <Link to="/contact">Contact</Link>
                     </div>
                     
