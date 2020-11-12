@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 class Logo extends Component{
@@ -9,13 +9,11 @@ class Logo extends Component{
 
     render(){
         return(
-
             <div className="Logo">
                 <div className="LogoText">
-                Katie's
+                <Link to="/">Katie's</Link>
                 </div>
             </div>
-
 
         )
         }
