@@ -22,7 +22,7 @@ a {
   color: #e4cde4;
 }
 
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 600px) {
   .AppSub {
     display: -ms-grid;
     display: grid;
@@ -104,8 +104,8 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 6;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 7;
     z-index: 2;
     display: -ms-grid;
@@ -128,7 +128,7 @@ a {
         grid-column-start: 2;
     grid-column-end: 8;
     font-family: myNeonFont;
-    font-size: 3.4vw;
+    font-size: 5.8vw;
     color: #e4cde4;
     padding-top: 12px;
     display: -ms-grid;
@@ -148,6 +148,7 @@ a {
     grid-column-end: 2;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    margin-right: 10px;
   }
   .TopThird .Nav .NavText .menu:hover {
     opacity: 0.6;
@@ -348,8 +349,8 @@ a {
     width: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (130px)[6];
-        grid-template-rows: repeat(6, 130px);
+    -ms-grid-rows: (125px)[6];
+        grid-template-rows: repeat(6, 125px);
     -ms-grid-columns: (1fr)[20];
         grid-template-columns: repeat(20, 1fr);
     grid-auto-rows: minmax(50px, auto);
@@ -445,9 +446,9 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 6vw;
+    font-size: 6.7vw;
     color: #4e4e4e;
-    margin-top: 2.5vw;
+    margin-top: 3.5vw;
   }
   .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-button {
     -ms-grid-row: 5;
@@ -460,7 +461,7 @@ a {
     display: grid;
     background-color: #4e4e4e;
     border-radius: 2px;
-    font-size: 4.8vw;
+    font-size: 5.5vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -498,7 +499,7 @@ a {
     color: #fff0ff;
   }
   .MiddleThird .CenterPanel .Menu .Menu-text {
-    font-size: 10vw;
+    font-size: 11vw;
     color: #e4cde4;
     font-family: myNeonFont;
     z-index: 2;
@@ -552,7 +553,7 @@ a {
     color: #fff0ff;
   }
   .MiddleThird .CenterPanel .Rewards .Rewards-text {
-    font-size: 10vw;
+    font-size: 11vw;
     color: #e4cde4;
     font-family: myNeonFont;
     z-index: 2;
@@ -607,7 +608,7 @@ a {
     grid-row-end: 3;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    grid-column-end: 11;
+    grid-column-end: 12;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
@@ -615,14 +616,14 @@ a {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .BottomThird .Signup .Signup-button {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 3;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -639,8 +640,8 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 5;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -657,8 +658,8 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
-    -ms-grid-column: 11;
-        grid-column-start: 11;
+    -ms-grid-column: 10;
+        grid-column-start: 10;
     grid-column-end: 20;
     display: -ms-grid;
     display: grid;
@@ -667,7 +668,7 @@ a {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .BottomThird .Socials .Socials-twitter {
     -ms-grid-row: 2;
@@ -709,17 +710,17 @@ a {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 5;
-    -ms-grid-column: 6;
-        grid-column-start: 6;
-    grid-column-end: 16;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 18;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
     font-family: myNeonFont;
-    font-size: 2.5vw;
+    font-size: 6vw;
   }
   .BottomThird .Terms .Terms-cookies {
     -ms-grid-row: 1;
@@ -727,7 +728,7 @@ a {
     grid-row-end: 2;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     -ms-grid-column-align: start;
         justify-self: start;
     -ms-flex-item-align: start;
@@ -743,9 +744,9 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    grid-column-end: 4;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 7;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: start;
@@ -761,9 +762,9 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 5;
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 10;
     -ms-grid-column-align: end;
         justify-self: end;
     -ms-flex-item-align: start;
@@ -779,15 +780,15 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 4;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 5;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 11;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 1.8vw;
+    font-size: 4.8vw;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
@@ -796,7 +797,7 @@ a {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 601px) {
   .AppSub {
     display: -ms-grid;
     display: grid;

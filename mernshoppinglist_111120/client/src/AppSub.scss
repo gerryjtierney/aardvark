@@ -44,7 +44,7 @@ a{
 
 
 //small screens
-@media screen and (max-width: 649px){
+@media screen and (max-width: 600px){
 
 
     .AppSub{
@@ -127,7 +127,7 @@ a{
         .Nav{
             grid-row-start: 1;
             grid-row-end:   6;
-            grid-column-start: 4;
+            grid-column-start: 3;
             grid-column-end:   7;
             z-index: 2;
 
@@ -147,7 +147,7 @@ a{
 
 
                 font-family: myNeonFont;
-                font-size: 3.4vw;
+                font-size: 5.8vw;
                 color: $siteWhite;
 
                 padding-top: 12px;
@@ -163,6 +163,7 @@ a{
                     grid-column-start: 1;
                     grid-column-end: 2;
                     transition: opacity 0.2s;
+                    margin-right: 10px;
                     &:hover{
                         opacity: 0.6;
                     }
@@ -364,7 +365,7 @@ a{
         width: auto;
         display: grid;
 
-        grid-template-rows: repeat(6, 130px);
+        grid-template-rows: repeat(6, 125px);
         grid-template-columns: repeat(20, 1fr);
         grid-auto-rows: minmax(50px, auto);
 
@@ -442,9 +443,9 @@ a{
                         display: grid;
                         justify-content: center;
                         align-items: center;
-                        font-size: 6vw;
+                        font-size: 6.7vw;
                         color: $siteContrast;
-                        margin-top: 2.5vw;
+                        margin-top: 3.5vw;
 
                     }
 
@@ -458,7 +459,7 @@ a{
 
                         background-color: $siteContrast;
                         border-radius: 2px;
-                        font-size: 4.8vw;
+                        font-size: 5.5vw;
                         justify-content: center;
                         align-content: center;
                         color: $siteWhite;
@@ -497,7 +498,7 @@ a{
                 }
                 
                 .Menu-text{
-                    font-size: 10vw;
+                    font-size: 11vw;
                     color: $siteWhite;
                     font-family: myNeonFont;
                     z-index: 2;
@@ -546,7 +547,7 @@ a{
                 }
 
                 .Rewards-text{
-                    font-size: 10vw;
+                    font-size: 11vw;
                     color: $siteWhite;
                     font-family: myNeonFont;
                     z-index: 2;
@@ -608,19 +609,19 @@ a{
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column-start: 2;
-            grid-column-end: 11;
+            grid-column-end: 12;
 
 
             display: grid;
             grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(5, 1fr);
             font-family: myNeonFont;
-            font-size: 3vw;
+            font-size: 8vw;
 
             .Signup-button{
                 grid-row-start: 2;
                 grid-row-end: 3;
-                grid-column-start: 2;
+                grid-column-start: 1;
                 grid-column-end: 3;
                 justify-self: center;
                 align-self: center;
@@ -633,7 +634,7 @@ a{
             .Signup-careers{
                 grid-row-start: 2;
                 grid-row-end: 3;
-                grid-column-start: 4;
+                grid-column-start: 3;
                 grid-column-end: 5;
                 justify-self: center;
                 align-self: center;
@@ -651,7 +652,7 @@ a{
 
             grid-row-start: 1;
             grid-row-end: 3;
-            grid-column-start: 11;
+            grid-column-start: 10;
             grid-column-end: 20;
 
 
@@ -659,7 +660,7 @@ a{
             grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(5, 1fr);
             font-family: myNeonFont;
-            font-size: 3vw;
+            font-size: 8vw;
 
             .Socials-twitter{
                 grid-row-start: 2;
@@ -692,21 +693,21 @@ a{
         .Terms{
             grid-row-start: 3;
             grid-row-end: 5;
-            grid-column-start: 6;
-            grid-column-end: 16;
+            grid-column-start: 4;
+            grid-column-end: 18;
 
 
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(10, 1fr);
             font-family: myNeonFont;
-            font-size: 2.5vw;
+            font-size: 6vw;
 
             .Terms-cookies{
                 grid-row-start: 1;
                 grid-row-end: 2;
                 grid-column-start: 2;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 justify-self: start;
                 align-self: start;
                 transition: opacity 0.2s;
@@ -718,8 +719,8 @@ a{
             .Terms-conditions{
                 grid-row-start: 1;
                 grid-row-end: 2;
-                grid-column-start: 3;
-                grid-column-end: 4;
+                grid-column-start: 5;
+                grid-column-end: 7;
                 justify-self: center;
                 align-self: start;
                 transition: opacity 0.2s;
@@ -731,8 +732,8 @@ a{
             .Terms-privacy{
                 grid-row-start: 1;
                 grid-row-end: 2;
-                grid-column-start: 4;
-                grid-column-end: 5;
+                grid-column-start: 8;
+                grid-column-end: 10;
                 justify-self: end;
                 align-self: start;
                 transition: opacity 0.2s;
@@ -744,11 +745,11 @@ a{
             .Terms-info{
                 grid-row-start: 2;
                 grid-row-end: 4;
-                grid-column-start: 2;
-                grid-column-end: 5;
+                grid-column-start: 1;
+                grid-column-end: 11;
                 justify-self: center;
                 align-self: center;
-                font-size: 1.8vw;
+                font-size: 4.8vw;
                 transition: opacity 0.2s;
                 &:hover{
                     opacity: 0.6;
@@ -821,7 +822,7 @@ a{
 
 
 //large screens
-@media screen and (min-width: 650px){
+@media screen and (min-width: 601px){
 
 
     .AppSub{
