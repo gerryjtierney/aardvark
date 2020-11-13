@@ -39,6 +39,11 @@ $roboFont: "Andale Mono";
 
 a:hover, a:active { text-decoration: none; color:$siteWhite }
 
+.menuButton{
+    background-color: transparent;
+    color: $siteWhite;
+}
+
 
 
 
@@ -1039,10 +1044,6 @@ a:hover, a:active { text-decoration: none; color:$siteWhite }
 
 
 
-.menuButton{
-    background-color: transparent;
-    color: $siteWhite;
-}
 
 
 
@@ -1081,6 +1082,65 @@ a:hover, a:active { text-decoration: none; color:$siteWhite }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//phones
 
 
 
@@ -1089,15 +1149,15 @@ a:hover, a:active { text-decoration: none; color:$siteWhite }
 
     .App{
         display: grid;
-        grid-template-rows: repeat(13, 1fr);
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         
         background-image: url("./images/pexels-negative-space-34650.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         
 
-        z-index: 1;
+        z-index: 5;
         
 
     }
@@ -1105,9 +1165,9 @@ a:hover, a:active { text-decoration: none; color:$siteWhite }
 
     .Overlay{
         grid-row-start: 1;
-        grid-row-end: 12;
+        grid-row-end: 11;
         grid-column-start: 1;
-        grid-column-end: 6;
+        grid-column-end: 4;
         background-image: linear-gradient(to bottom, rgba(300,0,0,0.5), rgba(0,0,0,0.8));
         z-index: 2;
         

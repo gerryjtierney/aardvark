@@ -32,6 +32,11 @@ a:hover, a:active {
   color: #e4cde4;
 }
 
+.menuButton {
+  background-color: transparent;
+  color: #e4cde4;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,31 +1004,26 @@ a:hover, a:active {
   }
 }
 
-.menuButton {
-  background-color: transparent;
-  color: #e4cde4;
-}
-
 @media screen and (max-width: 649px) {
   .App {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[13];
-        grid-template-rows: repeat(13, 1fr);
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     background-image: url("./images/pexels-negative-space-34650.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 1;
+    z-index: 5;
   }
   .Overlay {
     -ms-grid-row: 1;
         grid-row-start: 1;
-    grid-row-end: 12;
+    grid-row-end: 11;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8)));
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
     z-index: 2;
