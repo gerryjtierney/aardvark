@@ -15,6 +15,16 @@ $siteWhiteBright:  rgb(255, 240, 255);
 $siteContrast: rgb(78, 78, 78);
 $siteContrast2: rgb(88, 88, 88);
 
+
+
+
+
+
+@media screen and (min-width: 650px){
+
+
+
+
 .AppSub{
     display: grid;
     grid-template-rows: repeat(13, 1fr);
@@ -204,6 +214,7 @@ $siteContrast2: rgb(88, 88, 88);
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
             padding-right: 0.2vw;
+            
 
             z-index: 4;
             &:hover{
@@ -526,3 +537,9 @@ a{
 }
 
 
+.menuButton{
+    background-color: transparent;
+    color: $siteWhite;
+}
+
+}

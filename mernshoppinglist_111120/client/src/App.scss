@@ -250,7 +250,7 @@ $roboFont: "Andale Mono";
 .PrimaryMenuModal{
 
 
-    background-color: $siteWhite;
+    
 
     .PrimaryMenuModalContainer{
         margin-top: 200px;
@@ -479,6 +479,21 @@ $roboFont: "Andale Mono";
 
 
 
+
+
+
+
+
+
+@media screen and (min-width: 650px){
+
+
+
+
+
+
+
+
 .App{
     display: grid;
     grid-template-rows: repeat(13, 1fr);
@@ -576,6 +591,7 @@ $roboFont: "Andale Mono";
             grid-row-end: 5;
             grid-column-start: 2;
             grid-column-end: 8;
+            background-color: transparent;
 
 
             font-family: myNeonFont;
@@ -667,6 +683,8 @@ $roboFont: "Andale Mono";
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
             padding-right: 0.2vw;
+            padding-top: 0.2vw;
+            padding-bottom: 0.2vw;
 
             z-index: 4;
             &:hover{
@@ -1189,6 +1207,7 @@ $roboFont: "Andale Mono";
             grid-row-end: 5;
             grid-column-start: 2;
             grid-column-end: 8;
+            
 
 
             font-family: myNeonFont;
@@ -1423,7 +1442,7 @@ $roboFont: "Andale Mono";
             grid-row-end: 7;
             grid-column-start: 1;
             grid-column-end: 4;
-
+            
             background-image: url("./images/platter-2009590_1920.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -1706,7 +1725,7 @@ body{
 }
 
 #manualOverride{
-    color: $siteWhite;
+
     text-decoration: none;
 }
 
@@ -1714,3 +1733,10 @@ body{
 
 
 a:hover, a:active { text-decoration: none; color:$siteWhite }
+
+.menuButton{
+    background-color: transparent;
+    color: $siteWhite;
+}
+
+}

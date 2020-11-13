@@ -30,7 +30,7 @@ class PrimaryMenuModal extends Component {
         return (
 
             <div className="PrimaryMenuModal">
-                <Button color="dark" style={{ marginBottom: "2rem" }} onClick={this.toggle}> See Full Menu </Button>
+                <div onClick={this.toggle} className="menuButton"> Menu </div>
 
 
                 <Modal isOpen={this.state.toggled} id="menuModal">

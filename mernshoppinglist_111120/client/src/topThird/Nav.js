@@ -15,7 +15,7 @@ class Nav extends Component{
 
                 <div className="NavText">
 
-                        <div className="menu" id="manualOverride">
+                        <div className="menu">
                             <PrimaryMenuModal />
                         </div>
 
