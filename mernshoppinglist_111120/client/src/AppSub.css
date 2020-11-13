@@ -3,6 +3,10 @@
   src: url("./cafe.ttf") format("truetype");
 }
 
+html {
+  background-color: black;
+}
+
 a {
   color: #e4cde4;
   text-decoration: none;
@@ -22,7 +26,7 @@ a {
   color: #e4cde4;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .AppSub {
     display: -ms-grid;
     display: grid;
@@ -797,7 +801,7 @@ a {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 501px) {
   .AppSub {
     display: -ms-grid;
     display: grid;
@@ -899,11 +903,11 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 5;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 8;
     font-family: myNeonFont;
-    font-size: 3.4vw;
+    font-size: 4.8vw;
     color: #e4cde4;
     padding-top: 12px;
     display: -ms-grid;
