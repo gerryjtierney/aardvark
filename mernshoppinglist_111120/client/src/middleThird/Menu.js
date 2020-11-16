@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link} from "react-router-dom"
+import PrimaryMenuModal from "../components/PrimaryMenuModal"
 
 
 class Menu extends Component{

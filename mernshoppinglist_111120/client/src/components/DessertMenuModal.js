@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Container, ListGroup, ListGroupItem, Button, Modal } from "reactstrap";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 import { connect } from "react-redux";
-import { getDesserts, deleteDessert } from "../actions/dessertActions"
+import { getDesserts } from "../actions/dessertActions"
 import PropTypes from "prop-types"
 
 
@@ -47,4 +46,4 @@ const mapStateToProps = (state) => ({
 })
 
 
-export default connect(mapStateToProps, { getDesserts, deleteDessert })(DessertMenuModal);
+export default connect(mapStateToProps, { getDesserts })(DessertMenuModal);

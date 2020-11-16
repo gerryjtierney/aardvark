@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getStarters, deleteStarter } from "../actions/starterActions"
+import { getStarters } from "../actions/starterActions"
 import PropTypes from "prop-types"
 
 
@@ -48,4 +48,4 @@ const mapStateToProps = (state) => ({
 })
 
 
-export default connect(mapStateToProps, { getStarters, deleteStarter })(StarterMenuModal);
+export default connect(mapStateToProps, { getStarters })(StarterMenuModal);

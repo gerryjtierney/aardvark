@@ -1,5 +1,5 @@
 
-import { GET_STARTERS, ADD_STARTER, DELETE_STARTER, PUT_STARTER, STARTERS_LOADING } from "../actions/types"
+import { GET_STARTERS, STARTERS_LOADING } from "../actions/types"
 
 const initialState = {
     starters: [],
@@ -16,17 +16,6 @@ export default function (state = initialState, action) {
                 loading: false
             };
 
-        case DELETE_STARTER:
-            return {
-                ...state,
-                starters: state.starters.filter(starter => starter._id !== action.payload)
-            }
-
-        case ADD_STARTER:
-            return {
-                ...state,
-                starters: [action.payload, ...state.starters]
-            }
 
         case STARTERS_LOADING:
             return {

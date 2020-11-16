@@ -1,5 +1,5 @@
 
-import { GET_MAINS, ADD_MAIN, DELETE_MAIN, PUT_MAIN, MAINS_LOADING } from "../actions/types"
+import { GET_MAINS, MAINS_LOADING } from "../actions/types"
 
 const initialState = {
     mains: [],
@@ -16,17 +16,6 @@ export default function (state = initialState, action) {
                 loading: false
             };
 
-        case DELETE_MAIN:
-            return {
-                ...state,
-                mains: state.mains.filter(main => main._id !== action.payload)
-            }
-
-        case ADD_MAIN:
-            return {
-                ...state,
-                mains: [action.payload, ...state.mains]
-            }
 
         case MAINS_LOADING:
             return {

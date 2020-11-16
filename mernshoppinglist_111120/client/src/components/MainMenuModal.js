@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Container, ListGroup, ListGroupItem, Button, Modal } from "reactstrap";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { connect } from "react-redux";
-import { getMains, deleteMain } from "../actions/mainActions"
+import { getMains } from "../actions/mainActions"
 import PropTypes from "prop-types"
 
 
@@ -49,4 +47,4 @@ const mapStateToProps = (state) => ({
 })
 
 
-export default connect(mapStateToProps, { getMains, deleteMain })(MainMenuModal);
+export default connect(mapStateToProps, { getMains })(MainMenuModal);

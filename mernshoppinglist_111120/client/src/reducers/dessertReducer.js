@@ -1,5 +1,5 @@
 
-import { GET_DESSERTS, ADD_DESSERT, DELETE_DESSERT, PUT_DESSERT, DESSERTS_LOADING } from "../actions/types"
+import { GET_DESSERTS, DESSERTS_LOADING } from "../actions/types"
 
 const initialState = {
     desserts: [],
@@ -16,17 +16,6 @@ export default function (state = initialState, action) {
                 loading: false
             };
 
-        case DELETE_DESSERT:
-            return {
-                ...state,
-                desserts: state.desserts.filter(dessert => dessert._id !== action.payload)
-            }
-
-        case ADD_DESSERT:
-            return {
-                ...state,
-                desserts: [action.payload, ...state.desserts]
-            }
 
         case DESSERTS_LOADING:
             return {
