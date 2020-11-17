@@ -28,7 +28,7 @@ class PopupContact extends Component {
       <div className="PopupContact">
 
 
-        <form action="https://formspree.io/mleoeqve" method="POST">
+        <form action="https://formspree.io/mleoeqve" method="POST" className="PopupContactForm">
           <input type="text" id="userEmail" name="_replyto" placeholder="email@example.com" onFocus={this.defaultDelete} />
           <textarea name="message" type="text" onFocus={this.defaultDelete2} id="userMessage" placeholder="Your message" className="textareao"></textarea>
           <button type="submit" id="contactSend">Send</button>
