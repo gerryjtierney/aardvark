@@ -1,4 +1,4 @@
-//appsub
+//appsubcontact
 
 
 
@@ -53,9 +53,9 @@ a{
 @media screen and (max-width: 500px){
 
 
-    .AppSub{
+    .AppSubContact{
         display: grid;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
         
         background-image: url("./images/pexels-negative-space-34650.jpg");
@@ -69,9 +69,9 @@ a{
     }
 
 
-    .Overlay{
+    .OverlayContact{
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 4;
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
@@ -79,12 +79,12 @@ a{
         
     }
 
-    .TopThird{
+    .TopThirdContact{
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 4;
-        width: auto;
+        width: 100%;
         display: grid;
 
         grid-template-rows: repeat(6, 1fr);
@@ -275,249 +275,111 @@ a{
 
 
 
-  
-
-
-
-
-    .MiddleThird{
+    .PopupContact{
+        font-family: myNeonFont;
+        font-size: 2rem;
         grid-row-start: 2;
-        grid-row-end: 5;
+        grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 4;
-        width: auto;
+        width: 100%;
         display: grid;
-
-        grid-template-rows: repeat(6, 125px);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(20, 1fr);
-        grid-auto-rows: minmax(50px, auto);
 
-        
-        
-        
 
-        .CenterPanel{
-            
-            height: auto;
+    
+
+
+        form {   
+            display: grid;
+            grid-template-rows: repeat(10, 1.4rem);
+            grid-template-columns: repeat(20, 1fr);
             grid-row-start: 1;
-            grid-row-end: 7;
+            grid-row-end: 4;
             grid-column-start: 1;
             grid-column-end: 21;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr); 
-            grid-template-rows: repeat(3, 1fr);
-            z-index: 2;
-            
+            background-image: url("./images/brick-wall-1834784.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: black;  
+            background-position: center;
 
-            .Booking {
-                grid-row-start: 1;
-                grid-row-end: 2;
-                grid-column-start: 1;
-                grid-column-end: 7;
-                background-color: $siteWhite;
+            padding-top: 20px;
+            padding-bottom: 30px;
 
+
+
+
+            input{
                 display: grid;
-                grid-template-columns: 10;
-                grid-template-rows: 10;
-                justify-items: center;
-                align-items: center;
-                font-family: myNeonFont;
-                
-
-                
-                .Booking-internal{
-                    height: 96%;
-                    width: 98%;
-                    background-color: $siteWhite;
-                    border: 2px solid $siteContrast;
-                    display: grid;
-                    justify-content: center;
-                    align-content: center;
-                    line-height: 10px;
-                    padding: 0px;
-                    margin: 0px;
-
-                    grid-template-columns: repeat(10, 1fr);
-                    grid-template-rows: repeat(6, 1fr);
-                    grid-gap: 0px;
-
-
-                    .Booking-internal-first-paragraph{
-                        grid-row-start: 2;
-                        grid-row-end: 4;
-                        grid-column-start: 1;
-                        grid-column-end: 11;
-                        display: grid;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 12vw;
-                        text-decoration: underline;
-                        color: $siteContrast;
-
-                        
-                    }
-
-                    .Booking-internal-second-paragraph{
-                        grid-row-start: 3;
-                        grid-row-end: 5;
-                        grid-column-start: 1;
-                        grid-column-end: 11;
-                    
-                        display: grid;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 6.7vw;
-                        color: $siteContrast;
-                        margin-top: 3.5vw;
-
-                    }
-
-                    .Booking-internal-button{
-                        grid-row-start: 5;
-                        grid-row-end: 6;
-                        grid-column-start: 4;
-                        grid-column-end: 8;
-
-                        display: grid;
-
-                        background-color: $siteContrast;
-                        border-radius: 2px;
-                        font-size: 5.5vw;
-                        justify-content: center;
-                        align-content: center;
-                        color: $siteWhite;
-                        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
-                        &:hover{
-                            color: $siteContrast;
-                            background-color: $siteWhite2;
-
-                        }
-                        
-
-
-
-                    }
-                }
-
-            }
-
-            .Menu {
+                background-color: $siteWhite !important;
                 grid-row-start: 2;
                 grid-row-end: 3;
-                grid-column-start: 1;
-                grid-column-end: 7;
-
-                background-image: url("./images/platter-2009590_1920.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: grid;
-
-
-                grid-template-columns: 3;
-                grid-template-rows: 3;
-                &:hover{
-                    opacity: 0.8;
-                    color: $siteWhiteBright;
-                }
+                grid-column-start: 6;
+                grid-column-end: 16;
+                font-family: myNeonFont;
+                font-size: 1rem;
+                color: $siteContrast;
+                border-radius: 2px;
+                z-index: 5;
+        
+        
+                };
+        
+                textarea{
+        
+                grid-row-start: 4;
+                grid-row-end: 8;
+                grid-column-start: 5;
+                grid-column-end: 17;
+                font-family: myNeonFont;
+                font-size: 1rem;
+                background-color: $siteWhite;
+                color: $siteContrast;
+                border-radius: 2px;
+                z-index: 5;
+        
+                };
+        
+                button {
+                grid-row-start: 9;
+                grid-row-end: 10;
+                grid-column-start: 9;
+                grid-column-end: 13;
+                font-family: myNeonFont;
+                font-size: 1rem;
+                background-color: $siteWhite;
+                color: $siteContrast;
+                border-radius: 2px;
+                box-shadow: 0px 0px 2px 1px $siteWhite;
+                transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+                z-index: 5;
                 
-                .Menu-text{
-                    font-size: 11vw;
-                    color: $siteWhite;
-                    font-family: myNeonFont;
-                    z-index: 2;
-                    justify-self: center;
-                    align-self: center;
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
 
-                }
-
-                .Menu-overlay{
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
-                    background-color: black;
-                    z-index: 1;
-                    opacity: 0.45;
-                    transition: opacity 0.4s;
-                    &:hover{
-                        opacity: 0.6;
-                    }
-                }
-
-            }
-
-            .Rewards {
-                grid-row-start: 3;
-                grid-row-end: 4;
-                grid-column-start: 1;
-                grid-column-end: 7;
-
-                background-image: url("./images/morning-819362.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: grid;
-
-
-                grid-template-columns: 3;
-                grid-template-rows: 3;
                 &:hover{
-                    opacity: 0.8;
-                    color: $siteWhiteBright;
-                }
-
-                .Rewards-text{
-                    font-size: 11vw;
+                    background-color: $siteContrast;
                     color: $siteWhite;
-                    font-family: myNeonFont;
-                    z-index: 2;
-                    justify-self: center;
-                    align-self: center;
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
+                    box-shadow: 0px 0px 6px 6px $siteContrast;
+                }
+        
                 }
 
-                .Rewards-overlay{
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
-                    background-color: black;
-                    z-index: 1;
-                    opacity: 0.45;
-                    transition: opacity 0.4s;
-                    &:hover{
-                        opacity: 0.6;
-                    }
-                }
-            }
 
 
         }
+
+
     }
 
 
 
 
+  
 
-
-
-            
-        
-        
-        
-
-
-
-
-    .BottomThird{
-        grid-row-start: 5;
-        grid-row-end: 6;
+    .BottomThirdContact{
+        grid-row-start: 3;
+        grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 4;
         width: auto;
@@ -748,7 +610,7 @@ a{
 @media screen and (min-width: 501px){
 
 
-    .AppSub{
+    .AppSubContact{
         display: grid;
         grid-template-rows: repeat(13, 1fr);
         grid-template-columns: repeat(5, 1fr);
@@ -775,7 +637,7 @@ a{
         
     }
 
-    .TopThird{
+    .TopThirdContact{
         grid-row-start: 1;
         grid-row-end: 6;
         grid-column-start: 1;
@@ -970,230 +832,94 @@ a{
 
 
 
-   
-
-
-
-    .MiddleThird{
+    .PopupContact{
+        font-family: myNeonFont;
+        font-size: 5rem;
         grid-row-start: 6;
-        grid-row-end: 12;
+        grid-row-end: 10;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 6;
         width: auto;
         display: grid;
-
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(20, 1fr);
-        grid-auto-rows: minmax(50px, auto);
+        grid-auto-rows: minmax(500px, auto);
+        z-index: 5;
 
-        
-        
-        
 
-        .CenterPanel{
-            
-            height: auto;
-            grid-row-start: 1;
-            grid-row-end: 7;
-            grid-column-start: 3;
-            grid-column-end: 19;
+        form {   
             display: grid;
-            grid-template-columns: repeat(6, 1fr); 
-            grid-template-rows: repeat(6, 1fr);
-            z-index: 2;
-            
+            grid-template-rows: repeat(10, 1fr);
+            grid-template-columns: repeat(20, 1fr);
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 21;
 
-            .Booking {
-                grid-row-start: 1;
-                grid-row-end: 4;
-                grid-column-start: 1;
-                grid-column-end: 7;
-                background-color: $siteWhite;
 
+
+
+            input{
                 display: grid;
-                grid-template-columns: 10;
-                grid-template-rows: 10;
-                justify-items: center;
-                align-items: center;
+                background-color: $siteWhite !important;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 6;
+                grid-column-end: 16;
                 font-family: myNeonFont;
-                font-size: 10vw;
-
-                
-                .Booking-internal{
-                    height: 96%;
-                    width: 98%;
-                    background-color: $siteWhite;
-                    border: 2px solid $siteContrast;
-                    display: grid;
-                    justify-content: center;
-                    align-content: center;
-                    line-height: 10px;
-                    padding: 0px;
-                    margin: 0px;
-
-                    grid-template-columns: repeat(10, 1fr);
-                    grid-template-rows: repeat(6, 1fr);
-                    grid-gap: 0px;
-
-
-                    .Booking-internal-first-paragraph{
-                        grid-row-start: 2;
-                        grid-row-end: 4;
-                        grid-column-start: 1;
-                        grid-column-end: 11;
-                        display: grid;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 7vw;
-                        text-decoration: underline;
-                        color: $siteContrast;
-
-                        
-                    }
-
-                    .Booking-internal-second-paragraph{
-                        grid-row-start: 3;
-                        grid-row-end: 5;
-                        grid-column-start: 1;
-                        grid-column-end: 11;
-                    
-                        display: grid;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 3vw;
-                        color: $siteContrast;
-                        margin-top: 1.5vw;
-
-                    }
-
-                    .Booking-internal-button{
-                        grid-row-start: 5;
-                        grid-row-end: 6;
-                        grid-column-start: 5;
-                        grid-column-end: 7;
-
-                        display: grid;
-
-                        background-color: $siteContrast;
-                        border-radius: 2px;
-                        font-size: 2.8vw;
-                        justify-content: center;
-                        align-content: center;
-                        color: $siteWhite;
-                        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
-                        &:hover{
-                            color: $siteContrast;
-                            background-color: $siteWhite2;
-
-                        }
-                        
-
-
-
-                    }
-                }
-
-            }
-
-            .Menu {
+                font-size: 2rem;
+                color: $siteContrast;
+                border-radius: 2px;
+        
+        
+                };
+        
+                textarea{
+        
                 grid-row-start: 4;
-                grid-row-end: 7;
-                grid-column-start: 1;
-                grid-column-end: 4;
-
-                background-image: url("./images/platter-2009590_1920.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: grid;
-
-
-                grid-template-columns: 3;
-                grid-template-rows: 3;
-                &:hover{
-                    opacity: 0.8;
-                    color: $siteWhiteBright;
-                }
+                grid-row-end: 8;
+                grid-column-start: 5;
+                grid-column-end: 17;
+                font-family: myNeonFont;
+                font-size: 2rem;
+                background-color: $siteWhite;
+                color: $siteContrast;
+                border-radius: 2px;
+        
+                };
+        
+                button {
+                grid-row-start: 9;
+                grid-row-end: 10;
+                grid-column-start: 9;
+                grid-column-end: 13;
+                font-family: myNeonFont;
+                font-size: 3rem;
+                background-color: $siteWhite;
+                color: $siteContrast;
+                border-radius: 2px;
+                box-shadow: 0px 0px 2px 1px $siteWhite;
+                transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
                 
-                .Menu-text{
-                    font-size: 5vw;
-                    color: $siteWhite;
-                    font-family: myNeonFont;
-                    z-index: 2;
-                    justify-self: center;
-                    align-self: center;
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
 
-                }
-
-                .Menu-overlay{
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
-                    background-color: black;
-                    z-index: 1;
-                    opacity: 0.45;
-                    transition: opacity 0.4s;
-                    &:hover{
-                        opacity: 0.6;
-                    }
-                }
-
-            }
-
-            .Rewards {
-                grid-row-start: 4;
-                grid-row-end: 7;
-                grid-column-start: 4;
-                grid-column-end: 7;
-
-                background-image: url("./images/morning-819362.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: grid;
-
-
-                grid-template-columns: 3;
-                grid-template-rows: 3;
                 &:hover{
-                    opacity: 0.8;
-                    color: $siteWhiteBright;
-                }
-
-                .Rewards-text{
-                    font-size: 5vw;
+                    background-color: $siteContrast;
                     color: $siteWhite;
-                    font-family: myNeonFont;
-                    z-index: 2;
-                    justify-self: center;
-                    align-self: center;
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
+                    box-shadow: 0px 0px 6px 6px $siteContrast;
+                }
+        
                 }
 
-                .Rewards-overlay{
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    grid-column-start: 1;
-                    grid-row-end: 3;
-                    background-color: black;
-                    z-index: 1;
-                    opacity: 0.45;
-                    transition: opacity 0.4s;
-                    &:hover{
-                        opacity: 0.6;
-                    }
-                }
-            }
 
 
         }
+
+
     }
+
+
+
+  
 
 
             
@@ -1204,7 +930,7 @@ a{
 
 
 
-    .BottomThird{
+    .BottomThirdContact{
         grid-row-start: 12;
         grid-row-end: 14;
         grid-column-start: 1;

@@ -27,11 +27,11 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .AppSub {
+  .AppSubContact {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[5];
-        grid-template-rows: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     background-image: url("./images/pexels-negative-space-34650.jpg");
@@ -40,10 +40,10 @@ a {
     background-color: black;
     z-index: 1;
   }
-  .Overlay {
+  .OverlayContact {
     -ms-grid-row: 1;
         grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 3;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
@@ -51,14 +51,14 @@ a {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
     z-index: 2;
   }
-  .TopThird {
+  .TopThirdContact {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
-    width: auto;
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[6];
@@ -68,7 +68,7 @@ a {
     grid-auto-rows: minmax(200px, auto);
     z-index: 3;
   }
-  .TopThird .Logo {
+  .TopThirdContact .Logo {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 6;
@@ -88,7 +88,7 @@ a {
         grid-template-columns: repeat(8, 1fr);
     z-index: 2;
   }
-  .TopThird .Logo .LogoText {
+  .TopThirdContact .Logo .LogoText {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 5;
@@ -101,10 +101,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .TopThird .Logo .LogoText:hover {
+  .TopThirdContact .Logo .LogoText:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav {
+  .TopThirdContact .Nav {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 6;
@@ -124,7 +124,7 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .TopThird .Nav .NavText {
+  .TopThirdContact .Nav .NavText {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 5;
@@ -143,7 +143,7 @@ a {
         grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
-  .TopThird .Nav .NavText .menu {
+  .TopThirdContact .Nav .NavText .menu {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -154,10 +154,10 @@ a {
     transition: opacity 0.2s;
     margin-right: 10px;
   }
-  .TopThird .Nav .NavText .menu:hover {
+  .TopThirdContact .Nav .NavText .menu:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav .NavText .book {
+  .TopThirdContact .Nav .NavText .book {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -168,10 +168,10 @@ a {
     transition: opacity 0.2s;
     margin-right: 15px;
   }
-  .TopThird .Nav .NavText .book:hover {
+  .TopThirdContact .Nav .NavText .book:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav .NavText .rewards {
+  .TopThirdContact .Nav .NavText .rewards {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -182,10 +182,10 @@ a {
     transition: opacity 0.2s;
     margin-right: 15px;
   }
-  .TopThird .Nav .NavText .rewards:hover {
+  .TopThirdContact .Nav .NavText .rewards:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav .NavText .contact {
+  .TopThirdContact .Nav .NavText .contact {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -195,10 +195,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .TopThird .Nav .NavText .contact:hover {
+  .TopThirdContact .Nav .NavText .contact:hover {
     opacity: 0.6;
   }
-  .TopThird .Call {
+  .TopThirdContact .Call {
     -ms-grid-row: 5;
         grid-row-start: 5;
     grid-row-end: 6;
@@ -212,7 +212,7 @@ a {
         align-self: start;
     z-index: 3;
   }
-  .TopThird .Call .Call-button {
+  .TopThirdContact .Call .Call-button {
     background-color: #e4cde4;
     height: auto;
     width: auto;
@@ -236,7 +236,7 @@ a {
     padding-right: 0.2vw;
     z-index: 4;
   }
-  .TopThird .Call .Call-button:hover {
+  .TopThirdContact .Call .Call-button:hover {
     background-color: #4e4e4e;
     color: #e4cde4;
     -webkit-box-shadow: 0px 0px 6px 6px #4e4e4e;
@@ -257,256 +257,104 @@ a {
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
   }
-  .MiddleThird {
+  .PopupContact {
+    font-family: myNeonFont;
+    font-size: 2rem;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 3;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
-    width: auto;
+    width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (125px)[6];
-        grid-template-rows: repeat(6, 125px);
-    -ms-grid-columns: (1fr)[20];
-        grid-template-columns: repeat(20, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-  }
-  .MiddleThird .CenterPanel {
-    height: auto;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 7;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 21;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    z-index: 2;
+    -ms-grid-columns: (1fr)[20];
+        grid-template-columns: repeat(20, 1fr);
   }
-  .MiddleThird .CenterPanel .Booking {
+  .PopupContact form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1.4rem)[10];
+        grid-template-rows: repeat(10, 1.4rem);
+    -ms-grid-columns: (1fr)[20];
+        grid-template-columns: repeat(20, 1fr);
     -ms-grid-row: 1;
         grid-row-start: 1;
-    grid-row-end: 2;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 7;
-    background-color: #e4cde4;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 10;
-        grid-template-columns: 10;
-    -ms-grid-rows: 10;
-        grid-template-rows: 10;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: myNeonFont;
-  }
-  .MiddleThird .CenterPanel .Booking .Booking-internal {
-    height: 96%;
-    width: 98%;
-    background-color: #e4cde4;
-    border: 2px solid #4e4e4e;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    line-height: 10px;
-    padding: 0px;
-    margin: 0px;
-    -ms-grid-columns: (1fr)[10];
-        grid-template-columns: repeat(10, 1fr);
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
-    grid-gap: 0px;
-  }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-first-paragraph {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
     grid-row-end: 4;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 11;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 12vw;
-    text-decoration: underline;
-    color: #4e4e4e;
+    grid-column-end: 21;
+    background-image: url("./images/brick-wall-1834784.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-second-paragraph {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 5;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 11;
+  .PopupContact form input {
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 6.7vw;
+    background-color: #e4cde4 !important;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 6;
+        grid-column-start: 6;
+    grid-column-end: 16;
+    font-family: myNeonFont;
+    font-size: 1rem;
     color: #4e4e4e;
-    margin-top: 3.5vw;
-  }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-button {
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 8;
-    display: -ms-grid;
-    display: grid;
-    background-color: #4e4e4e;
     border-radius: 2px;
-    font-size: 5.5vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #e4cde4;
+    z-index: 5;
+  }
+  .PopupContact form textarea {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 8;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 17;
+    font-family: myNeonFont;
+    font-size: 1rem;
+    background-color: #e4cde4;
+    color: #4e4e4e;
+    border-radius: 2px;
+    z-index: 5;
+  }
+  .PopupContact form button {
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    grid-row-end: 10;
+    -ms-grid-column: 9;
+        grid-column-start: 9;
+    grid-column-end: 13;
+    font-family: myNeonFont;
+    font-size: 1rem;
+    background-color: #e4cde4;
+    color: #4e4e4e;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 2px 1px #e4cde4;
+            box-shadow: 0px 0px 2px 1px #e4cde4;
     -webkit-transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+    z-index: 5;
   }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-button:hover {
-    color: #4e4e4e;
-    background-color: #c7b8c7;
-  }
-  .MiddleThird .CenterPanel .Menu {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 7;
-    background-image: url("./images/platter-2009590_1920.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3;
-        grid-template-columns: 3;
-    -ms-grid-rows: 3;
-        grid-template-rows: 3;
-  }
-  .MiddleThird .CenterPanel .Menu:hover {
-    opacity: 0.8;
-    color: #fff0ff;
-  }
-  .MiddleThird .CenterPanel .Menu .Menu-text {
-    font-size: 11vw;
+  .PopupContact form button:hover {
+    background-color: #4e4e4e;
     color: #e4cde4;
-    font-family: myNeonFont;
-    z-index: 2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
+    -webkit-box-shadow: 0px 0px 6px 6px #4e4e4e;
+            box-shadow: 0px 0px 6px 6px #4e4e4e;
   }
-  .MiddleThird .CenterPanel .Menu .Menu-overlay {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
-    background-color: black;
-    z-index: 1;
-    opacity: 0.45;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-  }
-  .MiddleThird .CenterPanel .Menu .Menu-overlay:hover {
-    opacity: 0.6;
-  }
-  .MiddleThird .CenterPanel .Rewards {
+  .BottomThirdContact {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 7;
-    background-image: url("./images/morning-819362.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3;
-        grid-template-columns: 3;
-    -ms-grid-rows: 3;
-        grid-template-rows: 3;
-  }
-  .MiddleThird .CenterPanel .Rewards:hover {
-    opacity: 0.8;
-    color: #fff0ff;
-  }
-  .MiddleThird .CenterPanel .Rewards .Rewards-text {
-    font-size: 11vw;
-    color: #e4cde4;
-    font-family: myNeonFont;
-    z-index: 2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
-  }
-  .MiddleThird .CenterPanel .Rewards .Rewards-overlay {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
-    background-color: black;
-    z-index: 1;
-    opacity: 0.45;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-  }
-  .MiddleThird .CenterPanel .Rewards .Rewards-overlay:hover {
-    opacity: 0.6;
-  }
-  .BottomThird {
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
@@ -520,7 +368,7 @@ a {
     grid-auto-rows: minmax(200px, auto);
     color: #e4cde4;
   }
-  .BottomThird .Signup {
+  .BottomThirdContact .Signup {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -536,7 +384,7 @@ a {
     font-family: myNeonFont;
     font-size: 8vw;
   }
-  .BottomThird .Signup .Signup-button {
+  .BottomThirdContact .Signup .Signup-button {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -551,10 +399,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Signup .Signup-button:hover {
+  .BottomThirdContact .Signup .Signup-button:hover {
     opacity: 0.6;
   }
-  .BottomThird .Signup .Signup-careers {
+  .BottomThirdContact .Signup .Signup-careers {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -569,10 +417,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Signup .Signup-careers:hover {
+  .BottomThirdContact .Signup .Signup-careers:hover {
     opacity: 0.6;
   }
-  .BottomThird .Socials {
+  .BottomThirdContact .Socials {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -588,7 +436,7 @@ a {
     font-family: myNeonFont;
     font-size: 8vw;
   }
-  .BottomThird .Socials .Socials-twitter {
+  .BottomThirdContact .Socials .Socials-twitter {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -603,10 +451,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Socials .Socials-twitter:hover {
+  .BottomThirdContact .Socials .Socials-twitter:hover {
     opacity: 0.6;
   }
-  .BottomThird .Socials .Socials-instagram {
+  .BottomThirdContact .Socials .Socials-instagram {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -621,10 +469,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Socials .Socials-instagram:hover {
+  .BottomThirdContact .Socials .Socials-instagram:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms {
+  .BottomThirdContact .Terms {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 5;
@@ -640,7 +488,7 @@ a {
     font-family: myNeonFont;
     font-size: 6vw;
   }
-  .BottomThird .Terms .Terms-cookies {
+  .BottomThirdContact .Terms .Terms-cookies {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -655,10 +503,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-cookies:hover {
+  .BottomThirdContact .Terms .Terms-cookies:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms .Terms-conditions {
+  .BottomThirdContact .Terms .Terms-conditions {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -673,10 +521,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-conditions:hover {
+  .BottomThirdContact .Terms .Terms-conditions:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms .Terms-privacy {
+  .BottomThirdContact .Terms .Terms-privacy {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -691,10 +539,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-privacy:hover {
+  .BottomThirdContact .Terms .Terms-privacy:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms .Terms-info {
+  .BottomThirdContact .Terms .Terms-info {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 4;
@@ -710,13 +558,13 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-info:hover {
+  .BottomThirdContact .Terms .Terms-info:hover {
     opacity: 0.6;
   }
 }
 
 @media screen and (min-width: 501px) {
-  .AppSub {
+  .AppSubContact {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[13];
@@ -740,7 +588,7 @@ a {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
     z-index: 2;
   }
-  .TopThird {
+  .TopThirdContact {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 6;
@@ -757,7 +605,7 @@ a {
     grid-auto-rows: minmax(200px, auto);
     z-index: 3;
   }
-  .TopThird .Logo {
+  .TopThirdContact .Logo {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 6;
@@ -777,7 +625,7 @@ a {
         grid-template-columns: repeat(8, 1fr);
     z-index: 2;
   }
-  .TopThird .Logo .LogoText {
+  .TopThirdContact .Logo .LogoText {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 5;
@@ -790,10 +638,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .TopThird .Logo .LogoText:hover {
+  .TopThirdContact .Logo .LogoText:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav {
+  .TopThirdContact .Nav {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 6;
@@ -813,7 +661,7 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .TopThird .Nav .NavText {
+  .TopThirdContact .Nav .NavText {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 5;
@@ -832,7 +680,7 @@ a {
         grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
-  .TopThird .Nav .NavText .menu {
+  .TopThirdContact .Nav .NavText .menu {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -842,10 +690,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .TopThird .Nav .NavText .menu:hover {
+  .TopThirdContact .Nav .NavText .menu:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav .NavText .book {
+  .TopThirdContact .Nav .NavText .book {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -856,10 +704,10 @@ a {
     transition: opacity 0.2s;
     margin-right: 15px;
   }
-  .TopThird .Nav .NavText .book:hover {
+  .TopThirdContact .Nav .NavText .book:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav .NavText .rewards {
+  .TopThirdContact .Nav .NavText .rewards {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -870,10 +718,10 @@ a {
     transition: opacity 0.2s;
     margin-right: 15px;
   }
-  .TopThird .Nav .NavText .rewards:hover {
+  .TopThirdContact .Nav .NavText .rewards:hover {
     opacity: 0.6;
   }
-  .TopThird .Nav .NavText .contact {
+  .TopThirdContact .Nav .NavText .contact {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -883,10 +731,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .TopThird .Nav .NavText .contact:hover {
+  .TopThirdContact .Nav .NavText .contact:hover {
     opacity: 0.6;
   }
-  .TopThird .Call {
+  .TopThirdContact .Call {
     -ms-grid-row: 5;
         grid-row-start: 5;
     grid-row-end: 6;
@@ -900,7 +748,7 @@ a {
         align-self: start;
     z-index: 3;
   }
-  .TopThird .Call .Call-button {
+  .TopThirdContact .Call .Call-button {
     background-color: #e4cde4;
     height: auto;
     width: auto;
@@ -924,7 +772,7 @@ a {
     padding-right: 0.2vw;
     z-index: 4;
   }
-  .TopThird .Call .Call-button:hover {
+  .TopThirdContact .Call .Call-button:hover {
     background-color: #4e4e4e;
     color: #e4cde4;
     -webkit-box-shadow: 0px 0px 6px 6px #4e4e4e;
@@ -945,254 +793,93 @@ a {
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
   }
-  .MiddleThird {
+  .PopupContact {
+    font-family: myNeonFont;
+    font-size: 5rem;
     -ms-grid-row: 6;
         grid-row-start: 6;
-    grid-row-end: 12;
+    grid-row-end: 10;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 6;
     width: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: (1fr)[20];
         grid-template-columns: repeat(20, 1fr);
-    grid-auto-rows: minmax(50px, auto);
+    grid-auto-rows: minmax(500px, auto);
+    z-index: 5;
   }
-  .MiddleThird .CenterPanel {
-    height: auto;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 7;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    grid-column-end: 19;
+  .PopupContact form {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
-    z-index: 2;
-  }
-  .MiddleThird .CenterPanel .Booking {
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    -ms-grid-columns: (1fr)[20];
+        grid-template-columns: repeat(20, 1fr);
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 4;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 7;
-    background-color: #e4cde4;
+    grid-column-end: 21;
+  }
+  .PopupContact form input {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 10;
-        grid-template-columns: 10;
-    -ms-grid-rows: 10;
-        grid-template-rows: 10;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: myNeonFont;
-    font-size: 10vw;
-  }
-  .MiddleThird .CenterPanel .Booking .Booking-internal {
-    height: 96%;
-    width: 98%;
-    background-color: #e4cde4;
-    border: 2px solid #4e4e4e;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    line-height: 10px;
-    padding: 0px;
-    margin: 0px;
-    -ms-grid-columns: (1fr)[10];
-        grid-template-columns: repeat(10, 1fr);
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
-    grid-gap: 0px;
-  }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-first-paragraph {
+    background-color: #e4cde4 !important;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    grid-row-end: 4;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 11;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 7vw;
-    text-decoration: underline;
+    grid-row-end: 3;
+    -ms-grid-column: 6;
+        grid-column-start: 6;
+    grid-column-end: 16;
+    font-family: myNeonFont;
+    font-size: 2rem;
     color: #4e4e4e;
+    border-radius: 2px;
   }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-second-paragraph {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 5;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 11;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 3vw;
-    color: #4e4e4e;
-    margin-top: 1.5vw;
-  }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-button {
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
+  .PopupContact form textarea {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 8;
     -ms-grid-column: 5;
         grid-column-start: 5;
-    grid-column-end: 7;
-    display: -ms-grid;
-    display: grid;
-    background-color: #4e4e4e;
+    grid-column-end: 17;
+    font-family: myNeonFont;
+    font-size: 2rem;
+    background-color: #e4cde4;
+    color: #4e4e4e;
     border-radius: 2px;
-    font-size: 2.8vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #e4cde4;
+  }
+  .PopupContact form button {
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    grid-row-end: 10;
+    -ms-grid-column: 9;
+        grid-column-start: 9;
+    grid-column-end: 13;
+    font-family: myNeonFont;
+    font-size: 3rem;
+    background-color: #e4cde4;
+    color: #4e4e4e;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 2px 1px #e4cde4;
+            box-shadow: 0px 0px 2px 1px #e4cde4;
     -webkit-transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
   }
-  .MiddleThird .CenterPanel .Booking .Booking-internal .Booking-internal-button:hover {
-    color: #4e4e4e;
-    background-color: #c7b8c7;
-  }
-  .MiddleThird .CenterPanel .Menu {
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 7;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
-    background-image: url("./images/platter-2009590_1920.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3;
-        grid-template-columns: 3;
-    -ms-grid-rows: 3;
-        grid-template-rows: 3;
-  }
-  .MiddleThird .CenterPanel .Menu:hover {
-    opacity: 0.8;
-    color: #fff0ff;
-  }
-  .MiddleThird .CenterPanel .Menu .Menu-text {
-    font-size: 5vw;
+  .PopupContact form button:hover {
+    background-color: #4e4e4e;
     color: #e4cde4;
-    font-family: myNeonFont;
-    z-index: 2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
+    -webkit-box-shadow: 0px 0px 6px 6px #4e4e4e;
+            box-shadow: 0px 0px 6px 6px #4e4e4e;
   }
-  .MiddleThird .CenterPanel .Menu .Menu-overlay {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
-    background-color: black;
-    z-index: 1;
-    opacity: 0.45;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-  }
-  .MiddleThird .CenterPanel .Menu .Menu-overlay:hover {
-    opacity: 0.6;
-  }
-  .MiddleThird .CenterPanel .Rewards {
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 7;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 7;
-    background-image: url("./images/morning-819362.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3;
-        grid-template-columns: 3;
-    -ms-grid-rows: 3;
-        grid-template-rows: 3;
-  }
-  .MiddleThird .CenterPanel .Rewards:hover {
-    opacity: 0.8;
-    color: #fff0ff;
-  }
-  .MiddleThird .CenterPanel .Rewards .Rewards-text {
-    font-size: 5vw;
-    color: #e4cde4;
-    font-family: myNeonFont;
-    z-index: 2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
-  }
-  .MiddleThird .CenterPanel .Rewards .Rewards-overlay {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-row-end: 3;
-    background-color: black;
-    z-index: 1;
-    opacity: 0.45;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-  }
-  .MiddleThird .CenterPanel .Rewards .Rewards-overlay:hover {
-    opacity: 0.6;
-  }
-  .BottomThird {
+  .BottomThirdContact {
     -ms-grid-row: 12;
         grid-row-start: 12;
     grid-row-end: 14;
@@ -1209,7 +896,7 @@ a {
     grid-auto-rows: minmax(200px, auto);
     color: #e4cde4;
   }
-  .BottomThird .Signup {
+  .BottomThirdContact .Signup {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -1225,7 +912,7 @@ a {
     font-family: myNeonFont;
     font-size: 3vw;
   }
-  .BottomThird .Signup .Signup-button {
+  .BottomThirdContact .Signup .Signup-button {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -1240,10 +927,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Signup .Signup-button:hover {
+  .BottomThirdContact .Signup .Signup-button:hover {
     opacity: 0.6;
   }
-  .BottomThird .Signup .Signup-careers {
+  .BottomThirdContact .Signup .Signup-careers {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -1258,10 +945,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Signup .Signup-careers:hover {
+  .BottomThirdContact .Signup .Signup-careers:hover {
     opacity: 0.6;
   }
-  .BottomThird .Socials {
+  .BottomThirdContact .Socials {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
@@ -1277,7 +964,7 @@ a {
     font-family: myNeonFont;
     font-size: 3vw;
   }
-  .BottomThird .Socials .Socials-twitter {
+  .BottomThirdContact .Socials .Socials-twitter {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -1292,10 +979,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Socials .Socials-twitter:hover {
+  .BottomThirdContact .Socials .Socials-twitter:hover {
     opacity: 0.6;
   }
-  .BottomThird .Socials .Socials-instagram {
+  .BottomThirdContact .Socials .Socials-instagram {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
@@ -1310,10 +997,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Socials .Socials-instagram:hover {
+  .BottomThirdContact .Socials .Socials-instagram:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms {
+  .BottomThirdContact .Terms {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 5;
@@ -1329,7 +1016,7 @@ a {
     font-family: myNeonFont;
     font-size: 2.5vw;
   }
-  .BottomThird .Terms .Terms-cookies {
+  .BottomThirdContact .Terms .Terms-cookies {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -1344,10 +1031,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-cookies:hover {
+  .BottomThirdContact .Terms .Terms-cookies:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms .Terms-conditions {
+  .BottomThirdContact .Terms .Terms-conditions {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -1362,10 +1049,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-conditions:hover {
+  .BottomThirdContact .Terms .Terms-conditions:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms .Terms-privacy {
+  .BottomThirdContact .Terms .Terms-privacy {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -1380,10 +1067,10 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-privacy:hover {
+  .BottomThirdContact .Terms .Terms-privacy:hover {
     opacity: 0.6;
   }
-  .BottomThird .Terms .Terms-info {
+  .BottomThirdContact .Terms .Terms-info {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 4;
@@ -1399,8 +1086,8 @@ a {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .BottomThird .Terms .Terms-info:hover {
+  .BottomThirdContact .Terms .Terms-info:hover {
     opacity: 0.6;
   }
 }
-/*# sourceMappingURL=AppSub.css.map */
+/*# sourceMappingURL=AppSubContact.css.map */

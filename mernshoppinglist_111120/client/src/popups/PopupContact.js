@@ -57,6 +57,3 @@ class PopupContact extends Component {
 export default PopupContact;
 
 
-//<div className="PopupMenu-close-text">
-//<Link to="/">Back</Link>
-//</div>

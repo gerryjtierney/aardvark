@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Button, Modal } from "reactstrap";
-import PrimaryMenuModal from "../components/PrimaryMenuModal"
 import StarterMenuModal from "../components/StarterMenuModal";
 import MainMenuModal from "../components/MainMenuModal";
 import DessertMenuModal from "../components/DessertMenuModal"

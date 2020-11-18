@@ -1,16 +1,16 @@
 import React from 'react';
-import TopThird from "./topThird/TopThird"
-import BottomThird from "./bottomThird/BottomThird";
+import TopThirdContact from "./topThird/TopThirdContact"
+import BottomThirdContact from "./bottomThird/BottomThirdContact";
 import PopupContact from "./popups/PopupContact";
-import './AppSub.css';
+import './AppSubContact.css';
 
 function ContactScreen() {
   return (
-    <div className="AppSub">
-      <div className="Overlay"></div>
-      <TopThird />
+    <div className="AppSubContact">
+      <div className="OverlayContact"></div>
+      <TopThirdContact />
       <PopupContact />
-      <BottomThird />
+      <BottomThirdContact />
 
 
     </div>
