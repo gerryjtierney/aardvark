@@ -9,7 +9,7 @@ class Call extends Component{
     render(){
         return(
             <div className="Call">
-                <div className="Call-button">Come to Katie's</div>
+                <a href="tel:+447712402410" className="Call-button">Give us a call</a>
             </div>
         )
         }

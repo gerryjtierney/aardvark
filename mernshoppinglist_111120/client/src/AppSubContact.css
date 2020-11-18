@@ -553,7 +553,7 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 4.8vw;
+    font-size: 4.3vw;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
@@ -576,7 +576,7 @@ a {
     background-color: black;
     z-index: 1;
   }
-  .Overlay {
+  .OverlayContact {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 12;
