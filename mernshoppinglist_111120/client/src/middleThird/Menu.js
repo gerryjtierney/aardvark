@@ -23,7 +23,8 @@ class Menu extends Component{
     toggle = () => {
         this.setState({
             toggled: !this.state.toggled
-        })
+        });
+        window.scrollTo(500, 0);
     } 
 
 
@@ -35,7 +36,7 @@ class Menu extends Component{
                 
                 
                 <div className="Menu-overlay"></div>
-                <div className="Menu-text" onClick={this.scrollUp, this.toggle}>What's cooking?</div>
+                <div className="Menu-text" onClick={this.toggle}>What's cooking?</div>
 
 
                 <Modal isOpen={this.state.toggled} id="menuModal">
