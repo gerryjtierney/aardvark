@@ -1,4 +1,6 @@
-module.exports = {
-    mongoURI: "mongodb+srv://gerryjtierney:banzai@cluster0.mv343.mongodb.net/shoppinglist?retryWrites=true&w=majority"
-};
+require("dotenv").config();
 
+
+module.exports = {
+   mongoURI: process.env.API_KEY
+};
