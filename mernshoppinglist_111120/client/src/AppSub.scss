@@ -1221,20 +1221,20 @@ a{
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column-start: 2;
-            grid-column-end: 11;
+            grid-column-end: 20;
 
 
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(20, 1fr);
             font-family: myNeonFont;
             font-size: 3vw;
 
             .Signup-button{
                 grid-row-start: 2;
                 grid-row-end: 3;
-                grid-column-start: 2;
-                grid-column-end: 3;
+                grid-column-start: 5;
+                grid-column-end: 8;
                 justify-self: center;
                 align-self: center;
                 transition: opacity 0.2s;
@@ -1246,8 +1246,8 @@ a{
             .Signup-careers{
                 grid-row-start: 2;
                 grid-row-end: 3;
-                grid-column-start: 4;
-                grid-column-end: 5;
+                grid-column-start: 14;
+                grid-column-end: 17;
                 justify-self: center;
                 align-self: center;
                 transition: opacity 0.2s;
@@ -1264,13 +1264,13 @@ a{
 
             grid-row-start: 1;
             grid-row-end: 3;
-            grid-column-start: 11;
+            grid-column-start: 2;
             grid-column-end: 20;
 
 
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(20, 1fr);
             font-family: myNeonFont;
             font-size: 3vw;
 
@@ -1290,8 +1290,8 @@ a{
             .Socials-instagram{
                 grid-row-start: 2;
                 grid-row-end: 3;
-                grid-column-start: 4;
-                grid-column-end: 5;
+                grid-column-start: 10;
+                grid-column-end: 12;
                 align-self: center;
                 justify-self: center;
                 transition: opacity 0.2s;

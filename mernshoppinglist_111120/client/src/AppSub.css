@@ -1214,13 +1214,13 @@ a {
     grid-row-end: 3;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    grid-column-end: 11;
+    grid-column-end: 20;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[20];
+        grid-template-columns: repeat(20, 1fr);
     font-family: myNeonFont;
     font-size: 3vw;
   }
@@ -1228,9 +1228,9 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 3;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 8;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
@@ -1246,9 +1246,9 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 5;
+    -ms-grid-column: 14;
+        grid-column-start: 14;
+    grid-column-end: 17;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
@@ -1264,15 +1264,15 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
-    -ms-grid-column: 11;
-        grid-column-start: 11;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 20;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[20];
+        grid-template-columns: repeat(20, 1fr);
     font-family: myNeonFont;
     font-size: 3vw;
   }
@@ -1298,9 +1298,9 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 5;
+    -ms-grid-column: 10;
+        grid-column-start: 10;
+    grid-column-end: 12;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
