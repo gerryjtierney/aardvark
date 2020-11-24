@@ -267,8 +267,8 @@ a {
     width: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (125px)[6];
-        grid-template-rows: repeat(6, 125px);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
     -ms-grid-columns: (1fr)[20];
         grid-template-columns: repeat(20, 1fr);
   }
