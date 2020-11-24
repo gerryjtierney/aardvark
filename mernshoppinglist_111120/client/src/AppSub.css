@@ -525,7 +525,7 @@ a {
     grid-row-end: 3;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    grid-column-end: 12;
+    grid-column-end: 20;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
@@ -557,8 +557,8 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 5;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -575,8 +575,8 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
-    -ms-grid-column: 10;
-        grid-column-start: 10;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 20;
     display: -ms-grid;
     display: grid;
@@ -611,7 +611,7 @@ a {
     grid-row-end: 3;
     -ms-grid-column: 4;
         grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-end: 6;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
