@@ -1531,7 +1531,16 @@ a{
 
 
 
+    .bookingComponentForm{
+        font-family: myNeonFont;
+        font-size: 1.4vw;
 
+
+        .bookingComponentFormSlotSelect{
+            width: 10vw;
+            margin-left: 0.8vw;
+        }
+    }
 
 
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
 import PrimaryMenuModal from '../components/PrimaryMenuModal';
+import BookingComponent from "../components/BookingComponent";
 
 
 
@@ -19,7 +20,9 @@ class Nav extends Component{
                             <PrimaryMenuModal />
                         </div>
 
-                    <div className="book">Book</div>
+                    <div className="book">
+                        <BookingComponent />
+                    </div>
 
                     <div className="rewards">Rewards</div>
 

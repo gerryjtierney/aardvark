@@ -1401,5 +1401,13 @@ a {
   .BottomThird .Terms .Terms-info:hover {
     opacity: 0.6;
   }
+  .bookingComponentForm {
+    font-family: myNeonFont;
+    font-size: 1.4vw;
+  }
+  .bookingComponentForm .bookingComponentFormSlotSelect {
+    width: 10vw;
+    margin-left: 0.8vw;
+  }
 }
 /*# sourceMappingURL=AppSub.css.map */
