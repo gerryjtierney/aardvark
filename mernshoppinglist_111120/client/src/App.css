@@ -278,14 +278,4 @@ a:hover, a:active {
     margin: auto;
   }
 }
-
-.bookingComponentForm {
-  font-family: myNeonFont;
-  font-size: 1.4vw;
-}
-
-.bookingComponentForm .bookingComponentFormSlotSelect {
-  width: 10vw;
-  margin-left: 0.8vw;
-}
 /*# sourceMappingURL=App.css.map */

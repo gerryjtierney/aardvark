@@ -41,65 +41,63 @@ class BookingComponent extends Component {
 
 
 
-                        <div className="menuModalButtonDiv">
+                        <Form className="bookingComponentForm">
+
+                        <FormGroup row>
+                            <Col  sm={2}>
+                            <div className="menuModalButtonDiv">
                             <Button color="dark" className="BookingModalButton" onClick={this.toggle}>Close</Button>
                         </div>
+                        </Col>
+                        </FormGroup>
 
 
-                        <Form className="bookingComponentForm">
-                            <FormGroup row>
-                                <Label for="exampleEmail" sm={1}>Email</Label>
-                                <Col sm={9}>
-                                    <Input type="email" name="email" placeholder="Enter email" />
+                            <FormGroup row className="entryField">
+
+                                <Col sm={10}>
+                                    <Input type="email" name="email" placeholder="Email" />
                                 </Col>
                             </FormGroup>
 
-                            <FormGroup row>
-                                <Label sm={1}>Name</Label>
-                                <Col sm={9}>
-                                    <Input type="text" name="username" id="username" placeholder="Enter name" />
-                                </Col>
-                            </FormGroup>
+                            <FormGroup row  className="entryField">
 
-
-
-                            <FormGroup row>
-                                <Label for="exampleText" sm={1}>Comments</Label>
-                                <Col sm={9}>
-                                    <Input type="textarea" name="text" id="exampleText" />
+                                <Col sm={10}>
+                                    <Input type="text" name="username" id="username" placeholder="Name" />
                                 </Col>
                             </FormGroup>
 
 
 
-                            <FormGroup row>
-                                <Label for="exampleCustomSelect" id="slotLabel">Your slot</Label>
-                                <CustomInput type="select" id="exampleCustomSelect" name="customSelect" className="bookingComponentFormSlotSelect">
-                                    <option value="">-none-</option>
+                            <FormGroup row  className="entryField">
+
+                                <Col sm={10}>
+                                    <Input type="textarea" name="text" id="exampleText" placeholder="Comments/requirements" />
+                                </Col>
+                            </FormGroup>
+
+
+
+                            <FormGroup row className="entryField ">
+                            <Col sm={3}>
+                                <CustomInput type="select">
+                                    <option value="">-choose slot-</option>
                                     <option>Breakfast</option>
                                     <option>Lunch</option>
                                     <option>Dinner</option>
 
                                 </CustomInput>
+                            </Col>
                             </FormGroup>
+
+
+
 
 
 
                             <FormGroup row>
-                                <Label for="checkbox2" sm={2}>Confirm</Label>
-                                <Col sm={{ size: 15 }}>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="checkbox" id="checkbox2" required />{' '}
-
-                                        </Label>
-                                    </FormGroup>
-                                </Col>
-                            </FormGroup>
-                            <FormGroup check row>
-                                <Col sm={{ size: 10, offset: 2 }}>
+                            <Col sm={2}>
                                     <Button className="BookingSubmitButton">Submit</Button>
-                                </Col>
+                            </Col>
                             </FormGroup>
                         </Form>
 
