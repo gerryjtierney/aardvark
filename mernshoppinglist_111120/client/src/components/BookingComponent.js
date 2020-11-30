@@ -43,50 +43,49 @@ class BookingComponent extends Component {
 
                         <Form className="bookingComponentForm">
 
-                        <FormGroup row>
-                            <Col  sm={2}>
-                            <div className="menuModalButtonDiv">
-                            <Button color="dark" className="BookingModalButton" onClick={this.toggle}>Close</Button>
-                        </div>
-                        </Col>
-                        </FormGroup>
+                            <FormGroup row>
+                                <Col>
+                                    <div className="menuModalButtonDiv">
+                                        <Button color="dark" className="BookingModalButton" onClick={this.toggle}>Close</Button>
+                                    </div>
+                                </Col>
+                            </FormGroup>
 
 
-                            <FormGroup row className="entryField">
-
-                                <Col sm={10}>
+                            <FormGroup row className="entryFieldEmail">
+                                <Col>
                                     <Input type="email" name="email" placeholder="Email" />
                                 </Col>
                             </FormGroup>
 
-                            <FormGroup row  className="entryField">
 
-                                <Col sm={10}>
+                            <FormGroup row className="entryFieldName">
+                                <Col>
                                     <Input type="text" name="username" id="username" placeholder="Name" />
                                 </Col>
                             </FormGroup>
 
 
 
-                            <FormGroup row  className="entryField">
+                            <FormGroup row className="entryFieldComments">
 
-                                <Col sm={10}>
+                                <Col>
                                     <Input type="textarea" name="text" id="exampleText" placeholder="Comments/requirements" />
                                 </Col>
                             </FormGroup>
 
 
 
-                            <FormGroup row className="entryField ">
-                            <Col sm={3}>
-                                <CustomInput type="select">
-                                    <option value="">-choose slot-</option>
-                                    <option>Breakfast</option>
-                                    <option>Lunch</option>
-                                    <option>Dinner</option>
+                            <FormGroup row className="entryFieldSlots ">
+                                <Col>
+                                    <CustomInput type="select">
+                                        <option value="">-choose slot-</option>
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
 
-                                </CustomInput>
-                            </Col>
+                                    </CustomInput>
+                                </Col>
                             </FormGroup>
 
 
@@ -94,10 +93,10 @@ class BookingComponent extends Component {
 
 
 
-                            <FormGroup row>
-                            <Col sm={2}>
-                                    <Button className="BookingSubmitButton">Submit</Button>
-                            </Col>
+                            <FormGroup row  className="BookingSubmitButton">
+
+                                    <Button className="BookingSubmitButtonButton">Submit</Button>
+
                             </FormGroup>
                         </Form>
 
