@@ -738,7 +738,7 @@ a{
             grid-row-start: 1;
             grid-row-end: 12;
             grid-template-columns: repeat(14, 6vw);
-            grid-template-rows: repeat(10, 6.7vw);
+            grid-template-rows: repeat(9, 8vw);
 
 
 
@@ -770,7 +770,7 @@ a{
 
 
         .bookingComponentFormSlotSelect{
-            width: 18vw;
+            width: 20vw;
             margin-left: 0.8vw;
         }
 
@@ -778,7 +778,7 @@ a{
 
         .entryFieldEmail{
 
-            margin-top: 4vw;
+
 
             grid-column-start: 1;
             grid-column-end: 13;
@@ -788,7 +788,7 @@ a{
 
         .entryFieldName{
 
-            margin-top: 0vw;
+            margin-top: -4vw;
 
             grid-column-start: 1;
             grid-column-end: 13;
@@ -799,7 +799,7 @@ a{
 
         .entryFieldComments{
 
-            margin-top: -4vw;
+            margin-top: -8vw;
 
             grid-column-start: 1;
             grid-column-end: 13;
@@ -811,7 +811,7 @@ a{
 
         .entryFieldSlots{
 
-            margin-top: 0vw;
+            margin-top: -1vw;
             margin-bottom: 1vw;
 
             grid-column-start: 1;
@@ -834,13 +834,13 @@ a{
             vertical-align: middle;
             margin-bottom: 1vw;
             font-family: myNeonFont;
-            margin-top: 1vw;
+            margin-top: 3vw;
 
 
             grid-column-start: 5;
             grid-column-end: 9;
-            grid-row-start: 9;
-            grid-row-end: 10;
+            grid-row-start: 8;
+            grid-row-end: 9;
 
             font-family: myNeonFont;
 
@@ -862,7 +862,7 @@ a{
             background-color: $siteContrast;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             border: none;
-            font-size: 4.5vw;
+            font-size: 5vw;
             padding: 0.1vw;
             
             margin-top: 1vw;
@@ -886,12 +886,13 @@ a{
         }
         
         .form-control{
-            font-size: 3vw;
+            font-size: 4vw;
             justify-content: center;
         }
         
         .custom-select{
-            font-size: 3vw;
+            font-size: 4vw;
+            padding: 0.1vw;
         }
         
         #checkbox2{

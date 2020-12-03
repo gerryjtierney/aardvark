@@ -725,8 +725,8 @@ a {
     grid-row-end: 12;
     -ms-grid-columns: (6vw)[14];
         grid-template-columns: repeat(14, 6vw);
-    -ms-grid-rows: (6.7vw)[10];
-        grid-template-rows: repeat(10, 6.7vw);
+    -ms-grid-rows: (8vw)[9];
+        grid-template-rows: repeat(9, 8vw);
   }
   .bookingComponentForm .BookingModalButton {
     background-color: #585858;
@@ -754,11 +754,10 @@ a {
             box-shadow: 0px 0px 6px 6px #e4cde4;
   }
   .bookingComponentForm .bookingComponentFormSlotSelect {
-    width: 18vw;
+    width: 20vw;
     margin-left: 0.8vw;
   }
   .bookingComponentForm .entryFieldEmail {
-    margin-top: 4vw;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 13;
@@ -767,7 +766,7 @@ a {
     grid-row-end: 3;
   }
   .bookingComponentForm .entryFieldName {
-    margin-top: 0vw;
+    margin-top: -4vw;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 13;
@@ -777,7 +776,7 @@ a {
     width: auto;
   }
   .bookingComponentForm .entryFieldComments {
-    margin-top: -4vw;
+    margin-top: -8vw;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 13;
@@ -787,7 +786,7 @@ a {
     padding: 0.1vw;
   }
   .bookingComponentForm .entryFieldSlots {
-    margin-top: 0vw;
+    margin-top: -1vw;
     margin-bottom: 1vw;
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -811,13 +810,13 @@ a {
     vertical-align: middle;
     margin-bottom: 1vw;
     font-family: myNeonFont;
-    margin-top: 1vw;
+    margin-top: 3vw;
     -ms-grid-column: 5;
         grid-column-start: 5;
     grid-column-end: 9;
-    -ms-grid-row: 9;
-        grid-row-start: 9;
-    grid-row-end: 10;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    grid-row-end: 9;
     font-family: myNeonFont;
     width: 20vw;
     height: 6vw;
@@ -836,7 +835,7 @@ a {
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
     border: none;
-    font-size: 4.5vw;
+    font-size: 5vw;
     padding: 0.1vw;
     margin-top: 1vw;
   }
@@ -855,13 +854,14 @@ a {
     margin-right: 1.8vw;
   }
   .bookingComponentForm .form-control {
-    font-size: 3vw;
+    font-size: 4vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .bookingComponentForm .custom-select {
-    font-size: 3vw;
+    font-size: 4vw;
+    padding: 0.1vw;
   }
   .bookingComponentForm #checkbox2 {
     margin-right: 20px;
