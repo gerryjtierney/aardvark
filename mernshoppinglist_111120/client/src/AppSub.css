@@ -714,7 +714,7 @@ a {
   }
   .bookingComponentForm {
     font-family: myNeonFont;
-    font-size: 3.3vw;
+    font-size: 4vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-column: 1;
@@ -723,10 +723,10 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 12;
-    -ms-grid-columns: (6vw)[12];
-        grid-template-columns: repeat(12, 6vw);
-    -ms-grid-rows: (7vw)[7];
-        grid-template-rows: repeat(7, 7vw);
+    -ms-grid-columns: (6vw)[14];
+        grid-template-columns: repeat(14, 6vw);
+    -ms-grid-rows: (6.7vw)[10];
+        grid-template-rows: repeat(10, 6.7vw);
   }
   .bookingComponentForm .BookingModalButton {
     background-color: #585858;
@@ -742,9 +742,9 @@ a {
     text-align: center;
     vertical-align: middle;
     font-family: myNeonFont;
-    width: 6vw;
-    height: 3vw;
-    font-size: 2.2vw;
+    width: 9.5vw;
+    height: 5vw;
+    font-size: 4vw;
     padding: 0.1vw;
   }
   .bookingComponentForm .BookingModalButton:hover {
@@ -754,48 +754,49 @@ a {
             box-shadow: 0px 0px 6px 6px #e4cde4;
   }
   .bookingComponentForm .bookingComponentFormSlotSelect {
-    width: 14vw;
+    width: 18vw;
     margin-left: 0.8vw;
   }
   .bookingComponentForm .entryFieldEmail {
-    margin-top: 1vw;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 12;
+    margin-top: 4vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 13;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
   }
   .bookingComponentForm .entryFieldName {
-    margin-top: 1vw;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 12;
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 4;
+    margin-top: 0vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 13;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
     width: auto;
   }
   .bookingComponentForm .entryFieldComments {
-    margin-top: 1vw;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 12;
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 6;
+    margin-top: -4vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 13;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 7;
+    padding: 0.1vw;
   }
   .bookingComponentForm .entryFieldSlots {
-    margin-top: 4vw;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 5;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
+    margin-top: 0vw;
+    margin-bottom: 1vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 8;
   }
   .bookingComponentForm .BookingSubmitButton {
-    margin-top: 1.6vw;
     display: -ms-grid;
     display: grid;
     background-color: #585858;
@@ -808,17 +809,18 @@ a {
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
     text-align: center;
     vertical-align: middle;
-    margin-bottom: -0.8vw;
+    margin-bottom: 1vw;
     font-family: myNeonFont;
-    -ms-grid-column: 6;
-        grid-column-start: 6;
-    grid-column-end: 8;
-    -ms-grid-row: 6;
-        grid-row-start: 6;
-    grid-row-end: 8;
+    margin-top: 1vw;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 9;
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    grid-row-end: 10;
     font-family: myNeonFont;
-    width: 15vw;
-    height: 5vw;
+    width: 20vw;
+    height: 6vw;
   }
   .bookingComponentForm .BookingSubmitButton:hover {
     color: #4e4e4e;
@@ -834,8 +836,9 @@ a {
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
     border: none;
-    font-size: 3.3vw;
+    font-size: 4.5vw;
     padding: 0.1vw;
+    margin-top: 1vw;
   }
   .bookingComponentForm .BookingSubmitButtonButton:hover {
     color: #4e4e4e;
@@ -852,10 +855,13 @@ a {
     margin-right: 1.8vw;
   }
   .bookingComponentForm .form-control {
-    font-size: 2vw;
+    font-size: 3vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .bookingComponentForm .custom-select {
-    font-size: 1.8vw;
+    font-size: 3vw;
   }
   .bookingComponentForm #checkbox2 {
     margin-right: 20px;
