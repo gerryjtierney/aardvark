@@ -5,20 +5,15 @@ import { Button, Modal, Col, Form, FormGroup, Label, Input, CustomInput } from "
 class BookingComponent extends Component {
 
     state = {
-        booking0900: 3,
-        booking1200: 3,
-        booking1700: 3,
+        Breakfast: 3,
+        Lunch: 3,
+        Dinner: 3,
         toggled: false,
 
         comments: "",
         email: "",
         name: "",
         slot: ""
-
-
-    
-
-
 
     }
 
@@ -27,6 +22,16 @@ class BookingComponent extends Component {
     onChange = (e) => {
         this.setState({ [e.target.name]: e.target.value, [e.target.email]: e.target.value, 
                         [e.target.comments]: e.target.value, [e.target.slot]: e.target.value})
+    }
+
+
+
+
+
+    checkSlots = () => {
+        this.setState({Breakfast: this.state.Breakfast -1}, () => {
+            console.log(this.state.Breakfast)
+        });
     }
 
 
@@ -42,10 +47,14 @@ class BookingComponent extends Component {
             slot: this.state.slot
         };
 
-        
+        this.checkSlots();
+ 
 
         console.log(newBooking);
     }
+
+
+
 
 
 
@@ -114,9 +123,9 @@ class BookingComponent extends Component {
                                 <Col>
                                     <CustomInput type="select" onChange={this.onChange} name="slot">
                                         <option value="">-choose slot-</option>
-                                        <option>Breakfast</option>
-                                        <option>Lunch</option>
-                                        <option>Dinner</option>
+                                        <option value="Breakfast">Breakfast</option>
+                                        <option value="Lunch">Lunch</option>
+                                        <option value="Dinner">Dinner</option>
 
                                     </CustomInput>
                                 </Col>
