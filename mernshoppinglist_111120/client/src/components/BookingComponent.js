@@ -29,13 +29,33 @@ class BookingComponent extends Component {
 
 
     checkSlots = (e) => {
-        if(e === "Breakfast"){
-        this.setState({Breakfast: this.state.Breakfast -1}, () => {
-            console.log(this.state.Breakfast)
-        });
-        } else {
-            console.log("Bellybumjuice")
+
+        let checkSlotsVariable = e;
+        console.log(checkSlotsVariable);
+        
+        switch(checkSlotsVariable){
+            case "Breakfast":
+                this.setState({Breakfast: this.state.Breakfast -1}, () => {
+                console.log(this.state.Breakfast)
+                });
+            break;
+
+            case "Lunch":
+                this.setState({Lunch: this.state.Lunch -1}, () => {
+                console.log(this.state.Lunch)
+                });
+            break;
+
+            case "Dinner":
+                this.setState({Dinner: this.state.Dinner -1}, () => {
+                console.log(this.state.Dinner)
+                });
+            break;
+
+            default:
+                console.log("Something went wrong");
         }
+
     }
 
 
