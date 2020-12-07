@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Button, Modal, Col, Form, FormGroup, Label, Input, CustomInput } from "reactstrap";
+import { Button, Modal, Col, Form, FormGroup, Input, CustomInput } from "reactstrap";
+import { v4 as uuidv4 } from 'uuid';
 
 
 class BookingComponent extends Component {
@@ -13,7 +14,10 @@ class BookingComponent extends Component {
         comments: "",
         email: "",
         name: "",
-        slot: ""
+        slot: "",
+        BreakfastArray: [],
+        LunchArray: [],
+        DinnerArray: []
 
     }
 
@@ -35,21 +39,33 @@ class BookingComponent extends Component {
         
         switch(checkSlotsVariable){
             case "Breakfast":
-                this.setState({Breakfast: this.state.Breakfast -1}, () => {
-                console.log(this.state.Breakfast)
-                });
+                if(this.state.BreakfastArray.length < 2){
+                    this.setState({Breakfast: this.state.Breakfast -1}, () => {
+                    console.log(this.state.Breakfast)
+                    });
+                } else {
+                    alert("Sorry, no slots available for this time period");
+                }
             break;
 
             case "Lunch":
-                this.setState({Lunch: this.state.Lunch -1}, () => {
-                console.log(this.state.Lunch)
-                });
+                if(this.state.Lunch > 0){
+                    this.setState({Lunch: this.state.Lunch -1}, () => {
+                    console.log(this.state.Lunch)
+                    });
+                } else {
+                    alert("Sorry, no slots available for this time period")
+                }
             break;
 
             case "Dinner":
-                this.setState({Dinner: this.state.Dinner -1}, () => {
-                console.log(this.state.Dinner)
-                });
+                if(this.state.Dinner > 0){
+                    this.setState({Dinner: this.state.Dinner -1}, () => {
+                    console.log(this.state.Dinner)
+                    });
+                } else {
+                    alert("Sorry, no slots available for this time period")
+                }
             break;
 
             default:
@@ -68,14 +84,24 @@ class BookingComponent extends Component {
             name: this.state.name,
             email: this.state.email,
             comments: this.state.comments,
-            slot: this.state.slot
-        };
+            slot: this.state.slot,
+            id: uuidv4()
+        }
 
         this.checkSlots(newBooking.slot);
+
+
+        var joined = this.state.BreakfastArray.concat(newBooking.id);
+        this.setState({ BreakfastArray: joined })
+
+        //this.state.BreakfastArray.push(newBooking.id);
+        console.log(this.state.BreakfastArray);
  
 
         console.log(newBooking);
     }
+
+
 
 
 
@@ -145,7 +171,7 @@ class BookingComponent extends Component {
 
                             <FormGroup row className="entryFieldSlots ">
                                 <Col>
-                                    <CustomInput type="select" onChange={this.onChange} name="slot">
+                                    <CustomInput type="select" onChange={this.onChange} name="slot" id="bookingFormSlotSelect">
                                         <option value="">-choose slot-</option>
                                         <option value="Breakfast">Breakfast</option>
                                         <option value="Lunch">Lunch</option>
