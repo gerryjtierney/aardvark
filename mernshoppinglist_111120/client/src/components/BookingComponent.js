@@ -28,10 +28,14 @@ class BookingComponent extends Component {
 
 
 
-    checkSlots = () => {
+    checkSlots = (e) => {
+        if(e === "Breakfast"){
         this.setState({Breakfast: this.state.Breakfast -1}, () => {
             console.log(this.state.Breakfast)
         });
+        } else {
+            console.log("Bellybumjuice")
+        }
     }
 
 
@@ -47,7 +51,7 @@ class BookingComponent extends Component {
             slot: this.state.slot
         };
 
-        this.checkSlots();
+        this.checkSlots(newBooking.slot);
  
 
         console.log(newBooking);
