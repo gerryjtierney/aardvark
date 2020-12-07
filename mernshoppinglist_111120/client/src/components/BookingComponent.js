@@ -39,7 +39,10 @@ class BookingComponent extends Component {
             name: this.state.name,
             email: this.state.email,
             comments: this.state.comments,
+            slot: this.state.slot
         };
+
+        
 
         console.log(newBooking);
     }
