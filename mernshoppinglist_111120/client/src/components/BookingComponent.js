@@ -9,13 +9,48 @@ class BookingComponent extends Component {
         booking1200: 3,
         booking1700: 3,
         toggled: false,
-        userEmail: "",
-        userName: "",
-        userComments: "",
-        userSlot: ""
+
+        comments: "",
+        email: "",
+        name: ""
+
+
+        
+
+
+
+
+
+
 
 
     }
+
+
+
+    onChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value, [e.target.email]: e.target.value, 
+                        [e.target.comments]: e.target.value})
+    }
+
+
+
+    onSubmit = (e) => {
+        e.preventDefault();
+
+        let newBooking = {
+
+            name: this.state.name,
+            email: this.state.email,
+            comments: this.state.comments,
+        };
+
+        console.log(newBooking);
+    }
+
+
+
+
 
     toggle = () => {
         this.setState({
@@ -41,7 +76,7 @@ class BookingComponent extends Component {
 
 
 
-                        <Form className="bookingComponentForm">
+                        <Form className="bookingComponentForm" onSubmit={this.onSubmit}>
 
                             <FormGroup row>
                                 <Col>
@@ -54,14 +89,14 @@ class BookingComponent extends Component {
 
                             <FormGroup row className="entryFieldEmail">
                                 <Col>
-                                    <Input type="email" name="email" placeholder="Email" />
+                                    <Input type="email" name="email" placeholder="Email" onChange={this.onChange}/>
                                 </Col>
                             </FormGroup>
 
 
                             <FormGroup row className="entryFieldName">
                                 <Col>
-                                    <Input type="text" name="username" id="username" placeholder="Name" />
+                                    <Input type="text" name="name" id="username" placeholder="Name" onChange={this.onChange}/>
                                 </Col>
                             </FormGroup>
 
@@ -70,7 +105,7 @@ class BookingComponent extends Component {
                             <FormGroup row className="entryFieldComments">
 
                                 <Col>
-                                    <Input type="textarea" name="text" id="exampleText" placeholder="Comments/requirements" />
+                                    <Input type="textarea" name="comments" id="exampleText" placeholder="Comments/requirements" onChange={this.onChange} />
                                 </Col>
                             </FormGroup>
 
@@ -93,9 +128,9 @@ class BookingComponent extends Component {
 
 
 
-                            <FormGroup row  className="BookingSubmitButton">
+                            <FormGroup row className="BookingSubmitButton">
 
-                                    <Button className="BookingSubmitButtonButton">Submit</Button>
+                                <Button className="BookingSubmitButtonButton">Submit</Button>
 
                             </FormGroup>
                         </Form>
