@@ -12,15 +12,11 @@ class BookingComponent extends Component {
 
         comments: "",
         email: "",
-        name: ""
+        name: "",
+        slot: ""
 
 
-        
-
-
-
-
-
+    
 
 
 
@@ -30,7 +26,7 @@ class BookingComponent extends Component {
 
     onChange = (e) => {
         this.setState({ [e.target.name]: e.target.value, [e.target.email]: e.target.value, 
-                        [e.target.comments]: e.target.value})
+                        [e.target.comments]: e.target.value, [e.target.slot]: e.target.value})
     }
 
 
@@ -113,7 +109,7 @@ class BookingComponent extends Component {
 
                             <FormGroup row className="entryFieldSlots ">
                                 <Col>
-                                    <CustomInput type="select">
+                                    <CustomInput type="select" onChange={this.onChange} name="slot">
                                         <option value="">-choose slot-</option>
                                         <option>Breakfast</option>
                                         <option>Lunch</option>
