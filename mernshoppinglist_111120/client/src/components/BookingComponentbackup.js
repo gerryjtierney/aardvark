@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 class BookingComponent extends Component {
 
     state = {
-        BreakfastCounter: 3,
-        LunchCounter: 3,
-        DinnerCounter: 3,
+        Breakfast: 3,
+        Lunch: 3,
+        Dinner: 3,
         toggled: false,
 
         comments: "",
@@ -46,10 +46,11 @@ class BookingComponent extends Component {
             id: uuidv4()
         }
 
-        this.checkSlots(newBooking);
+        this.checkSlots(newBooking.slot);
 
 
-
+        var joined = this.state.BreakfastArray.concat(newBooking);
+        this.setState({ BreakfastArray: joined });
 
 
     }
@@ -59,51 +60,41 @@ class BookingComponent extends Component {
 
 
 
-    checkSlots = (newBooking) => {
+    checkSlots = (e) => {
 
-        let checkSlotsVariable = newBooking.slot;
-
+        let checkSlotsVariable = e;
+        console.log(checkSlotsVariable);
 
         switch (checkSlotsVariable) {
             case "Breakfast":
-                if (this.state.BreakfastArray.length < 3) {
-                    this.setBreakfastCounter();
-                    var joinedBreakfast = this.state.BreakfastArray.concat(newBooking);
-                    this.setState({ BreakfastArray: joinedBreakfast });
-                    console.log(this.state.BreakfastCounter)
-                    //put all this part in a separate function then call on it here
+                if (this.state.BreakfastArray.length < 2) {
+                    this.setState({ Breakfast: this.state.Breakfast - 1 }, () => {
+                        console.log(this.state.Breakfast)
+                    });
                 } else {
                     alert("Sorry, no slots available for this time period");
                 }
                 break;
 
-
-
             case "Lunch":
-                if (this.state.LunchArray.length < 3) {
-                    this.setLunchCounter();
-                    var joinedLunch = this.state.LunchArray.concat(newBooking);
-                    this.setState({ LunchArray: joinedLunch });
-                    console.log(this.state.LunchCounter)
+                if (this.state.Lunch > 0) {
+                    this.setState({ Lunch: this.state.Lunch - 1 }, () => {
+                        console.log(this.state.Lunch)
+                    });
                 } else {
                     alert("Sorry, no slots available for this time period")
                 }
                 break;
-
-
 
             case "Dinner":
-                if (this.state.DinnerArray.length < 3) {
-                    this.setDinnerCounter();
-                    var joinedDinner = this.state.DinnerArray.concat(newBooking);
-                    this.setState({ DinnerArray: joinedDinner });
-                    console.log(this.state.DinnerCounter)
+                if (this.state.Dinner > 0) {
+                    this.setState({ Dinner: this.state.Dinner - 1 }, () => {
+                        console.log(this.state.Dinner)
+                    });
                 } else {
                     alert("Sorry, no slots available for this time period")
                 }
                 break;
-
-
 
             default:
                 console.log("Something went wrong");
@@ -113,17 +104,11 @@ class BookingComponent extends Component {
 
 
 
-    setBreakfastCounter = () => {
-        this.setState({ BreakfastCounter: this.state.BreakfastCounter - 1 })
-    }
 
-    setLunchCounter = () => {
-        this.setState({ LunchCounter: this.state.LunchCounter - 1 })
-    }
 
-    setDinnerCounter = () => {
-        this.setState({ DinnerCounter: this.state.DinnerCounter - 1 })
-    }
+
+
+
 
 
 
