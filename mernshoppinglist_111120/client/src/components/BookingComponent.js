@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button, Modal, Col, Form, FormGroup, Input, CustomInput } from "reactstrap";
+import { connect } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
+import { addBooking } from "../actions/bookingActions"
 
 
 class BookingComponent extends Component {
@@ -37,7 +39,7 @@ class BookingComponent extends Component {
     onSubmit = (e) => {
         e.preventDefault();
 
-        let newBooking = {
+        const newBooking = {
 
             name: this.state.name,
             email: this.state.email,
@@ -46,10 +48,8 @@ class BookingComponent extends Component {
             id: uuidv4()
         }
 
+        this.props.addBooking(newBooking);
         this.checkSlots(newBooking);
-
-
-
 
 
     }
@@ -62,6 +62,7 @@ class BookingComponent extends Component {
     checkSlots = (newBooking) => {
 
         let checkSlotsVariable = newBooking.slot;
+       
 
 
         switch (checkSlotsVariable) {
@@ -70,7 +71,7 @@ class BookingComponent extends Component {
                     this.setBreakfastCounter();
                     var joinedBreakfast = this.state.BreakfastArray.concat(newBooking);
                     this.setState({ BreakfastArray: joinedBreakfast });
-                    console.log(this.state.BreakfastCounter)
+                    
                     //put all this part in a separate function then call on it here
                 } else {
                     alert("Sorry, no slots available for this time period");
@@ -110,6 +111,9 @@ class BookingComponent extends Component {
         }
 
     }
+
+
+
 
 
 
@@ -225,4 +229,10 @@ class BookingComponent extends Component {
     }
 }
 
-export default BookingComponent;
+
+const mapStateToProps = (state) =>({
+    booking: state.booking
+})
+
+
+export default connect(mapStateToProps, { addBooking })(BookingComponent);

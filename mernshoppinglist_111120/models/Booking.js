@@ -5,23 +5,23 @@ const Schema = mongoose.Schema;
 const BookingSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: false
     },
     email: {
         type: String,
-        required: true
+        required: false
     },
     comments: {
         type: String,
-        required: true
+        required: false
     },
     slot: {
         type: String,
-        required: true
+        required: false
     },
     id: {
         type: String,
-        required: true
+        required: false
     }
 
 });
