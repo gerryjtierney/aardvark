@@ -9,7 +9,7 @@ const app = express();
 
 
 //bodyparser middleware
-app.use(express.json())
+app.use(express.json());
 
 
 //db config
@@ -18,9 +18,9 @@ const db = require("./config/keys").mongoURI;
 //use routes
 
 app.use("/api/starters", require("./routes/api/starters"));
-app.use("/api/users", require("./routes/api/users"));
 app.use("/api/mains", require("./routes/api/mains"));
 app.use("/api/desserts", require("./routes/api/desserts"));
+app.use("/api/bookings", require("./routes/api/bookings"));
 
 
 

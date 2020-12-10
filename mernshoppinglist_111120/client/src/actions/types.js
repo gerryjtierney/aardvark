@@ -8,3 +8,7 @@ export const MAINS_LOADING = "MAINS_LOADING";
 
 export const GET_DESSERTS = "GET_DESSERTS";
 export const DESSERTS_LOADING = "DESSERTS_LOADING";
+
+
+export const ADD_BOOKING = "ADD_BOOKING";
+export const BOOKINGS_LOADING = "BOOKINGS_LOADING";
