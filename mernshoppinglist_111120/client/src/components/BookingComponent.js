@@ -3,6 +3,7 @@ import { Button, Modal, Col, Form, FormGroup, Input, CustomInput } from "reactst
 import { connect } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
 import { addBooking } from "../actions/bookingActions"
+import { addLunchBooking } from "../actions/lunchBookingActions"
 
 
 class BookingComponent extends Component {
@@ -48,7 +49,22 @@ class BookingComponent extends Component {
             id: uuidv4()
         }
 
-        this.props.addBooking(newBooking);
+
+        switch(newBooking.slot){
+            case "Breakfast":
+                this.props.addBooking(newBooking);
+                break;
+            case "Lunch":
+                this.props.addLunchBooking(newBooking);
+                break;
+            default:
+                alert("Something went wrong")
+
+
+
+
+        }
+
         this.checkSlots(newBooking);
 
 
@@ -85,7 +101,6 @@ class BookingComponent extends Component {
                     this.setLunchCounter();
                     var joinedLunch = this.state.LunchArray.concat(newBooking);
                     this.setState({ LunchArray: joinedLunch });
-                    console.log(this.state.LunchCounter)
                 } else {
                     alert("Sorry, no slots available for this time period")
                 }
@@ -235,4 +250,4 @@ const mapStateToProps = (state) =>({
 })
 
 
-export default connect(mapStateToProps, { addBooking })(BookingComponent);
+export default connect(mapStateToProps, { addBooking, addLunchBooking })(BookingComponent);

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Create Schema
-const BookingSchema = new Schema({
+const LunchBookingSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -31,4 +31,4 @@ const BookingSchema = new Schema({
 
 });
 
-module.exports = Item = mongoose.model('Booking', BookingSchema);
+module.exports = Item = mongoose.model('lunchBooking', LunchBookingSchema);

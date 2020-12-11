@@ -14,3 +14,4 @@ export const addBooking = (booking) => dispatch =>{
                 payload: res.data
             }))
 }
+
