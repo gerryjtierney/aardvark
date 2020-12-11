@@ -12,10 +12,10 @@ router.post('/', (req, res) => {
 
     Booking.create({
         name: req.body.name,
-        email: req.body.price,
-        comments: req.body.description,
+        email: req.body.email,
+        comments: req.body.comments,
         slot: req.body.slot,
-        id: req.body.id
+        id: req.body.id,
     }).then(zoonsh => res.json(zoonsh))
 
 });

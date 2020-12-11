@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const BookingSchema = new Schema({
     name: {
         type: String,
-        required: false
+        required: true
     },
     email: {
         type: String,
@@ -22,8 +22,13 @@ const BookingSchema = new Schema({
     id: {
         type: String,
         required: false
+    },
+    expire_at: {
+        type: Date,
+        default: (Date.now() + 3600000),
     }
+
 
 });
 
-module.exports = Item = mongoose.model('booking', BookingSchema);
+module.exports = Item = mongoose.model('breakfastBooking', BookingSchema);
