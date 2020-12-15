@@ -2,14 +2,33 @@ import React, { Component } from "react";
 import { Button, Modal, Col, Form, FormGroup, Input, CustomInput } from "reactstrap";
 import { connect } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
+import PropTypes from "prop-types"
 import { addBooking } from "../actions/bookingActions"
 import { addLunchBooking } from "../actions/lunchBookingActions"
+import { addDinnerBooking } from "../actions/dinnerBookingActions"
+
+import { getBookings } from "../actions/bookingActions"
+
 
 
 class BookingComponent extends Component {
 
+
+
+    componentDidMount() {
+        
+    }
+
+    componentDidUpdate(){
+        this.props.getBookings();
+    }
+
+
+        
+
+
     state = {
-        BreakfastCounter: 3,
+        BreakfastCounter: 0,
         LunchCounter: 3,
         DinnerCounter: 3,
         toggled: false,
@@ -20,16 +39,20 @@ class BookingComponent extends Component {
         slot: "",
         BreakfastArray: [],
         LunchArray: [],
-        DinnerArray: []
+        DinnerArray: [],
+        
+        }
 
-    }
+
+        
 
 
 
     onChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value, [e.target.email]: e.target.value,
-            [e.target.comments]: e.target.value, [e.target.slot]: e.target.value
+            [e.target.comments]: e.target.value, [e.target.slot]: e.target.value,
+            BreakfastCounter: this.props.booking.length
         })
     }
 
@@ -57,6 +80,9 @@ class BookingComponent extends Component {
             case "Lunch":
                 this.props.addLunchBooking(newBooking);
                 break;
+            case "Dinner":
+                this.props.addDinnerBooking(newBooking);
+                break;
             default:
                 alert("Something went wrong")
 
@@ -77,13 +103,15 @@ class BookingComponent extends Component {
 
     checkSlots = (newBooking) => {
 
+        
         let checkSlotsVariable = newBooking.slot;
        
 
 
+    
         switch (checkSlotsVariable) {
             case "Breakfast":
-                if (this.state.BreakfastArray.length < 3) {
+                if (this.state.BreakfastCounter.length < 3) {
                     this.setBreakfastCounter();
                     var joinedBreakfast = this.state.BreakfastArray.concat(newBooking);
                     this.setState({ BreakfastArray: joinedBreakfast });
@@ -133,7 +161,7 @@ class BookingComponent extends Component {
 
 
     setBreakfastCounter = () => {
-        this.setState({ BreakfastCounter: this.state.BreakfastCounter - 1 })
+        this.setState({ BreakfastCounter: this.state.BreakfastCounter + 1 })
     }
 
     setLunchCounter = () => {
@@ -162,7 +190,10 @@ class BookingComponent extends Component {
 
 
 
+
         return (
+
+            
 
             <div>
                 <div onClick={this.toggle} className="menuButton">Book</div>
@@ -246,8 +277,14 @@ class BookingComponent extends Component {
 
 
 const mapStateToProps = (state) =>({
-    booking: state.booking
+    booking: state.booking.bookings
 })
 
 
-export default connect(mapStateToProps, { addBooking, addLunchBooking })(BookingComponent);
+BookingComponent.propTypes = {
+    getBookings: PropTypes.func.isRequired,
+    booking: PropTypes.object.isRequired
+}
+
+
+export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings })(BookingComponent);

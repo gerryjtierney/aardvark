@@ -1,14 +1,20 @@
 
-import { ADD_BOOKING, BOOKINGS_LOADING } from "../actions/types"
+import { ADD_BOOKING, GET_BOOKINGS } from "../actions/types"
 
 const initialState = {
     bookings: [],
-    loading: false
+
 }
 
 
 export default function (state = initialState, action) {
     switch (action.type) {
+
+        case GET_BOOKINGS:
+            return {
+                ...state,
+                bookings: action.payload,
+            };
 
 
         case ADD_BOOKING:
@@ -17,11 +23,6 @@ export default function (state = initialState, action) {
                 bookings: [action.payload, ...state.bookings]
             }
 
-        case BOOKINGS_LOADING:
-            return {
-                ...state,
-                loading: true
-            }
 
 
 

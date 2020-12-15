@@ -1,5 +1,22 @@
 import axios from "axios"
-import { ADD_BOOKING } from "./types";
+import { ADD_BOOKING, GET_BOOKINGS } from "./types";
+
+
+
+
+
+export const getBookings = () => dispatch =>{
+
+    axios
+        .get("/api/bookings")
+        .then(res => 
+            dispatch({
+                type: GET_BOOKINGS,
+                payload: res.data
+            })
+        )
+}
+
 
 
 
@@ -13,5 +30,4 @@ export const addBooking = (booking) => dispatch =>{
                 type: ADD_BOOKING,
                 payload: res.data
             }))
-}
-
+};
