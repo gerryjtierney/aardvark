@@ -16,6 +16,7 @@ class BookingComponent extends Component {
 
 
     componentDidMount() {
+        this.props.getBookings();
         
     }
 
@@ -28,7 +29,7 @@ class BookingComponent extends Component {
 
 
     state = {
-        BreakfastCounter: 0,
+        
         LunchCounter: 3,
         DinnerCounter: 3,
         toggled: false,
@@ -62,6 +63,7 @@ class BookingComponent extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
+        this.setState({ BreakfastCounter: this.props.booking.length })
 
         const newBooking = {
 
@@ -73,23 +75,8 @@ class BookingComponent extends Component {
         }
 
 
-        switch(newBooking.slot){
-            case "Breakfast":
-                this.props.addBooking(newBooking);
-                break;
-            case "Lunch":
-                this.props.addLunchBooking(newBooking);
-                break;
-            case "Dinner":
-                this.props.addDinnerBooking(newBooking);
-                break;
-            default:
-                alert("Something went wrong")
 
 
-
-
-        }
 
         this.checkSlots(newBooking);
 
@@ -111,10 +98,10 @@ class BookingComponent extends Component {
     
         switch (checkSlotsVariable) {
             case "Breakfast":
-                if (this.state.BreakfastCounter.length < 3) {
-                    this.setBreakfastCounter();
+                if (this.state.BreakfastCounter < 3) {
                     var joinedBreakfast = this.state.BreakfastArray.concat(newBooking);
                     this.setState({ BreakfastArray: joinedBreakfast });
+                    this.props.addBooking(newBooking);
                     
                     //put all this part in a separate function then call on it here
                 } else {
@@ -159,10 +146,6 @@ class BookingComponent extends Component {
 
 
 
-
-    setBreakfastCounter = () => {
-        this.setState({ BreakfastCounter: this.state.BreakfastCounter + 1 })
-    }
 
     setLunchCounter = () => {
         this.setState({ LunchCounter: this.state.LunchCounter - 1 })
@@ -283,7 +266,7 @@ const mapStateToProps = (state) =>({
 
 BookingComponent.propTypes = {
     getBookings: PropTypes.func.isRequired,
-    booking: PropTypes.object.isRequired
+    booking: PropTypes.array.isRequired
 }
 
 
