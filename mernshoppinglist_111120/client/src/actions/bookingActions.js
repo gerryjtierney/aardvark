@@ -5,7 +5,7 @@ import { ADD_BOOKING, GET_BOOKINGS } from "./types";
 
 
 
-export const getBookings = () => dispatch =>{
+export const getBookings = () => dispatch =>{         
 
     axios
         .get("/api/bookings")

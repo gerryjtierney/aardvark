@@ -6,6 +6,15 @@ const LunchBooking = require("../../models/LunchBooking")
 
 
 
+//get all lunch bookings
+router.get('/', (req, res) => {
+
+    LunchBooking.find()
+    .sort({name: 1})
+    .then(lunchBooking => res.json(lunchBooking))
+
+});
+
 
 //post a lunch booking
 router.post('/', (req, res) => {

@@ -4,10 +4,18 @@ const DinnerBooking = require("../../models/DinnerBooking")
 
 
 
+//get all dinner bookings
+router.get('/', (req, res) => {
+
+    DinnerBooking.find()
+        .sort({ name: 1 })
+        .then(dinnerBooking => res.json(dinnerBooking))
+
+});
 
 
 
-//post a lunch booking
+//post a dinner booking
 router.post('/', (req, res) => {
 
     DinnerBooking.create({
