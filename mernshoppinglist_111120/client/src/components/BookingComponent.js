@@ -8,6 +8,7 @@ import { addLunchBooking } from "../actions/lunchBookingActions"
 import { addDinnerBooking } from "../actions/dinnerBookingActions"
 
 import { getBookings } from "../actions/bookingActions"
+import { getLunchBookings } from "../actions/lunchBookingActions"
 
 
 
@@ -17,11 +18,13 @@ class BookingComponent extends Component {
 
     componentDidMount() {
         this.props.getBookings();
+        this.props.getLunchBookings();
         
     }
 
     componentDidUpdate(){
         this.props.getBookings();
+        this.props.getLunchBookings();
     }
 
 
@@ -30,8 +33,7 @@ class BookingComponent extends Component {
 
     state = {
         
-        LunchCounter: 3,
-        DinnerCounter: 3,
+
         toggled: false,
 
         comments: "",
@@ -51,9 +53,12 @@ class BookingComponent extends Component {
 
     onChange = (e) => {
         this.setState({
-            [e.target.name]: e.target.value, [e.target.email]: e.target.value,
-            [e.target.comments]: e.target.value, [e.target.slot]: e.target.value,
-            BreakfastCounter: this.props.booking.length
+            [e.target.name]: e.target.value, 
+            [e.target.email]: e.target.value,
+            [e.target.comments]: e.target.value, 
+            [e.target.slot]: e.target.value,
+            BreakfastCounter: this.props.booking.length,
+            LunchCounter: this.props.lunchBooking.length
         })
     }
 
@@ -64,6 +69,7 @@ class BookingComponent extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         this.setState({ BreakfastCounter: this.props.booking.length })
+        this.setState({ LunchCounter: this.props.lunchBooking.length })
 
         const newBooking = {
 
@@ -112,10 +118,10 @@ class BookingComponent extends Component {
 
 
             case "Lunch":
-                if (this.state.LunchArray.length < 3) {
-                    this.setLunchCounter();
+                if (this.state.LunchCounter < 3) {
                     var joinedLunch = this.state.LunchArray.concat(newBooking);
                     this.setState({ LunchArray: joinedLunch });
+                    this.props.addLunchBooking(newBooking);
                 } else {
                     alert("Sorry, no slots available for this time period")
                 }
@@ -260,14 +266,16 @@ class BookingComponent extends Component {
 
 
 const mapStateToProps = (state) =>({
-    booking: state.booking.bookings
+    booking: state.booking.bookings,
+    lunchBooking: state.lunchBooking.lunchBookings
 })
 
 
 BookingComponent.propTypes = {
     getBookings: PropTypes.func.isRequired,
+    getLunchBookings: PropTypes.func.isRequired,
     booking: PropTypes.array.isRequired
 }
 
 
-export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings })(BookingComponent);
+export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings, getLunchBookings })(BookingComponent);
