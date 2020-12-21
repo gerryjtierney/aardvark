@@ -9,6 +9,7 @@ import { addDinnerBooking } from "../actions/dinnerBookingActions"
 
 import { getBookings } from "../actions/bookingActions"
 import { getLunchBookings } from "../actions/lunchBookingActions"
+import { getDinnerBookings } from "../actions/dinnerBookingActions"
 
 
 
@@ -19,22 +20,25 @@ class BookingComponent extends Component {
     componentDidMount() {
         this.props.getBookings();
         this.props.getLunchBookings();
-        
+        this.props.getDinnerBookings();
+
     }
 
-    componentDidUpdate(){
-        this.props.getBookings();
-        this.props.getLunchBookings();
-    }
+    // componentDidUpdate(){
+    //     this.props.getBookings();
+    //     this.props.getLunchBookings();
+    //     this.props.getDinnerBookings();
+    // }
 
 
-        
+
 
 
     state = {
-        
+
 
         toggled: false,
+        toggled2: false,
 
         comments: "",
         email: "",
@@ -43,24 +47,35 @@ class BookingComponent extends Component {
         BreakfastArray: [],
         LunchArray: [],
         DinnerArray: [],
-        
-        }
+
+    }
 
 
-        
+
 
 
 
     onChange = (e) => {
+
+        this.props.getBookings();
+        this.props.getLunchBookings();
+        this.props.getDinnerBookings();
+
         this.setState({
-            [e.target.name]: e.target.value, 
+
+            [e.target.name]: e.target.value,
             [e.target.email]: e.target.value,
-            [e.target.comments]: e.target.value, 
+            [e.target.comments]: e.target.value,
             [e.target.slot]: e.target.value,
             BreakfastCounter: this.props.booking.length,
-            LunchCounter: this.props.lunchBooking.length
+            LunchCounter: this.props.lunchBooking.length,
+            DinnerCounter: this.props.dinnerBooking.length
         })
     }
+
+
+
+
 
 
 
@@ -70,6 +85,8 @@ class BookingComponent extends Component {
         e.preventDefault();
         this.setState({ BreakfastCounter: this.props.booking.length })
         this.setState({ LunchCounter: this.props.lunchBooking.length })
+        this.setState({ DinnerCounter: this.props.dinnerBooking.length })
+
 
         const newBooking = {
 
@@ -96,19 +113,21 @@ class BookingComponent extends Component {
 
     checkSlots = (newBooking) => {
 
-        
+
         let checkSlotsVariable = newBooking.slot;
-       
 
 
-    
+
+
         switch (checkSlotsVariable) {
             case "Breakfast":
                 if (this.state.BreakfastCounter < 3) {
                     var joinedBreakfast = this.state.BreakfastArray.concat(newBooking);
                     this.setState({ BreakfastArray: joinedBreakfast });
                     this.props.addBooking(newBooking);
-                    
+                    this.toggle2()
+                    this.toggle()
+
                     //put all this part in a separate function then call on it here
                 } else {
                     alert("Sorry, no slots available for this time period");
@@ -122,6 +141,8 @@ class BookingComponent extends Component {
                     var joinedLunch = this.state.LunchArray.concat(newBooking);
                     this.setState({ LunchArray: joinedLunch });
                     this.props.addLunchBooking(newBooking);
+                    this.toggle2()
+                    this.toggle()
                 } else {
                     alert("Sorry, no slots available for this time period")
                 }
@@ -130,11 +151,12 @@ class BookingComponent extends Component {
 
 
             case "Dinner":
-                if (this.state.DinnerArray.length < 3) {
-                    this.setDinnerCounter();
+                if (this.state.DinnerCounter < 3) {
                     var joinedDinner = this.state.DinnerArray.concat(newBooking);
                     this.setState({ DinnerArray: joinedDinner });
-                    console.log(this.state.DinnerCounter)
+                    this.props.addDinnerBooking(newBooking);
+                    this.toggle2()
+                    this.toggle()
                 } else {
                     alert("Sorry, no slots available for this time period")
                 }
@@ -153,14 +175,6 @@ class BookingComponent extends Component {
 
 
 
-    setLunchCounter = () => {
-        this.setState({ LunchCounter: this.state.LunchCounter - 1 })
-    }
-
-    setDinnerCounter = () => {
-        this.setState({ DinnerCounter: this.state.DinnerCounter - 1 })
-    }
-
 
 
 
@@ -172,6 +186,11 @@ class BookingComponent extends Component {
         })
     }
 
+    toggle2 = () => {
+        this.setState({
+            toggled2: !this.state.toggled2
+        })
+    }
 
 
 
@@ -182,7 +201,7 @@ class BookingComponent extends Component {
 
         return (
 
-            
+
 
             <div>
                 <div onClick={this.toggle} className="menuButton">Book</div>
@@ -259,23 +278,41 @@ class BookingComponent extends Component {
                     </div>
                 </Modal>
 
+
+
+
+
+
+                <Modal className="BookingThankYou" isOpen={this.state.toggled2}>
+                    <div className="BookingThankYouInternal">
+                        <div className="BookingThankYouInternalTitle">Thank you!</div>
+                        <div className="BookingThankYouInternalParagraph">Booking for {this.state.name} at {this.state.slot} booked successfully</div>
+                        <button className="BookingThankYouCloseButton" onClick={this.toggle2}>close</button>
+                    </div>
+                </Modal>
+
+
+
+
             </div>
         )
     }
 }
 
 
-const mapStateToProps = (state) =>({
+const mapStateToProps = (state) => ({
     booking: state.booking.bookings,
-    lunchBooking: state.lunchBooking.lunchBookings
+    lunchBooking: state.lunchBooking.lunchBookings,
+    dinnerBooking: state.dinnerBooking.dinnerBookings
 })
 
 
 BookingComponent.propTypes = {
     getBookings: PropTypes.func.isRequired,
     getLunchBookings: PropTypes.func.isRequired,
+    getDinnerBookings: PropTypes.func.isRequired,
     booking: PropTypes.array.isRequired
 }
 
 
-export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings, getLunchBookings })(BookingComponent);
+export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings, getLunchBookings, getDinnerBookings })(BookingComponent);

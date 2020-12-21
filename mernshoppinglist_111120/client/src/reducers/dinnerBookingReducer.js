@@ -13,14 +13,14 @@ export default function (state = initialState, action) {
         case GET_DINNER_BOOKINGS:
             return {
                 ...state,
-                bookings: action.payload,
+                dinnerBookings: action.payload,
             };
 
 
         case ADD_DINNER_BOOKING:
             return {
                 ...state,
-                bookings: [action.payload, ...state.bookings]
+                dinnerBookings: [action.payload, ...state.dinnerBookings]
             }
 
 
