@@ -39,6 +39,7 @@ class BookingComponent extends Component {
 
         toggled: false,
         toggled2: false,
+        toggled3: false,
 
         comments: "",
         email: "",
@@ -130,7 +131,8 @@ class BookingComponent extends Component {
 
                     //put all this part in a separate function then call on it here
                 } else {
-                    alert("Sorry, no slots available for this time period");
+
+                    this.toggle3();
                 }
                 break;
 
@@ -144,7 +146,7 @@ class BookingComponent extends Component {
                     this.toggle2()
                     this.toggle()
                 } else {
-                    alert("Sorry, no slots available for this time period")
+                    this.toggle3();
                 }
                 break;
 
@@ -158,7 +160,7 @@ class BookingComponent extends Component {
                     this.toggle2()
                     this.toggle()
                 } else {
-                    alert("Sorry, no slots available for this time period")
+                    this.toggle3();
                 }
                 break;
 
@@ -189,6 +191,12 @@ class BookingComponent extends Component {
     toggle2 = () => {
         this.setState({
             toggled2: !this.state.toggled2
+        })
+    }
+
+    toggle3 = () => {
+        this.setState({
+            toggled3: !this.state.toggled3
         })
     }
 
@@ -288,6 +296,14 @@ class BookingComponent extends Component {
                         <div className="BookingThankYouInternalTitle">Thank you!</div>
                         <div className="BookingThankYouInternalParagraph">Booking for {this.state.name} at {this.state.slot} booked successfully</div>
                         <button className="BookingThankYouCloseButton" onClick={this.toggle2}>close</button>
+                    </div>
+                </Modal>
+
+                <Modal className="BookingNoSlots" id="bah" isOpen={this.state.toggled3}>
+                    <div className="BookingNoSlotsInternal">
+                        <div className="BookingNoSlotsInternalTitle">No slots available</div>
+                        <div className="BookingNoSlotsParagraph">No slots available for {this.state.slot} - please try a different time</div>
+                        <button className="BookingNoSlotsCloseButton" onClick={this.toggle3}>close</button>
                     </div>
                 </Modal>
 
