@@ -967,14 +967,14 @@ a{
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: repeat(3, 1fr);
         z-index: 5;
-        border-left: solid $siteContrast 2px;
-        border-right: solid $siteContrast 2px;
+        border-left: solid $siteContrast 1px;
+        border-right: solid $siteContrast 1px;
 
 
 
         .BookingNoSlotsInternalTitle{
             color: $siteContrast;
-            font-size: 4vw;
+            font-size: 5vw;
             display: grid;
             grid-row-start: 1;
             grid-row-end: 2;
@@ -990,7 +990,7 @@ a{
 
         .BookingNoSlotsParagraph{
             color: $siteContrast;
-            font-size: 2.3vw;
+            font-size: 3vw;
             display: grid;
             grid-row-start: 2;
             grid-row-end: 3;
@@ -1005,13 +1005,13 @@ a{
             background-color: $siteContrast;
             color: $siteWhite;
             border: none;
-            font-size: 2.3vw;
+            font-size: 3vw;
             grid-row-start: 3;
             grid-row-end: 4;
             grid-column-start: 5;
             grid-column-end: 7;
-            margin-bottom: 20px;
-            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
 
             justify-content: center;
             align-content: center;
