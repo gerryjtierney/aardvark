@@ -904,7 +904,7 @@ a {
   }
   .BookingNoSlotsInternal {
     font-family: myNeonFont;
-    height: 20vw;
+    height: 40vw;
     text-align: center;
     display: -ms-grid;
     display: grid;
@@ -943,16 +943,17 @@ a {
   }
   .BookingNoSlotsInternal .BookingNoSlotsParagraph {
     color: #4e4e4e;
-    font-size: 5vw;
+    font-size: 4.4vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 10;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 11;
     margin-top: 2vw;
+    margin-bottom: 2vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -963,7 +964,7 @@ a {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
-    font-size: 5vw;
+    font-size: 5.5vw;
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;

@@ -956,7 +956,7 @@ a{
 
     .BookingNoSlotsInternal{
         font-family: myNeonFont;
-        height: 20vw;
+        height: 40vw;
         text-align: center;
         display: grid;
         width: auto;
@@ -990,13 +990,14 @@ a{
 
         .BookingNoSlotsParagraph{
             color: $siteContrast;
-            font-size: 5vw;
+            font-size: 4.4vw;
             display: grid;
             grid-row-start: 2;
             grid-row-end: 3;
-            grid-column-start: 2;
-            grid-column-end: 10;
+            grid-column-start: 1;
+            grid-column-end: 11;
             margin-top: 2vw;
+            margin-bottom: 2vw;
             justify-content: center;
             align-content: center;
         }
@@ -1005,7 +1006,7 @@ a{
             background-color: $siteContrast;
             color: $siteWhite;
             border: none;
-            font-size: 5vw;
+            font-size: 5.5vw;
             grid-row-start: 3;
             grid-row-end: 4;
             grid-column-start: 4;
