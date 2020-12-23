@@ -923,15 +923,15 @@ a {
   }
   .BookingNoSlotsInternal .BookingNoSlotsInternalTitle {
     color: #4e4e4e;
-    font-size: 5vw;
+    font-size: 7vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 8;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 9;
     margin-top: 1px;
     margin-bottom: 1px;
     -webkit-box-pack: center;
@@ -943,15 +943,15 @@ a {
   }
   .BookingNoSlotsInternal .BookingNoSlotsParagraph {
     color: #4e4e4e;
-    font-size: 3vw;
+    font-size: 5vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    grid-column-end: 9;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 10;
     margin-top: 2vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -963,13 +963,13 @@ a {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
-    font-size: 3vw;
+    font-size: 5vw;
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
-    -ms-grid-column: 5;
-        grid-column-start: 5;
-    grid-column-end: 7;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 8;
     margin-bottom: 10px;
     margin-top: 10px;
     -webkit-box-pack: center;
