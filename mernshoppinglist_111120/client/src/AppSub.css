@@ -1,3 +1,11 @@
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: auto;
+}
+
 body {
   padding: 0px !important;
 }
@@ -1790,8 +1798,8 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 12;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-columns: (6vw)[12];
+        grid-template-columns: repeat(12, 6vw);
     -ms-grid-rows: (5.2vw)[8];
         grid-template-rows: repeat(8, 5.2vw);
   }

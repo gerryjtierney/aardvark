@@ -13,7 +13,7 @@ import { getDinnerBookings } from "../actions/dinnerBookingActions"
 
 
 
-class BookingComponent extends Component {
+class BookingOnlineButton extends Component {
 
 
 
@@ -25,13 +25,6 @@ class BookingComponent extends Component {
         this.props.getDinnerBookings();
 
     }
-
-    // componentDidUpdate(){
-    //     this.props.getBookings();
-    //     this.props.getLunchBookings();
-    //     this.props.getDinnerBookings();
-    // }
-
 
 
 
@@ -214,7 +207,7 @@ class BookingComponent extends Component {
 
 
             <div>
-                <div onClick={this.toggle} className="menuButton">Book</div>
+                <div onClick={this.toggle} className="menuButton">Book online</div>
 
 
                 <Modal isOpen={this.state.toggled}>
@@ -325,7 +318,7 @@ const mapStateToProps = (state) => ({
 })
 
 
-BookingComponent.propTypes = {
+BookingOnlineButton.propTypes = {
     getBookings: PropTypes.func.isRequired,
     getLunchBookings: PropTypes.func.isRequired,
     getDinnerBookings: PropTypes.func.isRequired,
@@ -333,4 +326,4 @@ BookingComponent.propTypes = {
 }
 
 
-export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings, getLunchBookings, getDinnerBookings })(BookingComponent);
+export default connect(mapStateToProps, { addBooking, addLunchBooking, addDinnerBooking, getBookings, getLunchBookings, getDinnerBookings })(BookingOnlineButton);

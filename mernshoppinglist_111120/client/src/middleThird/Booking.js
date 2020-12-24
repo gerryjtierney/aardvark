@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import BookOnlineButton from "../components/BookOnlineButton"
+
 
 
 class Booking extends Component{
+
 
 
 
@@ -14,12 +17,19 @@ class Booking extends Component{
                     <div className="Booking-internal-first-paragraph">Book with us</div>
                     <div className="Booking-internal-second-paragraph">Enjoy a complimentary tea or coffee when booking online</div>
                     <div className="Booking-internal-button">
-                       BOOK &nbsp; ONLINE
+                       <BookOnlineButton />
                     </div>
-                </div>
+                </div>                
             </div>
+            
         )
     }
+
+
+
 }
+
+
+
 
 export default Booking;
