@@ -25,7 +25,7 @@ const BookingSchema = new Schema({
     },
     expire_at: {
         type: Date,
-        default: (Date.now() + 3600000),
+        default: (Date.now() + 120000),
     }
 
 
