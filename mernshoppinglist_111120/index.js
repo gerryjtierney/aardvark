@@ -25,6 +25,8 @@ app.use("/api/bookings", require("./routes/api/bookings"));
 app.use("/api/lunchBookings", require("./routes/api/lunchBookings"));
 app.use("/api/dinnerBookings", require("./routes/api/dinnerBookings"));
 
+app.use("/api/rewards", require("./routes/api/rewards"));
+
 
 
 
