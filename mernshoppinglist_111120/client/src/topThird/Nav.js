@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Link} from "react-router-dom";
 import PrimaryMenuModal from '../components/PrimaryMenuModal';
 import BookingComponent from "../components/BookingComponent";
-
+import RewardComponent from "../components/RewardComponent"
 
 
 class Nav extends Component{
@@ -24,7 +24,9 @@ class Nav extends Component{
                         <BookingComponent />
                     </div>
 
-                    <div className="rewards">Rewards</div>
+                    <div className="rewards">
+                        <RewardComponent />
+                    </div>
 
                         <div className="contact" id="manualOverride">
                         <Link to="/contact">Contact</Link>

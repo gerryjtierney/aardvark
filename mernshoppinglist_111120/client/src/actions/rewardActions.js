@@ -11,7 +11,7 @@ export const getRewards = () => dispatch =>{
         .get("/api/rewards")
         .then(res => 
             dispatch({
-                type: GET_REWARDSS,
+                type: GET_REWARDS,
                 payload: res.data
             })
         )
