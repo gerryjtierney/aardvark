@@ -1534,6 +1534,402 @@ a{
 
 
 
+    //small screen reward form
+    .rewardComponentForm{
+
+        font-family: myNeonFont;
+        font-size: 4vw;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 12;
+        grid-template-columns: repeat(14, 6vw);
+        grid-template-rows: repeat(9, 8vw);
+
+
+
+    .BookingModalButton{
+        background-color: $siteContrast2;
+        border: none;
+        color: $siteWhite;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        border-radius: 3px;                    
+        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+        text-align: center;
+        vertical-align: middle;
+    
+        font-family: myNeonFont;
+        width: 9.5vw;
+        height: 5vw;
+        font-size: 4vw;
+        padding: 0.1vw;
+
+        
+    
+        &:hover{
+            color: $siteContrast;
+            background-color: $siteWhite;
+            box-shadow: 0px 0px 6px 6px $siteWhite;
+        }
+    }
+
+
+    .bookingComponentFormSlotSelect{
+        width: 20vw;
+        margin-left: 0.8vw;
+    }
+
+
+
+    .entryFieldEmail{
+
+
+
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .entryFieldName{
+
+        margin-top: -4vw;
+
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: auto;
+    }
+
+    .entryFieldComments{
+
+        margin-top: -8vw;
+
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 6;
+        grid-row-end: 7;
+
+        padding: 0.1vw;
+    }
+
+    .entryFieldSlots{
+
+        margin-top: -1vw;
+        margin-bottom: 1vw;
+
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        
+    }
+
+
+    .BookingSubmitButton{
+
+        display: grid;
+        background-color: $siteContrast2;
+        border: none;
+        color: $siteWhite;
+        border-radius: 3px;                    
+        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 1vw;
+        font-family: myNeonFont;
+        margin-top: 3vw;
+
+
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 8;
+        grid-row-end: 9;
+
+        font-family: myNeonFont;
+
+        width: 20vw;
+        height: 6vw;
+
+
+        
+    
+        &:hover{
+            color: $siteContrast;
+            background-color: $siteWhite;
+            box-shadow: 0px 0px 6px 6px $siteWhite;
+        }
+    }
+
+    .BookingSubmitButtonButton{
+        color: $siteWhite;
+        background-color: $siteContrast;
+        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+        border: none;
+        font-size: 5vw;
+        padding: 0.1vw;
+        
+        margin-top: 1vw;
+
+        &:hover{
+            color: $siteContrast;
+            background-color: $siteWhite;
+            box-shadow: 0px 0px 6px 6px $siteWhite;
+        }
+    }
+
+
+    .col-form-label{
+        padding-left: 2.7vw;
+        margin-right: 3.5vw;
+    }
+    
+    #slotLabel{
+        padding-left: 2.7vw;
+        margin-right: 1.8vw;
+    }
+    
+    .form-control{
+        font-size: 4vw;
+        justify-content: center;
+    }
+    
+    .custom-select{
+        font-size: 4vw;
+        padding: 0.1vw;
+    }
+    
+    #checkbox2{
+        margin-right: 20px;
+    }
+    
+    .col-sm-2{
+        margin-right: 15px;
+        padding-bottom: 3px;
+    }
+    
+    .offset-sm-2{
+        margin-left: 0px;
+        padding-left: 65vw;
+    }
+    
+    .entryField{
+        margin-left: 9vw;
+        margin-top: 1vw;
+    }
+    
+    .checcyBoccy{
+        margin-left: 12vw;
+    }
+    
+    #checkbox2{
+        margin-right: 0px;
+    }
+    
+    .form-check-input{
+        margin-left: 15vw;
+    }
+    
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    
+    
+    
+    .col-sm-10{
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .form-control{
+        padding: 0px;
+    }
+
+
+
+
+    
+
+}
+
+
+
+.BookingNoSlotsInternal{
+    font-family: myNeonFont;
+    height: 40vw;
+    text-align: center;
+    display: grid;
+    width: auto;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(3, 1fr);
+    z-index: 5;
+    border-left: solid $siteContrast 1px;
+    border-right: solid $siteContrast 1px;
+
+
+
+    .BookingNoSlotsInternalTitle{
+        color: $siteContrast;
+        font-size: 7vw;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 9;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        justify-content: center;
+        align-content: center;
+        border-bottom: $siteContrast 2px solid;
+    }
+
+
+    .BookingNoSlotsParagraph{
+        color: $siteContrast;
+        font-size: 4.4vw;
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 11;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .BookingNoSlotsCloseButton{
+        background-color: $siteContrast;
+        color: $siteWhite;
+        border: none;
+        font-size: 5.5vw;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 8;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        justify-content: center;
+        align-content: center;
+        width: auto;
+
+
+        box-shadow: 0px 0px 2px 1px $siteWhite;
+        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+        padding-left: 0.3vw;
+        padding-right: 0.2vw;
+        
+
+        z-index: 4;
+        &:hover{
+            background-color: $siteWhite2;
+            color: $siteContrast2;
+            box-shadow: 0px 0px 6px 6px $siteWhite2;
+        }
+
+    }
+
+}
+
+
+
+
+.BookingThankYouInternal{
+    font-family: myNeonFont;
+    height: 20vw;
+    text-align: center;
+    display: grid;
+    width: auto;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 2vw;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(3, 1fr);
+    z-index: 5;
+    border-left: solid $siteContrast 2px;
+    border-right: solid $siteContrast 2px;
+
+
+
+    .BookingThankYouInternalTitle{
+        color: $siteContrast;
+        font-size: 4vw;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 8;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        justify-content: center;
+        align-content: center;
+        border-bottom: $siteContrast 2px solid;
+    }
+
+
+    .BookingThankYouInternalParagraph{
+        color: $siteContrast;
+        font-size: 2.3vw;
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 9;
+        margin-top: 2vw;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .BookingThankYouCloseButton{
+        background-color: $siteContrast;
+        color: $siteWhite;
+        border: none;
+        font-size: 2.3vw;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 5;
+        grid-column-end: 7;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        justify-content: center;
+        align-content: center;
+        width: auto;
+
+
+        box-shadow: 0px 0px 2px 1px $siteWhite;
+        transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
+        padding-left: 0.3vw;
+        padding-right: 0.2vw;
+        
+
+        z-index: 4;
+        &:hover{
+            background-color: $siteWhite2;
+            color: $siteContrast2;
+            box-shadow: 0px 0px 6px 6px $siteWhite2;
+        }
+
+    }
+
+}
+
+
+
+
+
+
 
 }
 
