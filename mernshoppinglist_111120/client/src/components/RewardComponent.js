@@ -142,6 +142,12 @@ class RewardComponent extends Component {
                                 </Col>
                             </FormGroup>
 
+                            <FormGroup row className="entryFieldRewardText">
+                                <Col>
+                                    Sign up to hear about our latest rewards!
+                                </Col>
+                            </FormGroup>
+
 
                             <FormGroup row className="entryFieldEmail">
                                 <Col>

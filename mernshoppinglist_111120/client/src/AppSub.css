@@ -263,7 +263,7 @@ a {
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid green;
+    border: 1px solid #585858;
     -webkit-text-fill-color: #4e4e4e;
     -webkit-box-shadow: 0 0 0px 1000px #e4cde4 inset;
     -webkit-transition: background-color 5000s ease-in-out 0s;
@@ -1482,6 +1482,21 @@ a {
     -ms-grid-rows: (8vw)[9];
         grid-template-rows: repeat(9, 8vw);
   }
+  .rewardComponentForm input:-webkit-autofill,
+  .rewardComponentForm input:-webkit-autofill:hover,
+  .rewardComponentForm input:-webkit-autofill:focus,
+  .rewardComponentForm textarea:-webkit-autofill,
+  .rewardComponentForm textarea:-webkit-autofill:hover,
+  .rewardComponentForm textarea:-webkit-autofill:focus,
+  .rewardComponentForm select:-webkit-autofill,
+  .rewardComponentForm select:-webkit-autofill:hover,
+  .rewardComponentForm select:-webkit-autofill:focus {
+    border: 0px solid #585858;
+    -webkit-text-fill-color: #585858;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+  }
   .rewardComponentForm .BookingModalButton {
     background-color: #585858;
     border: none;
@@ -1511,43 +1526,54 @@ a {
     width: 20vw;
     margin-left: 0.8vw;
   }
-  .rewardComponentForm .entryFieldEmail {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 13;
+  .rewardComponentForm .entryFieldRewardText {
+    margin-top: 3vw;
+    font-size: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 15;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
+    padding-bottom: 2.4vw;
+    color: #585858;
+  }
+  .rewardComponentForm .entryFieldEmail {
+    margin-top: 1vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 13;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
   }
   .rewardComponentForm .entryFieldName {
-    margin-top: -4vw;
+    margin-top: -3vw;
+    color: red;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 13;
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 6;
     width: auto;
   }
-  .rewardComponentForm .entryFieldComments {
-    margin-top: -8vw;
+  .rewardComponentForm .entryFieldConsent {
+    margin-top: -5vw;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 13;
-    -ms-grid-row: 6;
-        grid-row-start: 6;
-    grid-row-end: 7;
-    padding: 0.1vw;
-  }
-  .rewardComponentForm .entryFieldSlots {
-    margin-top: -1vw;
-    margin-bottom: 1vw;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 6;
     -ms-grid-row: 7;
         grid-row-start: 7;
     grid-row-end: 8;
+    padding: 0.1vw;
   }
   .rewardComponentForm .BookingSubmitButton {
     display: -ms-grid;
@@ -1564,7 +1590,6 @@ a {
     vertical-align: middle;
     margin-bottom: 1vw;
     font-family: myNeonFont;
-    margin-top: 3vw;
     -ms-grid-column: 5;
         grid-column-start: 5;
     grid-column-end: 9;

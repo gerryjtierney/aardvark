@@ -323,7 +323,7 @@ a{
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-    border: 1px solid green;
+    border: 1px solid $siteContrast2;
     -webkit-text-fill-color: $siteContrast;
     -webkit-box-shadow: 0 0 0px 1000px $siteWhite inset;
     transition: background-color 5000s ease-in-out 0s;
@@ -1535,6 +1535,7 @@ a{
 
 
     //small screen reward form
+    //current
     .rewardComponentForm{
 
         font-family: myNeonFont;
@@ -1546,6 +1547,23 @@ a{
         grid-row-end: 12;
         grid-template-columns: repeat(14, 6vw);
         grid-template-rows: repeat(9, 8vw);
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+        border: 0px solid $siteContrast2;
+        -webkit-text-fill-color: $siteContrast2;
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        transition: background-color 5000s ease-in-out 0s;
+        }
+
+
 
 
 
@@ -1582,51 +1600,57 @@ a{
     }
 
 
+    .entryFieldRewardText{
+        margin-top: 3vw;
+        font-size: 5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        align-content: center;
+        justify-content: center;
+        grid-column-start: 2;
+        grid-column-end: 15;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-bottom: 2.4vw;
+        color: $siteContrast2;
+
+    }
+
 
     .entryFieldEmail{
 
 
-
+        margin-top: 1vw;
         grid-column-start: 1;
         grid-column-end: 13;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 
     .entryFieldName{
 
-        margin-top: -4vw;
+        margin-top: -3vw;
+        color: red;
 
         grid-column-start: 1;
         grid-column-end: 13;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
         width: auto;
     }
 
-    .entryFieldComments{
+    .entryFieldConsent{
 
-        margin-top: -8vw;
+        margin-top: -5vw;
 
         grid-column-start: 1;
         grid-column-end: 13;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 8;
 
         padding: 0.1vw;
     }
 
-    .entryFieldSlots{
-
-        margin-top: -1vw;
-        margin-bottom: 1vw;
-
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 7;
-        grid-row-end: 8;
-        
-    }
 
 
     .BookingSubmitButton{
@@ -1641,7 +1665,7 @@ a{
         vertical-align: middle;
         margin-bottom: 1vw;
         font-family: myNeonFont;
-        margin-top: 3vw;
+
 
 
         grid-column-start: 5;
