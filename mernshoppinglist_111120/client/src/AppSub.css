@@ -981,6 +981,7 @@ a {
     grid-column-end: 8;
     margin-bottom: 10px;
     margin-top: 10px;
+    border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1302,7 +1303,7 @@ a {
   }
   .BookingNoSlotsInternal .BookingNoSlotsInternalTitle {
     color: #4e4e4e;
-    font-size: 7vw;
+    font-size: 6vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
@@ -1352,12 +1353,12 @@ a {
     grid-column-end: 8;
     margin-bottom: 10px;
     margin-top: 10px;
+    border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    width: auto;
     -webkit-box-shadow: 0px 0px 2px 1px #e4cde4;
             box-shadow: 0px 0px 2px 1px #e4cde4;
     -webkit-transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
@@ -1376,7 +1377,7 @@ a {
   }
   .BookingThankYouInternal {
     font-family: myNeonFont;
-    height: 20vw;
+    height: 30vw;
     text-align: center;
     display: -ms-grid;
     display: grid;
@@ -1390,12 +1391,12 @@ a {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
     z-index: 5;
-    border-left: solid #4e4e4e 2px;
-    border-right: solid #4e4e4e 2px;
+    border-left: solid #4e4e4e 1px;
+    border-right: solid #4e4e4e 1px;
   }
   .BookingThankYouInternal .BookingThankYouInternalTitle {
     color: #4e4e4e;
-    font-size: 4vw;
+    font-size: 6vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
@@ -1415,16 +1416,17 @@ a {
   }
   .BookingThankYouInternal .BookingThankYouInternalParagraph {
     color: #4e4e4e;
-    font-size: 2.3vw;
+    font-size: 4.4vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    grid-column-end: 9;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 10;
     margin-top: 2vw;
+    margin-bottom: 2vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1435,15 +1437,16 @@ a {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
-    font-size: 2.3vw;
+    font-size: 5.5vw;
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
-    -ms-grid-column: 5;
-        grid-column-start: 5;
-    grid-column-end: 7;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 8;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1497,7 +1500,7 @@ a {
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
   }
-  .rewardComponentForm .BookingModalButton {
+  .rewardComponentForm .RewardModalButton {
     background-color: #585858;
     border: none;
     color: #e4cde4;
@@ -1516,7 +1519,7 @@ a {
     font-size: 4vw;
     padding: 0.1vw;
   }
-  .rewardComponentForm .BookingModalButton:hover {
+  .rewardComponentForm .RewardModalButton:hover {
     color: #4e4e4e;
     background-color: #e4cde4;
     -webkit-box-shadow: 0px 0px 6px 6px #e4cde4;
@@ -1575,7 +1578,7 @@ a {
     grid-row-end: 8;
     padding: 0.1vw;
   }
-  .rewardComponentForm .BookingSubmitButton {
+  .rewardComponentForm .RewardSubmitButton {
     display: -ms-grid;
     display: grid;
     background-color: #585858;
@@ -1600,13 +1603,13 @@ a {
     width: 20vw;
     height: 6vw;
   }
-  .rewardComponentForm .BookingSubmitButton:hover {
+  .rewardComponentForm .RewardSubmitButton:hover {
     color: #4e4e4e;
     background-color: #e4cde4;
     -webkit-box-shadow: 0px 0px 6px 6px #e4cde4;
             box-shadow: 0px 0px 6px 6px #e4cde4;
   }
-  .rewardComponentForm .BookingSubmitButtonButton {
+  .rewardComponentForm .RewardSubmitButtonButton {
     color: #e4cde4;
     background-color: #4e4e4e;
     -webkit-transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
@@ -1618,7 +1621,7 @@ a {
     padding: 0.1vw;
     margin-top: 1vw;
   }
-  .rewardComponentForm .BookingSubmitButtonButton:hover {
+  .rewardComponentForm .RewardSubmitButtonButton:hover {
     color: #4e4e4e;
     background-color: #e4cde4;
     -webkit-box-shadow: 0px 0px 6px 6px #e4cde4;
@@ -1677,9 +1680,9 @@ a {
   .rewardComponentForm .form-control {
     padding: 0px;
   }
-  .BookingNoSlotsInternal {
+  .RewardNoSlotsInternal {
     font-family: myNeonFont;
-    height: 40vw;
+    height: 30vw;
     text-align: center;
     display: -ms-grid;
     display: grid;
@@ -1696,9 +1699,9 @@ a {
     border-left: solid #4e4e4e 1px;
     border-right: solid #4e4e4e 1px;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsInternalTitle {
+  .RewardNoSlotsInternal .RewardNoSlotsInternalTitle {
     color: #4e4e4e;
-    font-size: 7vw;
+    font-size: 5vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
@@ -1716,26 +1719,7 @@ a {
         align-content: center;
     border-bottom: #4e4e4e 2px solid;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsParagraph {
-    color: #4e4e4e;
-    font-size: 4.4vw;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 11;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .BookingNoSlotsInternal .BookingNoSlotsCloseButton {
+  .RewardNoSlotsInternal .RewardNoSlotsCloseButton {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
@@ -1762,17 +1746,18 @@ a {
     transition: color 0.6s, background-color 0.6s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
     padding-left: 0.3vw;
     padding-right: 0.2vw;
+    border-radius: 3px;
     z-index: 4;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsCloseButton:hover {
+  .RewardNoSlotsInternal .RewardNoSlotsCloseButton:hover {
     background-color: #c7b8c7;
     color: #585858;
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;
             box-shadow: 0px 0px 6px 6px #c7b8c7;
   }
-  .BookingThankYouInternal {
+  .RewardThankYouInternal {
     font-family: myNeonFont;
-    height: 20vw;
+    height: 24vw;
     text-align: center;
     display: -ms-grid;
     display: grid;
@@ -1789,9 +1774,9 @@ a {
     border-left: solid #4e4e4e 1px;
     border-right: solid #4e4e4e 1px;
   }
-  .BookingThankYouInternal .BookingThankYouInternalTitle {
+  .RewardThankYouInternal .RewardThankYouInternalTitle {
     color: #4e4e4e;
-    font-size: 4vw;
+    font-size: 5vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
@@ -1810,17 +1795,17 @@ a {
         align-content: center;
     border-bottom: #4e4e4e 2px solid;
   }
-  .BookingThankYouInternal .BookingThankYouInternalParagraph {
+  .RewardThankYouInternal .RewardThankYouInternalParagraph {
     color: #4e4e4e;
-    font-size: 2.3vw;
+    font-size: 3.3vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 8;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 10;
     margin-top: 2vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1828,7 +1813,7 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .BookingThankYouInternal .BookingThankYouCloseButton {
+  .RewardThankYouInternal .RewardThankYouCloseButton {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
@@ -1839,8 +1824,7 @@ a {
     -ms-grid-column: 5;
         grid-column-start: 5;
     grid-column-end: 7;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1858,7 +1842,7 @@ a {
     padding-right: 0.2vw;
     z-index: 4;
   }
-  .BookingThankYouInternal .BookingThankYouCloseButton:hover {
+  .RewardThankYouInternal .RewardThankYouCloseButton:hover {
     background-color: #c7b8c7;
     color: #585858;
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;
@@ -2774,6 +2758,7 @@ a {
     grid-column-end: 7;
     margin-bottom: 20px;
     margin-top: 20px;
+    border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2904,7 +2889,7 @@ a {
     -ms-grid-rows: (5.2vw)[7];
         grid-template-rows: repeat(7, 5.2vw);
   }
-  .rewardComponentForm .BookingModalButton {
+  .rewardComponentForm .RewardModalButton {
     background-color: #585858;
     border: none;
     color: #e4cde4;
@@ -2924,7 +2909,7 @@ a {
     font-size: 2.2vw;
     padding: 0.1vw;
   }
-  .rewardComponentForm .BookingModalButton:hover {
+  .rewardComponentForm .RewardModalButton:hover {
     color: #585858;
     background-color: #c7b8c7;
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;
@@ -2978,7 +2963,7 @@ a {
         grid-row-start: 5;
     grid-row-end: 6;
   }
-  .rewardComponentForm .BookingSubmitButton {
+  .rewardComponentForm .RewardSubmitButton {
     margin-top: 1.6vw;
     display: -ms-grid;
     display: grid;
@@ -3004,13 +2989,13 @@ a {
     width: auto;
     height: 5vw;
   }
-  .rewardComponentForm .BookingSubmitButton:hover {
+  .rewardComponentForm .RewardSubmitButton:hover {
     color: #4e4e4e;
     background-color: #e4cde4;
     -webkit-box-shadow: 0px 0px 6px 6px #e4cde4;
             box-shadow: 0px 0px 6px 6px #e4cde4;
   }
-  .rewardComponentForm .BookingSubmitButtonButton {
+  .rewardComponentForm .RewardSubmitButtonButton {
     color: #e4cde4;
     background-color: #4e4e4e;
     -webkit-transition: color 0.6s, background-color 0.6s, -webkit-box-shadow 0.5s;
@@ -3021,7 +3006,7 @@ a {
     font-size: 3vw;
     padding: 0.1vw;
   }
-  .rewardComponentForm .BookingSubmitButtonButton:hover {
+  .rewardComponentForm .RewardSubmitButtonButton:hover {
     color: #4e4e4e;
     background-color: #c7b8c7;
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;
@@ -3041,7 +3026,7 @@ a {
   .rewardComponentForm .form-control {
     padding: 0x;
   }
-  .BookingNoSlotsInternal {
+  .RewardNoSlotsInternal {
     font-family: myNeonFont;
     height: 20vw;
     text-align: center;
@@ -3060,7 +3045,7 @@ a {
     border-left: solid #4e4e4e 2px;
     border-right: solid #4e4e4e 2px;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsInternalTitle {
+  .RewardNoSlotsInternal .RewardNoSlotsInternalTitle {
     color: #4e4e4e;
     font-size: 4vw;
     display: -ms-grid;
@@ -3080,7 +3065,7 @@ a {
         align-content: center;
     border-bottom: #4e4e4e 2px solid;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsParagraph {
+  .RewardNoSlotsInternal .RewardNoSlotsParagraph {
     color: #4e4e4e;
     font-size: 2.3vw;
     display: -ms-grid;
@@ -3098,7 +3083,7 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsCloseButton {
+  .RewardNoSlotsInternal .RewardNoSlotsCloseButton {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
@@ -3111,6 +3096,7 @@ a {
     grid-column-end: 7;
     margin-bottom: 20px;
     margin-top: 20px;
+    border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3127,13 +3113,13 @@ a {
     padding-right: 0.2vw;
     z-index: 4;
   }
-  .BookingNoSlotsInternal .BookingNoSlotsCloseButton:hover {
+  .RewardNoSlotsInternal .RewardNoSlotsCloseButton:hover {
     background-color: #c7b8c7;
     color: #585858;
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;
             box-shadow: 0px 0px 6px 6px #c7b8c7;
   }
-  .BookingThankYouInternal {
+  .RewardThankYouInternal {
     font-family: myNeonFont;
     height: 20vw;
     text-align: center;
@@ -3152,7 +3138,7 @@ a {
     border-left: solid #4e4e4e 2px;
     border-right: solid #4e4e4e 2px;
   }
-  .BookingThankYouInternal .BookingThankYouInternalTitle {
+  .RewardThankYouInternal .RewardThankYouInternalTitle {
     color: #4e4e4e;
     font-size: 4vw;
     display: -ms-grid;
@@ -3172,7 +3158,7 @@ a {
         align-content: center;
     border-bottom: #4e4e4e 2px solid;
   }
-  .BookingThankYouInternal .BookingThankYouInternalParagraph {
+  .RewardThankYouInternal .RewardThankYouInternalParagraph {
     color: #4e4e4e;
     font-size: 2.3vw;
     display: -ms-grid;
@@ -3190,7 +3176,7 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .BookingThankYouInternal .BookingThankYouCloseButton {
+  .RewardThankYouInternal .RewardThankYouCloseButton {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
@@ -3219,7 +3205,7 @@ a {
     padding-right: 0.2vw;
     z-index: 4;
   }
-  .BookingThankYouInternal .BookingThankYouCloseButton:hover {
+  .RewardThankYouInternal .RewardThankYouCloseButton:hover {
     background-color: #c7b8c7;
     color: #585858;
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;

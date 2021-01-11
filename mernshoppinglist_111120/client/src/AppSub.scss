@@ -434,9 +434,7 @@ a{
                         grid-row-end: 6;
                         grid-column-start: 4;
                         grid-column-end: 8;
-
                         display: grid;
-
                         background-color: $siteContrast;
                         border-radius: 3px;
                         font-size: 5.5vw;
@@ -743,6 +741,7 @@ a{
 
 
 
+    
     .bookingComponentForm{
 
             font-family: myNeonFont;
@@ -766,13 +765,13 @@ a{
             border-radius: 3px;                    
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             text-align: center;
-            vertical-align: middle;
-        
+            vertical-align: middle;        
             font-family: myNeonFont;
             width: 9.5vw;
             height: 5vw;
             font-size: 4vw;
             padding: 0.1vw;
+
 
             
         
@@ -1026,6 +1025,7 @@ a{
             grid-column-end: 8;
             margin-bottom: 10px;
             margin-top: 10px;
+            border-radius: 3px;
 
             justify-content: center;
             align-content: center;
@@ -1139,9 +1139,8 @@ a{
 
 
 
-
+//small screen booking form
   .bookingComponentForm{
-
             font-family: myNeonFont;
             font-size: 4vw;
             display: grid;
@@ -1153,7 +1152,7 @@ a{
             grid-template-rows: repeat(9, 8vw);
 
 
-
+        //small screen booking form
         .BookingModalButton{
             background-color: $siteContrast2;
             border: none;
@@ -1163,14 +1162,12 @@ a{
             border-radius: 3px;                    
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             text-align: center;
-            vertical-align: middle;
-        
+            vertical-align: middle;        
             font-family: myNeonFont;
             width: 9.5vw;
             height: 5vw;
             font-size: 4vw;
             padding: 0.1vw;
-
             
         
             &:hover{
@@ -1180,28 +1177,24 @@ a{
             }
         }
 
-
+        //small screen booking form
         .bookingComponentFormSlotSelect{
             width: 20vw;
             margin-left: 0.8vw;
         }
 
     
-
+        //small screen booking form
         .entryFieldEmail{
-
-
-
             grid-column-start: 1;
             grid-column-end: 13;
             grid-row-start: 2;
             grid-row-end: 3;
         }
 
+        //small screen booking form
         .entryFieldName{
-
             margin-top: -4vw;
-
             grid-column-start: 1;
             grid-column-end: 13;
             grid-row-start: 4;
@@ -1209,33 +1202,29 @@ a{
             width: auto;
         }
 
+        //small screen booking form
         .entryFieldComments{
-
             margin-top: -8vw;
-
             grid-column-start: 1;
             grid-column-end: 13;
             grid-row-start: 6;
             grid-row-end: 7;
-
             padding: 0.1vw;
         }
 
+        //small screen booking form
         .entryFieldSlots{
-
             margin-top: -1vw;
             margin-bottom: 1vw;
-
             grid-column-start: 1;
             grid-column-end: 6;
             grid-row-start: 7;
-            grid-row-end: 8;
-            
+            grid-row-end: 8;            
         }
 
 
+        //small screen booking form
         .BookingSubmitButton{
-
             display: grid;
             background-color: $siteContrast2;
             border: none;
@@ -1247,15 +1236,11 @@ a{
             margin-bottom: 1vw;
             font-family: myNeonFont;
             margin-top: 3vw;
-
-
             grid-column-start: 5;
             grid-column-end: 9;
             grid-row-start: 8;
             grid-row-end: 9;
-
             font-family: myNeonFont;
-
             width: 20vw;
             height: 6vw;
 
@@ -1269,14 +1254,14 @@ a{
             }
         }
 
+        //small screen booking form
         .BookingSubmitButtonButton{
             color: $siteWhite;
             background-color: $siteContrast;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             border: none;
             font-size: 5vw;
-            padding: 0.1vw;
-            
+            padding: 0.1vw;            
             margin-top: 1vw;
 
             &:hover{
@@ -1363,7 +1348,7 @@ a{
     }
 
 
-
+    //small screen booking form
     .BookingNoSlotsInternal{
         font-family: myNeonFont;
         height: 40vw;
@@ -1381,10 +1366,10 @@ a{
         border-right: solid $siteContrast 1px;
 
 
-
+        //small screen booking form
         .BookingNoSlotsInternalTitle{
             color: $siteContrast;
-            font-size: 7vw;
+            font-size: 6vw;
             display: grid;
             grid-row-start: 1;
             grid-row-end: 2;
@@ -1397,7 +1382,7 @@ a{
             border-bottom: $siteContrast 2px solid;
         }
 
-
+        //small screen booking form
         .BookingNoSlotsParagraph{
             color: $siteContrast;
             font-size: 4.4vw;
@@ -1412,6 +1397,7 @@ a{
             align-content: center;
         }
 
+        //small screen booking form
         .BookingNoSlotsCloseButton{
             background-color: $siteContrast;
             color: $siteWhite;
@@ -1423,12 +1409,9 @@ a{
             grid-column-end: 8;
             margin-bottom: 10px;
             margin-top: 10px;
-
+            border-radius: 3px;
             justify-content: center;
             align-content: center;
-            width: auto;
-
-
             box-shadow: 0px 0px 2px 1px $siteWhite;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
@@ -1448,10 +1431,10 @@ a{
 
 
 
-
+    //small screen booking form
     .BookingThankYouInternal{
         font-family: myNeonFont;
-        height: 20vw;
+        height: 30vw;
         text-align: center;
         display: grid;
         width: auto;
@@ -1462,14 +1445,14 @@ a{
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: repeat(3, 1fr);
         z-index: 5;
-        border-left: solid $siteContrast 2px;
-        border-right: solid $siteContrast 2px;
+        border-left: solid $siteContrast 1px;
+        border-right: solid $siteContrast 1px;
 
 
-
+        //small screen booking form
         .BookingThankYouInternalTitle{
             color: $siteContrast;
-            font-size: 4vw;
+            font-size: 6vw;
             display: grid;
             grid-row-start: 1;
             grid-row-end: 2;
@@ -1482,37 +1465,37 @@ a{
             border-bottom: $siteContrast 2px solid;
         }
 
-
+        //small screen booking form
         .BookingThankYouInternalParagraph{
             color: $siteContrast;
-            font-size: 2.3vw;
+            font-size: 4.4vw;
             display: grid;
             grid-row-start: 2;
             grid-row-end: 3;
-            grid-column-start: 3;
-            grid-column-end: 9;
+            grid-column-start: 2;
+            grid-column-end: 10;
             margin-top: 2vw;
+            margin-bottom: 2vw;
             justify-content: center;
             align-content: center;
         }
 
+        //small screen booking form
         .BookingThankYouCloseButton{
             background-color: $siteContrast;
             color: $siteWhite;
             border: none;
-            font-size: 2.3vw;
+            font-size: 5.5vw;
             grid-row-start: 3;
             grid-row-end: 4;
-            grid-column-start: 5;
-            grid-column-end: 7;
-            margin-bottom: 20px;
-            margin-top: 20px;
-
+            grid-column-start: 4;
+            grid-column-end: 8;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 3px;
             justify-content: center;
             align-content: center;
             width: auto;
-
-
             box-shadow: 0px 0px 2px 1px $siteWhite;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
@@ -1566,8 +1549,8 @@ a{
 
 
 
-
-    .BookingModalButton{
+    //small screen reward form
+    .RewardModalButton{
         background-color: $siteContrast2;
         border: none;
         color: $siteWhite;
@@ -1576,8 +1559,7 @@ a{
         border-radius: 3px;                    
         transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
         text-align: center;
-        vertical-align: middle;
-    
+        vertical-align: middle;    
         font-family: myNeonFont;
         width: 9.5vw;
         height: 5vw;
@@ -1585,7 +1567,7 @@ a{
         padding: 0.1vw;
 
         
-    
+        //small screen reward form
         &:hover{
             color: $siteContrast;
             background-color: $siteWhite;
@@ -1593,13 +1575,13 @@ a{
         }
     }
 
-
+    //small screen reward form
     .bookingComponentFormSlotSelect{
         width: 20vw;
         margin-left: 0.8vw;
     }
 
-
+    //small screen reward form
     .entryFieldRewardText{
         margin-top: 3vw;
         font-size: 5vw;
@@ -1616,10 +1598,8 @@ a{
 
     }
 
-
+    //small screen reward form
     .entryFieldEmail{
-
-
         margin-top: 1vw;
         grid-column-start: 1;
         grid-column-end: 13;
@@ -1627,11 +1607,10 @@ a{
         grid-row-end: 4;
     }
 
+    //small screen reward form
     .entryFieldName{
-
         margin-top: -3vw;
         color: red;
-
         grid-column-start: 1;
         grid-column-end: 13;
         grid-row-start: 5;
@@ -1639,22 +1618,19 @@ a{
         width: auto;
     }
 
+    //small screen reward form
     .entryFieldConsent{
-
         margin-top: -5vw;
-
         grid-column-start: 1;
         grid-column-end: 13;
         grid-row-start: 7;
         grid-row-end: 8;
-
         padding: 0.1vw;
     }
 
 
-
-    .BookingSubmitButton{
-
+    //small screen reward form
+    .RewardSubmitButton{
         display: grid;
         background-color: $siteContrast2;
         border: none;
@@ -1665,16 +1641,11 @@ a{
         vertical-align: middle;
         margin-bottom: 1vw;
         font-family: myNeonFont;
-
-
-
         grid-column-start: 5;
         grid-column-end: 9;
         grid-row-start: 8;
         grid-row-end: 9;
-
         font-family: myNeonFont;
-
         width: 20vw;
         height: 6vw;
 
@@ -1688,16 +1659,15 @@ a{
         }
     }
 
-    .BookingSubmitButtonButton{
+    //small screen reward form
+    .RewardSubmitButtonButton{
         color: $siteWhite;
         background-color: $siteContrast;
         transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
         border: none;
         font-size: 5vw;
-        padding: 0.1vw;
-        
+        padding: 0.1vw;        
         margin-top: 1vw;
-
         &:hover{
             color: $siteContrast;
             background-color: $siteWhite;
@@ -1782,10 +1752,10 @@ a{
 }
 
 
-
-.BookingNoSlotsInternal{
+//small screen reward form
+.RewardNoSlotsInternal{
     font-family: myNeonFont;
-    height: 40vw;
+    height: 30vw;
     text-align: center;
     display: grid;
     width: auto;
@@ -1800,10 +1770,10 @@ a{
     border-right: solid $siteContrast 1px;
 
 
-
-    .BookingNoSlotsInternalTitle{
+    //small screen reward form
+    .RewardNoSlotsInternalTitle{
         color: $siteContrast;
-        font-size: 7vw;
+        font-size: 5vw;
         display: grid;
         grid-row-start: 1;
         grid-row-end: 2;
@@ -1817,21 +1787,8 @@ a{
     }
 
 
-    .BookingNoSlotsParagraph{
-        color: $siteContrast;
-        font-size: 4.4vw;
-        display: grid;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 11;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .BookingNoSlotsCloseButton{
+    //small screen reward form
+    .RewardNoSlotsCloseButton{
         background-color: $siteContrast;
         color: $siteWhite;
         border: none;
@@ -1842,16 +1799,14 @@ a{
         grid-column-end: 8;
         margin-bottom: 10px;
         margin-top: 10px;
-
         justify-content: center;
         align-content: center;
         width: auto;
-
-
         box-shadow: 0px 0px 2px 1px $siteWhite;
         transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
         padding-left: 0.3vw;
         padding-right: 0.2vw;
+        border-radius: 3px;
         
 
         z-index: 4;
@@ -1867,10 +1822,10 @@ a{
 
 
 
-
-.BookingThankYouInternal{
+//small screen reward form
+.RewardThankYouInternal{
     font-family: myNeonFont;
-    height: 20vw;
+    height: 24vw;
     text-align: center;
     display: grid;
     width: auto;
@@ -1885,10 +1840,11 @@ a{
     border-right: solid $siteContrast 1px;
 
 
+    //small screen reward form
     //standard format?
-    .BookingThankYouInternalTitle{
+    .RewardThankYouInternalTitle{
         color: $siteContrast;
-        font-size: 4vw;
+        font-size: 5vw;
         display: grid;
         grid-row-start: 1;
         grid-row-end: 2;
@@ -1902,22 +1858,23 @@ a{
         border-bottom: $siteContrast 2px solid;
     }
 
-
-    .BookingThankYouInternalParagraph{
+    //small screen reward form
+    .RewardThankYouInternalParagraph{
         color: $siteContrast;
-        font-size: 2.3vw;
+        font-size: 3.3vw;
         display: grid;
         grid-row-start: 2;
         grid-row-end: 3;
-        grid-column-start: 4;
-        grid-column-end: 8;
+        grid-column-start: 2;
+        grid-column-end: 10;
         margin-top: 2vw;
         justify-content: center;
         align-content: center;
     }
 
+    //small screen reward form
     //current
-    .BookingThankYouCloseButton{
+    .RewardThankYouCloseButton{
         background-color: $siteContrast;
         color: $siteWhite;
         border: none;
@@ -1926,15 +1883,12 @@ a{
         grid-row-end: 4;
         grid-column-start: 5;
         grid-column-end: 7;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        border-radius: 3px;
 
+        margin-top: 10px;
+        border-radius: 3px;
         justify-content: center;
         align-content: center;
         width: auto;
-
-
         box-shadow: 0px 0px 2px 1px $siteWhite;
         transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
         padding-left: 0.3vw;
@@ -2779,7 +2733,7 @@ a{
         grid-template-rows: repeat(8, 5.2vw);
 
 
-
+        //large screens booking form
         .BookingModalButton{
             background-color: $siteContrast2;
             border: none;
@@ -2790,8 +2744,7 @@ a{
             border-radius: 3px;                    
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             text-align: center;
-            vertical-align: middle;
-        
+            vertical-align: middle;        
             font-family: myNeonFont;
             width: 5vw;
             height: 3vw;
@@ -2811,24 +2764,16 @@ a{
 
 
     
-
+        //large screens booking form
         .entryFieldEmail{
-
-
-
-
-
             grid-column-start: 2;
             grid-column-end: 12;
             grid-row-start: 2;
             grid-row-end: 3;
         }
 
+        //large screens booking form
         .entryFieldName{
-
-
-
-
             grid-column-start: 2;
             grid-column-end: 12;
             grid-row-start: 3;
@@ -2836,11 +2781,9 @@ a{
             width: auto;
         }
 
+        //large screens booking form
         .entryFieldComments{
-
-
             margin-bottom: -10px;
-
             grid-column-start: 2;
             grid-column-end: 12;
             grid-row-start: 4;
@@ -2848,11 +2791,9 @@ a{
         }
 
 
+        //large screens booking form
         .entryFieldConsent{
-
-
             margin-bottom: -10px;
-
             grid-column-start: 2;
             grid-column-end: 12;
             grid-row-start: 4;
@@ -2862,9 +2803,8 @@ a{
         
 
 
-
+        //large screens booking form
         .entryFieldSlots{
-
             grid-column-start: 2;
             grid-column-end: 5;
             grid-row-start: 6;
@@ -2873,7 +2813,7 @@ a{
 
 
 
-
+        //large screens booking form
         .BookingSubmitButton{
             margin-top: 1.6vw;
             display: grid;
@@ -2886,14 +2826,10 @@ a{
             vertical-align: middle;
             margin-bottom: -0.8vw;
             font-family: myNeonFont;
-
-
-
             grid-column-start: 5;
             grid-column-end: 9;
             grid-row-start: 7;
             grid-row-end: 8;
-
             font-family: myNeonFont;
             width: auto;
             height: 5vw;
@@ -2909,6 +2845,7 @@ a{
             }
         }
 
+        //large screens booking form
         .BookingSubmitButtonButton{
             color: $siteWhite;
             background-color: $siteContrast;
@@ -2971,7 +2908,7 @@ a{
 
 
 
-
+    //large screens booking form
     .BookingNoSlotsInternal{
         font-family: myNeonFont;
         height: 20vw;
@@ -2989,7 +2926,7 @@ a{
         border-right: solid $siteContrast 2px;
 
 
-
+        //large screens booking form
         .BookingNoSlotsInternalTitle{
             color: $siteContrast;
             font-size: 4vw;
@@ -3005,7 +2942,7 @@ a{
             border-bottom: $siteContrast 2px solid;
         }
 
-
+        //large screens booking form
         .BookingNoSlotsParagraph{
             color: $siteContrast;
             font-size: 2.3vw;
@@ -3019,6 +2956,7 @@ a{
             align-content: center;
         }
 
+        //large screens booking form
         .BookingNoSlotsCloseButton{
             background-color: $siteContrast;
             color: $siteWhite;
@@ -3030,12 +2968,10 @@ a{
             grid-column-end: 7;
             margin-bottom: 20px;
             margin-top: 20px;
-
+            border-radius: 3px;
             justify-content: center;
             align-content: center;
             width: auto;
-
-
             box-shadow: 0px 0px 2px 1px $siteWhite;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
@@ -3055,7 +2991,7 @@ a{
 
 
 
-
+    //large screens booking form
     .BookingThankYouInternal{
         font-family: myNeonFont;
         height: 20vw;
@@ -3073,7 +3009,7 @@ a{
         border-right: solid $siteContrast 2px;
 
 
-
+        //large screens booking form
         .BookingThankYouInternalTitle{
             color: $siteContrast;
             font-size: 4vw;
@@ -3089,7 +3025,7 @@ a{
             border-bottom: $siteContrast 2px solid;
         }
 
-
+        //large screens booking form
         .BookingThankYouInternalParagraph{
             color: $siteContrast;
             font-size: 2.3vw;
@@ -3103,6 +3039,7 @@ a{
             align-content: center;
         }
 
+        //large screens booking form
         .BookingThankYouCloseButton{
             background-color: $siteContrast;
             color: $siteWhite;
@@ -3114,12 +3051,9 @@ a{
             grid-column-end: 7;
             margin-bottom: 20px;
             margin-top: 20px;
-
             justify-content: center;
             align-content: center;
             width: auto;
-
-
             box-shadow: 0px 0px 2px 1px $siteWhite;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
@@ -3148,10 +3082,10 @@ a{
 
 
 
+    
+
+
     //large screen reward form
-
-
-
     .rewardComponentForm{
         font-family: myNeonFont;
         font-size: 2.3vw;
@@ -3164,8 +3098,8 @@ a{
         grid-template-rows: repeat(7, 5.2vw);
 
 
-
-        .BookingModalButton{
+        //large screen reward form
+        .RewardModalButton{
             background-color: $siteContrast2;
             border: none;
             color: $siteWhite;
@@ -3194,6 +3128,7 @@ a{
 
 
 
+        //large screen reward form
         .entryFieldRewardText{
             margin-top: 3vw;
 
@@ -3213,7 +3148,7 @@ a{
 
 
     
-
+        //large screen reward form
         .entryFieldEmail{
             padding-top: 2vw;
             grid-column-start: 2;
@@ -3222,6 +3157,7 @@ a{
             grid-row-end: 4;
         }
 
+        //large screen reward form
         .entryFieldName{
             padding-top: 2vw;
             grid-column-start: 2;
@@ -3232,7 +3168,7 @@ a{
         }
 
 
-
+        //large screen reward form
         .entryFieldConsent{
 
             padding-top: 2vw;
@@ -3252,8 +3188,8 @@ a{
 
 
 
-
-        .BookingSubmitButton{
+        //large screen reward form
+        .RewardSubmitButton{
             margin-top: 1.6vw;
             display: grid;
             background-color: $siteContrast2;
@@ -3265,14 +3201,10 @@ a{
             vertical-align: middle;
             margin-bottom: -0.8vw;
             font-family: myNeonFont;
-
-
-
             grid-column-start: 5;
             grid-column-end: 9;
             grid-row-start: 6;
             grid-row-end: 7;
-
             font-family: myNeonFont;
             width: auto;
             height: 5vw;
@@ -3288,7 +3220,8 @@ a{
             }
         }
 
-        .BookingSubmitButtonButton{
+        //large screen reward form
+        .RewardSubmitButtonButton{
             color: $siteWhite;
             background-color: $siteContrast;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
@@ -3350,8 +3283,8 @@ a{
 
 
 
-
-    .BookingNoSlotsInternal{
+    //large screen reward form
+    .RewardNoSlotsInternal{
         font-family: myNeonFont;
         height: 20vw;
         text-align: center;
@@ -3368,8 +3301,8 @@ a{
         border-right: solid $siteContrast 2px;
 
 
-
-        .BookingNoSlotsInternalTitle{
+        //large screen reward form
+        .RewardNoSlotsInternalTitle{
             color: $siteContrast;
             font-size: 4vw;
             display: grid;
@@ -3384,8 +3317,8 @@ a{
             border-bottom: $siteContrast 2px solid;
         }
 
-
-        .BookingNoSlotsParagraph{
+        //large screen reward form
+        .RewardNoSlotsParagraph{
             color: $siteContrast;
             font-size: 2.3vw;
             display: grid;
@@ -3398,7 +3331,8 @@ a{
             align-content: center;
         }
 
-        .BookingNoSlotsCloseButton{
+        //large screen reward form
+        .RewardNoSlotsCloseButton{
             background-color: $siteContrast;
             color: $siteWhite;
             border: none;
@@ -3409,12 +3343,10 @@ a{
             grid-column-end: 7;
             margin-bottom: 20px;
             margin-top: 20px;
-
+            border-radius: 3px;
             justify-content: center;
             align-content: center;
             width: auto;
-
-
             box-shadow: 0px 0px 2px 1px $siteWhite;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;
@@ -3434,8 +3366,8 @@ a{
 
 
 
-
-    .BookingThankYouInternal{
+    //large screen reward form
+    .RewardThankYouInternal{
         font-family: myNeonFont;
         height: 20vw;
         text-align: center;
@@ -3452,8 +3384,8 @@ a{
         border-right: solid $siteContrast 2px;
 
 
-
-        .BookingThankYouInternalTitle{
+        //large screen reward form
+        .RewardThankYouInternalTitle{
             color: $siteContrast;
             font-size: 4vw;
             display: grid;
@@ -3468,8 +3400,8 @@ a{
             border-bottom: $siteContrast 2px solid;
         }
 
-
-        .BookingThankYouInternalParagraph{
+        //large screen reward form
+        .RewardThankYouInternalParagraph{
             color: $siteContrast;
             font-size: 2.3vw;
             display: grid;
@@ -3482,7 +3414,8 @@ a{
             align-content: center;
         }
 
-        .BookingThankYouCloseButton{
+        //large screen reward form
+        .RewardThankYouCloseButton{
             background-color: $siteContrast;
             color: $siteWhite;
             border: none;
@@ -3493,12 +3426,9 @@ a{
             grid-column-end: 7;
             margin-bottom: 20px;
             margin-top: 20px;
-
             justify-content: center;
             align-content: center;
             width: auto;
-
-
             box-shadow: 0px 0px 2px 1px $siteWhite;
             transition: color 0.6s, background-color 0.6s, box-shadow 0.5s;
             padding-left: 0.3vw;

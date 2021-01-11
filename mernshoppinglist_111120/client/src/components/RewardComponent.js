@@ -137,7 +137,7 @@ class RewardComponent extends Component {
                             <FormGroup row>
                                 <Col>
                                     <div className="menuModalButtonDiv">
-                                        <Button color="dark" className="BookingModalButton" onClick={this.toggle}>Close</Button>
+                                        <Button color="dark" className="RewardModalButton" onClick={this.toggle}>Close</Button>
                                     </div>
                                 </Col>
                             </FormGroup>
@@ -178,9 +178,9 @@ class RewardComponent extends Component {
 
                             
 
-                            <FormGroup row className="BookingSubmitButton">
+                            <FormGroup row className="RewardSubmitButton">
 
-                                <Button className="BookingSubmitButtonButton">Submit</Button>
+                                <Button className="RewardSubmitButtonButton">Submit</Button>
 
                             </FormGroup>
                         </Form>
@@ -198,16 +198,16 @@ class RewardComponent extends Component {
 
 
                 <Modal className="BookingThankYou" isOpen={this.state.rewardsToggled2}>
-                    <div className="BookingThankYouInternal">
-                        <div className="BookingThankYouInternalTitle">Thank you, we'll stay in touch</div>
-                        <button className="BookingThankYouCloseButton" onClick={this.toggle2}>close</button>
+                    <div className="RewardThankYouInternal">
+                        <div className="RewardThankYouInternalTitle">Thank you, we'll stay in touch</div>
+                        <button className="RewardThankYouCloseButton" onClick={this.toggle2}>close</button>
                     </div>
                 </Modal>
 
                 <Modal className="BookingNoSlots" id="bah" isOpen={this.state.rewardsToggled3}>
-                    <div className="BookingNoSlotsInternal">
-                        <div className="BookingNoSlotsInternalTitle" id="pleaseConsent">Please consent to our terms and conditions and try again.</div>
-                        <button className="BookingNoSlotsCloseButton" onClick={this.toggle3}>close</button>
+                    <div className="RewardNoSlotsInternal">
+                        <div className="RewardNoSlotsInternalTitle" id="pleaseConsent">Please consent to our terms and conditions and try again.</div>
+                        <button className="RewardNoSlotsCloseButton" onClick={this.toggle3}>close</button>
                     </div>
                 </Modal>
 
