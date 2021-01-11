@@ -130,11 +130,13 @@ class BookingComponent extends Component {
                     this.props.addBooking(newBooking);
                     this.toggle2()
                     this.toggle()
+                    console.log("booked")
 
                     //put all this part in a separate function then call on it here
                 } else {
 
                     this.toggle3();
+                    console.log("not booked")
                 }
                 break;
 
