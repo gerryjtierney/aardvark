@@ -26,23 +26,15 @@ class BookingComponent extends Component {
 
     }
 
-    // componentDidUpdate(){
-    //     this.props.getBookings();
-    //     this.props.getLunchBookings();
-    //     this.props.getDinnerBookings();
-    // }
 
 
 
 
 
     state = {
-
-
         toggled: false,
         toggled2: false,
         toggled3: false,
-
         comments: "",
         email: "",
         name: "",
@@ -92,7 +84,6 @@ class BookingComponent extends Component {
 
 
         const newBooking = {
-
             name: this.state.name,
             email: this.state.email,
             comments: this.state.comments,
@@ -139,7 +130,6 @@ class BookingComponent extends Component {
                     console.log("not booked")
                 }
                 break;
-
 
 
             case "Lunch":
