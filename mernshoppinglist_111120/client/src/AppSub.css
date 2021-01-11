@@ -389,7 +389,7 @@ a {
     display: -ms-grid;
     display: grid;
     background-color: #4e4e4e;
-    border-radius: 2px;
+    border-radius: 3px;
     font-size: 5.5vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1030,9 +1030,9 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 8;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 9;
     margin-top: 1px;
     margin-bottom: 1px;
     -webkit-box-pack: center;
@@ -1786,8 +1786,8 @@ a {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
     z-index: 5;
-    border-left: solid #4e4e4e 2px;
-    border-right: solid #4e4e4e 2px;
+    border-left: solid #4e4e4e 1px;
+    border-right: solid #4e4e4e 1px;
   }
   .BookingThankYouInternal .BookingThankYouInternalTitle {
     color: #4e4e4e;
@@ -1797,11 +1797,12 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 8;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 9;
     margin-top: 1px;
     margin-bottom: 1px;
+    padding-bottom: 5px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1817,9 +1818,9 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    grid-column-end: 9;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 8;
     margin-top: 2vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1831,7 +1832,7 @@ a {
     background-color: #4e4e4e;
     color: #e4cde4;
     border: none;
-    font-size: 2.3vw;
+    font-size: 4.3vw;
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
@@ -1840,6 +1841,7 @@ a {
     grid-column-end: 7;
     margin-bottom: 20px;
     margin-top: 20px;
+    border-radius: 3px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2216,7 +2218,7 @@ a {
     display: -ms-grid;
     display: grid;
     background-color: #4e4e4e;
-    border-radius: 2px;
+    border-radius: 3px;
     font-size: 2.8vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2899,8 +2901,8 @@ a {
     grid-row-end: 12;
     -ms-grid-columns: (6vw)[12];
         grid-template-columns: repeat(12, 6vw);
-    -ms-grid-rows: (5.2vw)[6];
-        grid-template-rows: repeat(6, 5.2vw);
+    -ms-grid-rows: (5.2vw)[7];
+        grid-template-rows: repeat(7, 5.2vw);
   }
   .rewardComponentForm .BookingModalButton {
     background-color: #585858;
@@ -2928,30 +2930,52 @@ a {
     -webkit-box-shadow: 0px 0px 6px 6px #c7b8c7;
             box-shadow: 0px 0px 6px 6px #c7b8c7;
   }
-  .rewardComponentForm .entryFieldEmail {
+  .rewardComponentForm .entryFieldRewardText {
+    margin-top: 3vw;
+    font-size: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    grid-column-end: 12;
+    grid-column-end: 15;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
+    padding-bottom: 5.4vw;
+    color: #585858;
   }
-  .rewardComponentForm .entryFieldName {
+  .rewardComponentForm .entryFieldEmail {
+    padding-top: 2vw;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 12;
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
-    width: auto;
   }
-  .rewardComponentForm .entryFieldConsent {
-    margin-bottom: -10px;
+  .rewardComponentForm .entryFieldName {
+    padding-top: 2vw;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 12;
     -ms-grid-row: 4;
         grid-row-start: 4;
+    grid-row-end: 5;
+    width: auto;
+  }
+  .rewardComponentForm .entryFieldConsent {
+    padding-top: 2vw;
+    margin-bottom: -10px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 12;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
     grid-row-end: 6;
   }
   .rewardComponentForm .BookingSubmitButton {
@@ -2973,9 +2997,9 @@ a {
     -ms-grid-column: 5;
         grid-column-start: 5;
     grid-column-end: 9;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 7;
     font-family: myNeonFont;
     width: auto;
     height: 5vw;
@@ -3136,9 +3160,9 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 8;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 9;
     margin-top: 1px;
     margin-bottom: 1px;
     -webkit-box-pack: center;

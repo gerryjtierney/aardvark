@@ -438,7 +438,7 @@ a{
                         display: grid;
 
                         background-color: $siteContrast;
-                        border-radius: 2px;
+                        border-radius: 3px;
                         font-size: 5.5vw;
                         justify-content: center;
                         align-content: center;
@@ -1076,8 +1076,8 @@ a{
             display: grid;
             grid-row-start: 1;
             grid-row-end: 2;
-            grid-column-start: 4;
-            grid-column-end: 8;
+            grid-column-start: 3;
+            grid-column-end: 9;
             margin-top: 1px;
             margin-bottom: 1px;
             justify-content: center;
@@ -1535,7 +1535,7 @@ a{
 
 
     //small screen reward form
-    //current
+   
     .rewardComponentForm{
 
         font-family: myNeonFont;
@@ -1881,21 +1881,22 @@ a{
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(3, 1fr);
     z-index: 5;
-    border-left: solid $siteContrast 2px;
-    border-right: solid $siteContrast 2px;
+    border-left: solid $siteContrast 1px;
+    border-right: solid $siteContrast 1px;
 
 
-
+    //standard format?
     .BookingThankYouInternalTitle{
         color: $siteContrast;
         font-size: 4vw;
         display: grid;
         grid-row-start: 1;
         grid-row-end: 2;
-        grid-column-start: 4;
-        grid-column-end: 8;
+        grid-column-start: 3;
+        grid-column-end: 9;
         margin-top: 1px;
         margin-bottom: 1px;
+        padding-bottom: 5px;
         justify-content: center;
         align-content: center;
         border-bottom: $siteContrast 2px solid;
@@ -1908,24 +1909,26 @@ a{
         display: grid;
         grid-row-start: 2;
         grid-row-end: 3;
-        grid-column-start: 3;
-        grid-column-end: 9;
+        grid-column-start: 4;
+        grid-column-end: 8;
         margin-top: 2vw;
         justify-content: center;
         align-content: center;
     }
 
+    //current
     .BookingThankYouCloseButton{
         background-color: $siteContrast;
         color: $siteWhite;
         border: none;
-        font-size: 2.3vw;
+        font-size: 4.3vw;
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 5;
         grid-column-end: 7;
         margin-bottom: 20px;
         margin-top: 20px;
+        border-radius: 3px;
 
         justify-content: center;
         align-content: center;
@@ -2457,7 +2460,7 @@ a{
                         display: grid;
 
                         background-color: $siteContrast;
-                        border-radius: 2px;
+                        border-radius: 3px;
                         font-size: 2.8vw;
                         justify-content: center;
                         align-content: center;
@@ -3145,6 +3148,7 @@ a{
 
 
 
+    //large screen reward form
 
 
 
@@ -3157,7 +3161,7 @@ a{
         grid-row-start: 1;
         grid-row-end: 12;
         grid-template-columns: repeat(12, 6vw);
-        grid-template-rows: repeat(6, 5.2vw);
+        grid-template-rows: repeat(7, 5.2vw);
 
 
 
@@ -3190,30 +3194,40 @@ a{
 
 
 
+        .entryFieldRewardText{
+            margin-top: 3vw;
+
+            font-size: 5vw;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            align-content: center;
+            justify-content: center;
+            grid-column-start: 2;
+            grid-column-end: 15;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            padding-bottom: 5.4vw;
+            color: $siteContrast2;
+    
+        }
+
 
     
 
         .entryFieldEmail{
-
-
-
-
-
-            grid-column-start: 2;
-            grid-column-end: 12;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-
-        .entryFieldName{
-
-
-
-
+            padding-top: 2vw;
             grid-column-start: 2;
             grid-column-end: 12;
             grid-row-start: 3;
             grid-row-end: 4;
+        }
+
+        .entryFieldName{
+            padding-top: 2vw;
+            grid-column-start: 2;
+            grid-column-end: 12;
+            grid-row-start: 4;
+            grid-row-end: 5;
             width: auto;
         }
 
@@ -3221,12 +3235,12 @@ a{
 
         .entryFieldConsent{
 
-
+            padding-top: 2vw;
             margin-bottom: -10px;
 
             grid-column-start: 2;
             grid-column-end: 12;
-            grid-row-start: 4;
+            grid-row-start: 5;
             grid-row-end: 6;
         }
 
@@ -3256,8 +3270,8 @@ a{
 
             grid-column-start: 5;
             grid-column-end: 9;
-            grid-row-start: 5;
-            grid-row-end: 6;
+            grid-row-start: 6;
+            grid-row-end: 7;
 
             font-family: myNeonFont;
             width: auto;
@@ -3445,8 +3459,8 @@ a{
             display: grid;
             grid-row-start: 1;
             grid-row-end: 2;
-            grid-column-start: 4;
-            grid-column-end: 8;
+            grid-column-start: 3;
+            grid-column-end: 9;
             margin-top: 1px;
             margin-bottom: 1px;
             justify-content: center;

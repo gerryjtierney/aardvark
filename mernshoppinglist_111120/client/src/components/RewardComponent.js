@@ -199,7 +199,7 @@ class RewardComponent extends Component {
 
                 <Modal className="BookingThankYou" isOpen={this.state.rewardsToggled2}>
                     <div className="BookingThankYouInternal">
-                        <div className="BookingThankYouInternalTitle">Thank you!</div>
+                        <div className="BookingThankYouInternalTitle">Thank you, we'll stay in touch</div>
                         <button className="BookingThankYouCloseButton" onClick={this.toggle2}>close</button>
                     </div>
                 </Modal>
