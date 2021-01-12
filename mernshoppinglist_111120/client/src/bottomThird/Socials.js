@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 
-class Socials extends Component{
+class Socials extends Component {
 
 
 
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="Socials">
-                
-                <div className="Socials-instagram">Instagram</div>
+
+                <a href="https://www.instagram.com/" className="Socials-instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+
             </div>
         )
-        }
+    }
 
 
 }

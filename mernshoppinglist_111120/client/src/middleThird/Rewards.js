@@ -1,4 +1,10 @@
 import React, { Component } from 'react'
+import RewardComponent from "../components/RewardComponent"
+
+
+
+
+
 
 class Rewards extends Component{
 
@@ -9,7 +15,7 @@ class Rewards extends Component{
         return(
             <div className="Rewards">
                 <div className="Rewards-overlay"></div>
-                <div className="Rewards-text">Our Rewards</div>
+                <div className="Rewards-text"> <RewardComponent /> </div>
             </div>
         )
         }
@@ -17,5 +23,6 @@ class Rewards extends Component{
 
 }
 
-export default Rewards
-;
+
+
+export default Rewards;

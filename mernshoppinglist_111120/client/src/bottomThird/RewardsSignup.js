@@ -127,7 +127,7 @@ class RewardComponent extends Component {
 
 
             <div>
-                <div onClick={this.toggle} className="menuButton">Rewards</div>
+                <div onClick={this.toggle} className="menuButton">Sign up</div>
 
 
                 <Modal isOpen={this.state.rewardsToggled}>
