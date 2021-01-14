@@ -7,7 +7,7 @@ import './App.css';
 import AppSub from "./AppSub.js";
 import ContactScreen from './ContactScreen.js';
 import './AppSub.css';
-import CookiesPage from './CookiesPage';
+import CookiesComponent from "./components/CookiesPage.js"
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 
           <Route exact path="/contact" component={ContactScreen} />
           <Route exact path="/" component={AppSub} />
-          <Route exact path="/cookies" component={CookiesPage}/>
+          <Route exact path="/cookies" component={CookiesComponent} />
         </Switch>
       </div>
     </Provider>

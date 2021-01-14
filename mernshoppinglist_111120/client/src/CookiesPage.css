@@ -1,0 +1,205 @@
+.CookiesComponentContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (25vw)[5];
+      grid-template-rows: repeat(5, 25vw);
+  -ms-grid-columns: (20vw)[5];
+      grid-template-columns: repeat(5, 20vw);
+}
+
+.CookiesComponentContent a {
+  color: #585858;
+  text-decoration: none;
+}
+
+.CookiesComponentContent body {
+  padding: 0px !important;
+}
+
+@font-face {
+  .CookiesComponentContent {
+    font-family: myNeonFont;
+    src: url("./cafe.ttf") format("truetype");
+  }
+}
+
+.CookiesComponentContent html {
+  background-color: #fff0ff;
+}
+
+.CookiesComponentContent body {
+  line-height: 1;
+}
+
+.CookiesComponentContent .CookiesTopThird {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff0ff;
+  -ms-grid-rows: (120px)[6];
+      grid-template-rows: repeat(6, 120px);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  z-index: 3;
+}
+
+.CookiesComponentContent .CookiesTopThird .Logo {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  z-index: 2;
+}
+
+.CookiesComponentContent .CookiesTopThird .Logo .LogoText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  font-family: myNeonFont;
+  font-size: 8vw;
+  color: #4e4e4e;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesTopThird .Logo .LogoText:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 7;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 8;
+  font-family: myNeonFont;
+  font-size: 4.8vw;
+  color: #e4cde4;
+  padding-top: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .menu {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-right: 10px;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .menu:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .book {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-right: 15px;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .book:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .rewards {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-right: 15px;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .rewards:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .contact {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesTopThird .Nav .NavText .contact:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomTwoThirds {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  background-color: red;
+  color: red;
+}
+/*# sourceMappingURL=CookiesPage.css.map */

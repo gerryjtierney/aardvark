@@ -1,0 +1,88 @@
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: auto;
+}
+
+body {
+  padding: 0px !important;
+}
+
+@font-face {
+  font-family: myNeonFont;
+  src: url("./cafe.ttf") format("truetype");
+}
+
+html {
+  background-color: black;
+}
+
+a {
+  color: #e4cde4;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+.CookiesTopThird {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  background-color: #585858;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  z-index: 3;
+}
+
+.CookiesTopThird .Logo {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  z-index: 2;
+}
+
+.CookiesTopThird .Logo .LogoText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  font-family: myNeonFont;
+  font-size: 15vw;
+  color: #4e4e4e;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesTopThird .Logo .LogoText:hover {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=CookiesComponent.css.map */
