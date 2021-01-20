@@ -20,8 +20,8 @@ body {
   .CookiesComponentContent {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (9vw)[20];
-        grid-template-rows: repeat(20, 9vw);
+    -ms-grid-rows: (9vw)[30];
+        grid-template-rows: repeat(30, 9vw);
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
   }
@@ -95,8 +95,8 @@ body {
     display: -ms-grid;
     display: grid;
     padding-top: 1vw;
-    -ms-grid-rows: (22vw)[6];
-        grid-template-rows: repeat(6, 22vw);
+    -ms-grid-rows: (10vw)[43];
+        grid-template-rows: repeat(43, 10vw);
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: minmax(50px, auto);
@@ -131,22 +131,22 @@ body {
     text-align: center;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk1 {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 6;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 6;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk1 .paragraphText {
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #4e4e4e;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk2 {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 4;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 10;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 6;
@@ -165,10 +165,9 @@ body {
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 4vw;
+    font-size: 5vw;
     color: #4e4e4e;
     text-align: start;
-    margin-bottom: 1vw;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk2 .paragraphText {
     -ms-grid-row: 3;
@@ -178,14 +177,13 @@ body {
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #4e4e4e;
-    padding-bottom: 3vw;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk3 {
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 5;
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 12;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 6;
@@ -204,10 +202,9 @@ body {
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 4vw;
+    font-size: 5vw;
     color: #4e4e4e;
     text-align: start;
-    margin-bottom: 1vw;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk3 .paragraphText {
     -ms-grid-row: 3;
@@ -217,14 +214,13 @@ body {
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #4e4e4e;
-    padding-bottom: 3vw;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk4 {
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
+    -ms-grid-row: 14;
+        grid-row-start: 14;
+    grid-row-end: 15;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 6;
@@ -243,25 +239,25 @@ body {
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 2.4vw;
+    font-size: 5vw;
     color: #4e4e4e;
     text-align: start;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk4 .paragraphText {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 6;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 2vw;
+    font-size: 4vw;
     color: #4e4e4e;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk5 {
-    -ms-grid-row: 6;
-        grid-row-start: 6;
-    grid-row-end: 7;
+    -ms-grid-row: 18;
+        grid-row-start: 18;
+    grid-row-end: 22;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 6;
@@ -280,33 +276,33 @@ body {
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 2.4vw;
+    font-size: 5vw;
     color: #4e4e4e;
     text-align: start;
   }
   .CookiesComponentContent .CookiesMiddleThird .cookieChunk5 .paragraphText {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 6;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 11;
     font-family: myNeonFont;
-    font-size: 2vw;
+    font-size: 4vw;
     color: #4e4e4e;
   }
   .CookiesComponentContent .CookiesBottomThird {
-    -ms-grid-row: 18;
-        grid-row-start: 18;
-    grid-row-end: 21;
+    -ms-grid-row: 27;
+        grid-row-start: 27;
+    grid-row-end: 41;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 6;
     width: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
+    -ms-grid-rows: (15vw)[4];
+        grid-template-rows: repeat(4, 15vw);
     -ms-grid-columns: (1fr)[20];
         grid-template-columns: repeat(20, 1fr);
     grid-auto-rows: minmax(200px, auto);
@@ -324,18 +320,18 @@ body {
     display: grid;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[20];
-        grid-template-columns: repeat(20, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .CookiesComponentContent .CookiesBottomThird .Signup .Signup-button {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 8;
-        grid-column-start: 8;
-    grid-column-end: 10;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
@@ -358,10 +354,10 @@ body {
     display: grid;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[20];
-        grid-template-columns: repeat(20, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
     font-family: myNeonFont;
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .CookiesComponentContent .CookiesBottomThird .Socials .Socials-twitter {
     -ms-grid-row: 2;
@@ -385,9 +381,9 @@ body {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 12;
-        grid-column-start: 12;
-    grid-column-end: 14;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 5;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -403,17 +399,17 @@ body {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 5;
-    -ms-grid-column: 6;
-        grid-column-start: 6;
-    grid-column-end: 16;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 18;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
     font-family: myNeonFont;
-    font-size: 2.5vw;
+    font-size: 6vw;
   }
   .CookiesComponentContent .CookiesBottomThird .Terms .Terms-cookies {
     -ms-grid-row: 1;
@@ -421,7 +417,7 @@ body {
     grid-row-end: 2;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     -ms-grid-column-align: start;
         justify-self: start;
     -ms-flex-item-align: start;
@@ -437,9 +433,9 @@ body {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    grid-column-end: 4;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 7;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: start;
@@ -455,9 +451,9 @@ body {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 5;
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 10;
     -ms-grid-column-align: end;
         justify-self: end;
     -ms-flex-item-align: start;
@@ -473,15 +469,15 @@ body {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 4;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 5;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 11;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 1.8vw;
+    font-size: 4.3vw;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
