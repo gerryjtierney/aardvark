@@ -17,7 +17,7 @@ class CookiesMiddleThird extends Component{
                             Cookies were designed to be a reliable mechanism for websites to remember things that a browser/user had done there in the past,
                             which can include having clicked particular buttons, logging in, having read pages on that site, usage statistics for a given
                             site and compiling long-term records of browsers/users histories.
-                                </div>
+                        </div>
                     </div>
 
 

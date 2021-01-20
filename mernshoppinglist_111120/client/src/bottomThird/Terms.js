@@ -4,11 +4,18 @@ import {Link} from "react-router-dom";
 
 class Terms extends Component{
 
+
+    scrollUp = () =>{
+        window.scrollTo(500, 0);
+    }
+
     render(){
+
+
 
         return(
             <div className="Terms">
-                <div className="Terms-cookies" ><Link to="/cookies"> Cookies </Link></div>
+                <div className="Terms-cookies" onClick={this.scrollUp}><Link to="/cookies"> Cookies </Link></div>
                 <div className="Terms-conditions">Conditions</div>
                 <div className="Terms-privacy">Privacy</div>
                 <div className="Terms-info" > <a href="https://www.github.com/gerryjtierney">2020 Katie's Place | Site by Tierney Web Development</a></div>
