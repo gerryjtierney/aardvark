@@ -1,15 +1,10 @@
 .CookiesComponentContent {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (25vw)[5];
-      grid-template-rows: repeat(5, 25vw);
-  -ms-grid-columns: (20vw)[5];
-      grid-template-columns: repeat(5, 20vw);
-}
-
-.CookiesComponentContent a {
-  color: #585858;
-  text-decoration: none;
+  -ms-grid-rows: (9vw)[12];
+      grid-template-rows: repeat(12, 9vw);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
 }
 
 .CookiesComponentContent body {
@@ -25,6 +20,7 @@
 
 .CookiesComponentContent html {
   background-color: #fff0ff;
+  font-family: myNeonFont;
 }
 
 .CookiesComponentContent body {
@@ -41,18 +37,23 @@
   width: auto;
   display: -ms-grid;
   display: grid;
-  background-color: #fff0ff;
-  -ms-grid-rows: (120px)[6];
-      grid-template-rows: repeat(6, 120px);
+  margin-bottom: 5vw;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(200px, auto);
   z-index: 3;
 }
 
-.CookiesComponentContent .CookiesTopThird .Logo {
+.CookiesComponentContent .CookiesTopThird a {
+  color: #4e4e4e;
+}
+
+.CookiesComponentContent .CookiesTopThird .CookiesLogo {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row-end: 3;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 4;
@@ -70,136 +71,459 @@
   z-index: 2;
 }
 
-.CookiesComponentContent .CookiesTopThird .Logo .LogoText {
+.CookiesComponentContent .CookiesTopThird .CookiesLogo .CookiesLogoText {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 5;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
+  margin-top: 3vw;
+  margin-left: 0.5vw;
   font-family: myNeonFont;
-  font-size: 8vw;
+  font-size: 7.5vw;
   color: #4e4e4e;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.CookiesComponentContent .CookiesTopThird .Logo .LogoText:hover {
+.CookiesComponentContent .CookiesTopThird .CookiesLogo .CookiesLogoText:hover {
   opacity: 0.6;
 }
 
-.CookiesComponentContent .CookiesTopThird .Nav {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 6;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+.CookiesComponentContent .CookiesMiddleThird {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 11;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 7;
-  z-index: 2;
+  width: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  padding-top: 1vw;
+  -ms-grid-rows: (13vw)[6];
+      grid-template-rows: repeat(6, 13vw);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.CookiesComponentContent .CookiesMiddleThird .titleText {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-.CookiesComponentContent .CookiesTopThird .Nav .NavText {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
   -ms-grid-column: 2;
       grid-column-start: 2;
-  grid-column-end: 8;
+  grid-column-end: 6;
   font-family: myNeonFont;
-  font-size: 4.8vw;
-  color: #e4cde4;
-  padding-top: 12px;
+  font-size: 6vw;
+  color: #4e4e4e;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  padding-top: 2vw;
 }
 
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .menu {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 3;
+.CookiesComponentContent .CookiesMiddleThird .titleText .titleTextInternal {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 2;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  margin-right: 10px;
+  grid-column-end: 11;
+  text-align: center;
 }
 
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .menu:hover {
-  opacity: 0.6;
-}
-
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .book {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk1 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 3;
   -ms-grid-column: 2;
       grid-column-start: 2;
-  grid-column-end: 3;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  margin-right: 15px;
+  grid-column-end: 6;
 }
 
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .book:hover {
-  opacity: 0.6;
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk1 .paragraphText {
+  font-family: myNeonFont;
+  font-size: 2vw;
+  color: #4e4e4e;
 }
 
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .rewards {
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk2 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (4vw)[4];
+      grid-template-rows: repeat(4, 4vw);
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk2 .subTitleText {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 3;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  grid-column-end: 4;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  margin-right: 15px;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2.4vw;
+  color: #4e4e4e;
+  text-align: start;
 }
 
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .rewards:hover {
-  opacity: 0.6;
-}
-
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .contact {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 3;
-  -ms-grid-column: 4;
-      grid-column-start: 4;
-  grid-column-end: 5;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.CookiesComponentContent .CookiesTopThird .Nav .NavText .contact:hover {
-  opacity: 0.6;
-}
-
-.CookiesComponentContent .CookiesBottomTwoThirds {
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk2 .paragraphText {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 6;
   -ms-grid-column: 1;
       grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2vw;
+  color: #4e4e4e;
+  padding-bottom: 3vw;
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk3 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   grid-column-end: 6;
-  background-color: red;
-  color: red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (4vw)[4];
+      grid-template-rows: repeat(4, 4vw);
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk3 .subTitleText {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2.4vw;
+  color: #4e4e4e;
+  text-align: start;
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk3 .paragraphText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2vw;
+  color: #4e4e4e;
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk4 {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (4vw)[4];
+      grid-template-rows: repeat(4, 4vw);
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk4 .subTitleText {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2.4vw;
+  color: #4e4e4e;
+  text-align: start;
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk4 .paragraphText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2vw;
+  color: #4e4e4e;
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk5 {
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 7;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (4vw)[4];
+      grid-template-rows: repeat(4, 4vw);
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk5 .subTitleText {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2.4vw;
+  color: #4e4e4e;
+  text-align: start;
+}
+
+.CookiesComponentContent .CookiesMiddleThird .cookieChunk5 .paragraphText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 11;
+  font-family: myNeonFont;
+  font-size: 2vw;
+  color: #4e4e4e;
+}
+
+.CookiesComponentContent .CookiesBottomThird {
+  -ms-grid-row: 11;
+      grid-row-start: 11;
+  grid-row-end: 13;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  color: #e4cde4;
+  background-color: black;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Signup {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 20;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  font-family: myNeonFont;
+  font-size: 3vw;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Signup .Signup-button {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 8;
+      grid-column-start: 8;
+  grid-column-end: 10;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Signup .Signup-button:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Socials {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 20;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  font-family: myNeonFont;
+  font-size: 3vw;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Socials .Socials-twitter {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Socials .Socials-twitter:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Socials .Socials-instagram {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 12;
+      grid-column-start: 12;
+  grid-column-end: 14;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Socials .Socials-instagram:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 16;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  font-family: myNeonFont;
+  font-size: 2.5vw;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-cookies {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-cookies:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-conditions {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-conditions:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-privacy {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-privacy:hover {
+  opacity: 0.6;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-info {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.8vw;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.CookiesComponentContent .CookiesBottomThird .Terms .Terms-info:hover {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=CookiesPage.css.map */
