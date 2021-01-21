@@ -8,7 +8,7 @@ class CookiesMiddleThird extends Component{
         return(
             <div className="CookiesMiddleThird">
                 <div className="titleText">
-                    <div className="titleTextInternal">Cookie Policy</div>
+                    <div className="titleTextInternal"><u>Cookie Policy &nbsp; </u></div>
                 </div>
                 <div className="cookieChunk1">
                         <div className="paragraphText">

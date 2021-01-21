@@ -8,6 +8,7 @@ import AppSub from "./AppSub.js";
 import ContactScreen from './ContactScreen.js';
 import './AppSub.css';
 import CookiesComponent from "./components/CookiesPage.js"
+import TermsComponent from "./components/TermsPage.js"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/contact" component={ContactScreen} />
           <Route exact path="/" component={AppSub} />
           <Route exact path="/cookies" component={CookiesComponent} />
+          <Route exact path="/terms" component={TermsComponent} />
         </Switch>
       </div>
     </Provider>

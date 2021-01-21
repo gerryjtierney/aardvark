@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../src/CookiesPage.css"
 import CookiesTopThird from "../topThird/CookiesTopThird"
-import CookiesMiddleThird from "../middleThird/CookiesMiddleThird"
+import TermsMiddleThird from "../middleThird/TermsMiddleThird"
 import CookiesBottomThird from "../bottomThird/CookiesBottomThird"
 
 
@@ -25,7 +25,7 @@ class CookiesPage extends Component {
 
             <div className="CookiesComponentContent">
                 <CookiesTopThird />
-                <CookiesMiddleThird />
+                <TermsMiddleThird />
                 <CookiesBottomThird />
             </div>
         )
