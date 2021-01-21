@@ -9,7 +9,7 @@ const BookingSchema = new Schema({
     },
     email: {
         type: String,
-        required: false
+        required: true
     },
     comments: {
         type: String,
@@ -17,7 +17,7 @@ const BookingSchema = new Schema({
     },
     slot: {
         type: String,
-        required: false
+        required: true
     },
     id: {
         type: String,

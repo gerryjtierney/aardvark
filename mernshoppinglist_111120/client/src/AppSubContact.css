@@ -369,8 +369,8 @@ a {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 20;
     display: -ms-grid;
     display: grid;
@@ -385,8 +385,8 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 3;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -455,8 +455,8 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 6;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -913,9 +913,9 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 6;
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 10;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
@@ -983,9 +983,9 @@ a {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    -ms-grid-column: 10;
-        grid-column-start: 10;
-    grid-column-end: 12;
+    -ms-grid-column: 12;
+        grid-column-start: 12;
+    grid-column-end: 14;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;

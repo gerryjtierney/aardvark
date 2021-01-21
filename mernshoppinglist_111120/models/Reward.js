@@ -9,7 +9,7 @@ const RewardSchema = new Schema({
     },
     email: {
         type: String,
-        required: false
+        required: true
     },
     consent: {
         type: Boolean,

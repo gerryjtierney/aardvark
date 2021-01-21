@@ -227,14 +227,14 @@ class BookingComponent extends Component {
 
                             <FormGroup row className="entryFieldEmail">
                                 <Col>
-                                    <Input type="email" name="email" placeholder="Email" onChange={this.onChange} />
+                                    <Input type="email" name="email" placeholder="Email" onChange={this.onChange} required/>
                                 </Col>
                             </FormGroup>
 
 
                             <FormGroup row className="entryFieldName">
                                 <Col>
-                                    <Input type="text" name="name" id="username" placeholder="Name" onChange={this.onChange} />
+                                    <Input type="text" name="name" id="username" placeholder="Name" onChange={this.onChange} required/>
                                 </Col>
                             </FormGroup>
 
@@ -251,7 +251,7 @@ class BookingComponent extends Component {
 
                             <FormGroup row className="entryFieldSlots ">
                                 <Col>
-                                    <CustomInput type="select" onChange={this.onChange} name="slot" id="bookingFormSlotSelect">
+                                    <CustomInput type="select" onChange={this.onChange} name="slot" id="bookingFormSlotSelect" required>
                                         <option value="">-choose slot-</option>
                                         <option value="Breakfast">Breakfast</option>
                                         <option value="Lunch">Lunch</option>

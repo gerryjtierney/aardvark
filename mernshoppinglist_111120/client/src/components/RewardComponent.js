@@ -154,14 +154,14 @@ class RewardComponent extends Component {
 
                             <FormGroup row className="entryFieldEmail">
                                 <Col>
-                                    <Input type="email" name="email" placeholder="Email" onChange={this.onChange} />
+                                    <Input type="email" name="email" placeholder="Email" onChange={this.onChange} required/>
                                 </Col>
                             </FormGroup>
 
 
                             <FormGroup row className="entryFieldName">
                                 <Col>
-                                    <Input type="text" name="name" id="username" placeholder="Name" onChange={this.onChange} />
+                                    <Input type="text" name="name" id="username" placeholder="Name" onChange={this.onChange} required/>
                                 </Col>
                             </FormGroup>
 
@@ -170,7 +170,7 @@ class RewardComponent extends Component {
                             <FormGroup  className="entryFieldConsent">
 
                                 <Col>
-                                    <CustomInput type="switch" id="exampleCustomSwitch" label="I consent to the terms and conditions" name="consent" placeholder="Consent" onChange={this.consentToggle} />
+                                    <CustomInput type="switch" id="exampleCustomSwitch" label="I consent to the terms and conditions" name="consent" placeholder="Consent" onChange={this.consentToggle} required/>
                                     
                                 </Col>
                             </FormGroup>
