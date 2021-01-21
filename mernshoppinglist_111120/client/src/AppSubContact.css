@@ -273,7 +273,6 @@ a {
         grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: (1fr)[20];
         grid-template-columns: repeat(20, 1fr);
-    background-image: url("./images/brickwall2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
