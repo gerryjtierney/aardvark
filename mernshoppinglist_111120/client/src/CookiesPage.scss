@@ -40,7 +40,7 @@ body{
 
 
 
-
+//small screen cookies and terms
 @media screen and (max-width: 500px){
     .CookiesComponentContent{
 
@@ -571,7 +571,7 @@ body{
 
 
 
-//large screens
+//large screens cookies and terms
 @media screen and (min-width: 501px){
     .CookiesComponentContent{
 
@@ -1034,5 +1034,1317 @@ body{
 
 
 
+        .PrivacyMiddleThird{
+            grid-row-start: 2;
+            grid-row-end: 11;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            width: auto;
+            display: grid;
+            padding-top: 1vw;
+
+            grid-template-rows: repeat(30, 13vw);
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+
+
+            .titleText{
+                justify-content: center;
+                align-content: center;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 6;
+
+                font-family: myNeonFont;
+                font-size: 6vw;
+                color: $siteContrast;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                padding-top: 2vw;
+
+                .titleTextInternal{
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    text-align: center;
+                }
+                
+            }
+
+            .cookieChunk1{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 6;
+
+
+                    .paragraphText{
+                        font-family: myNeonFont;
+                        font-size: 2vw;
+                        color: $siteContrast;
+                        
+                    }
+
+
+            }
+
+            .cookieChunk2{
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+                
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+                    padding-bottom: 3vw;
+
+
+                }
+                
+            }
+
+            .cookieChunk3{
+                grid-row-start: 4;
+                grid-row-end: 5;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+
+                }
+                
+            }
+
+
+
+            .cookieChunk4{
+                grid-row-start: 7;
+                grid-row-end: 13;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+
+                }
+                
+            }
+
+            .cookieChunk5{
+                grid-row-start: 13;
+                grid-row-end: 16;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+
+                }
+            }
+    
+        }
+
+
+
+
+        .PrivacyBottomThird{
+            grid-row-start: 11;
+            grid-row-end: 13;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            width: auto;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(20, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            color: $siteWhite;
+            background-color: black;
+
+            .Signup{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 20;
+
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(20, 1fr);
+                font-family: myNeonFont;
+                font-size: 3vw;
+
+                .Signup-button{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 8;
+                    grid-column-end: 10;
+                    justify-self: center;
+                    align-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+
+
+
+            }
+
+            .Socials{
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 20;
+
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(20, 1fr);
+                font-family: myNeonFont;
+                font-size: 3vw;
+
+                .Socials-twitter{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    align-self: center;
+                    justify-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                //large
+                .Socials-instagram{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 12;
+                    grid-column-end: 14;
+                    align-self: center;
+                    justify-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+            }
+
+            .Terms{
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 6;
+                grid-column-end: 16;
+
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+                font-family: myNeonFont;
+                font-size: 2.5vw;
+
+                .Terms-cookies{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    justify-self: start;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                .Terms-conditions{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                    justify-self: center;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                .Terms-privacy{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                    justify-self: end;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                .Terms-info{
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    justify-self: center;
+                    align-self: center;
+                    font-size: 1.8vw;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+            }
+    
+        }
+
+
+
+
+
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//large screen and privacy
+@media screen and (min-width: 501px){
+    .PrivacyComponentContent{
+
+
+        @font-face {
+            font-family: myNeonFont;
+            src: url("./cafe.ttf") format("truetype");
+        }
+
+        @mixin myMixin(){
+            background-color: black;
+            z-index: 1;
+            opacity: 30%;
+        }
+
+        $siteWhite: rgb(228, 205, 228);
+        $siteWhite2: rgb(199, 184, 199);
+        $siteWhiteBright:  rgb(255, 240, 255);
+        $siteContrast: rgb(78, 78, 78);
+        $siteContrast2: rgb(88, 88, 88);
+
+        html{
+            background-color: $siteWhiteBright;
+            font-family: myNeonFont;
+        }
+
+
+        body{
+            line-height: 1;
+        }
+
+
+
+        display: grid;
+        grid-template-rows: repeat(17, 9vw);
+        grid-template-columns: repeat(5, 1fr);
+
+
+        .CookiesTopThird{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            width: auto;
+            display: grid;
+            margin-bottom: 5vw;
+
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            z-index: 3;
+            
+            a{
+                color: $siteContrast;
+            }
+
+            
+
+            .CookiesLogo{        
+
+                grid-row-start: 1;
+                grid-row-end:   3;
+                grid-column-start: 1;
+                grid-column-end:   4;
+                justify-content: center;
+                align-content: center;
+                display: grid;
+                grid-template-rows: repeat(10, 1fr);
+                grid-template-columns: repeat(8, 1fr);
+                z-index: 2;
+
+                
+                
+
+                .CookiesLogoText{
+                    grid-row-start: 2;
+                    grid-row-end: 5;
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    margin-top: 3vw;
+                    margin-left: 0.5vw;
+                    
+
+
+                    font-family: myNeonFont;
+                    font-size: 7.5vw;
+                    color: $siteContrast;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }  
+                }
+            }
+        }
+
+
+
+
+
+
+      
+
+
+
+ 
+
+
+
+        .PrivacyMiddleThird{
+            grid-row-start: 2;
+            grid-row-end: 11;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            width: auto;
+            display: grid;
+            padding-top: 1vw;
+
+            grid-template-rows: repeat(30, 13vw);
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+
+
+            .titleText{
+                justify-content: center;
+                align-content: center;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 6;
+
+                font-family: myNeonFont;
+                font-size: 6vw;
+                color: $siteContrast;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                padding-top: 2vw;
+
+                .titleTextInternal{
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    text-align: center;
+                }
+                
+            }
+
+            .cookieChunk1{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 6;
+
+
+                    .paragraphText{
+                        font-family: myNeonFont;
+                        font-size: 2vw;
+                        color: $siteContrast;
+                        
+                    }
+
+
+            }
+
+            .cookieChunk2{
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+                
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+                    padding-bottom: 3vw;
+
+
+                }
+                
+            }
+
+            .cookieChunk3{
+                grid-row-start: 4;
+                grid-row-end: 5;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+
+                }
+                
+            }
+
+
+
+            .cookieChunk4{
+                grid-row-start: 6;
+                grid-row-end: 10;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+
+                }
+                
+            }
+
+            .cookieChunk5{
+                grid-row-start: 9;
+                grid-row-end: 11;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2.4vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+                }
+
+
+
+                .paragraphText{
+                    grid-row-start: 2;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 2vw;
+                    color: $siteContrast;
+
+                }
+            }
+    
+        }
+
+
+
+
+        .PrivacyBottomThird{
+            grid-row-start: 17;
+            grid-row-end: 19;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            width: auto;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(20, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            color: $siteWhite;
+            background-color: black;
+
+            .Signup{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 20;
+
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(20, 1fr);
+                font-family: myNeonFont;
+                font-size: 3vw;
+
+                .Signup-button{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 8;
+                    grid-column-end: 10;
+                    justify-self: center;
+                    align-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+
+
+
+            }
+
+            .Socials{
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 20;
+
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(20, 1fr);
+                font-family: myNeonFont;
+                font-size: 3vw;
+
+                .Socials-twitter{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    align-self: center;
+                    justify-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                //large
+                .Socials-instagram{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 12;
+                    grid-column-end: 14;
+                    align-self: center;
+                    justify-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+            }
+
+            .Terms{
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 6;
+                grid-column-end: 16;
+
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+                font-family: myNeonFont;
+                font-size: 2.5vw;
+
+                .Terms-cookies{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    justify-self: start;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                .Terms-conditions{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                    justify-self: center;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                .Terms-privacy{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                    justify-self: end;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                .Terms-info{
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    justify-self: center;
+                    align-self: center;
+                    font-size: 1.8vw;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+            }
+    
+        }
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+//small screen privacy
+
+@media screen and (max-width: 500px){
+    .PrivacyComponentContent{
+
+        display: grid;
+        grid-template-rows: repeat(55, 9vw);
+        grid-template-columns: repeat(5, 1fr);
+
+
+        .CookiesTopThird{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            width: auto;
+            display: grid;
+            margin-bottom: 5vw;
+
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            z-index: 3;
+            
+            a{
+                color: $siteContrast;
+            }
+
+            
+
+            .CookiesLogo{        
+
+                grid-row-start: 1;
+                grid-row-end:   3;
+                grid-column-start: 1;
+                grid-column-end:   4;
+                justify-content: center;
+                align-content: center;
+                display: grid;
+                grid-template-rows: repeat(10, 1fr);
+                grid-template-columns: repeat(8, 1fr);
+                z-index: 2;
+
+                
+                
+
+                .CookiesLogoText{
+                    grid-row-start: 2;
+                    grid-row-end: 5;
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    margin-top: 3vw;
+                    margin-left: 0.5vw;
+                    
+
+
+                    font-family: myNeonFont;
+                    font-size: 14vw;
+                    color: $siteContrast;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }  
+                }
+            }
+        }
+
+
+
+
+
+
+        .PrivacyMiddleThird{
+            grid-row-start: 3;
+            grid-row-end: 18;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            width: auto;
+            display: grid;
+            padding-top: 1vw;
+
+            grid-template-rows: repeat(60, 10vw);
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+
+
+            .titleText{
+                justify-content: center;
+                align-content: center;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 6;
+
+                font-family: myNeonFont;
+                font-size: 8vw;
+                color: $siteContrast;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                padding-top: 2vw;
+
+                .titleTextInternal{
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    text-align: center;
+                }
+                
+            }
+
+            .cookieChunk1{
+                grid-row-start: 3;
+                grid-row-end: 6;
+                grid-column-start: 2;
+                grid-column-end: 6;
+
+
+                    .paragraphText{
+                        font-family: myNeonFont;
+                        font-size: 4vw;
+                        color: $siteContrast;
+                        
+                    }
+
+
+            }
+
+            .cookieChunk2{
+                grid-row-start: 7;
+                grid-row-end: 10;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(6, 4vw);
+                
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 5vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 3;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 4vw;
+                    color: $siteContrast;
+
+
+                }
+                
+            }
+
+            .cookieChunk3{
+                grid-row-start: 10;
+                grid-row-end: 12;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(6, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 5vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 3;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 4vw;
+                    color: $siteContrast;
+
+
+                }
+                
+            }
+
+
+
+            .cookieChunk4{
+                grid-row-start: 19;
+                grid-row-end: 29;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 5vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 3;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 4vw;
+                    color: $siteContrast;
+
+
+                }
+                
+            }
+
+            .cookieChunk5{
+                grid-row-start: 33;
+                grid-row-end: 44;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(4, 4vw);
+
+                .subTitleText{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 5vw;
+                    color: $siteContrast;
+                    text-align: start;
+
+
+                }
+
+                .paragraphText{
+                    grid-row-start: 3;
+                    grid-row-end: 6;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    font-family: myNeonFont;
+                    font-size: 4vw;
+                    color: $siteContrast;
+
+
+                }
+            }
+
+        }
+
+
+
+        .PrivacyBottomThird{
+            grid-row-start: 49;
+            grid-row-end: 56;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            width: auto;
+            display: grid;
+            grid-template-rows: repeat(4, 15vw);
+            grid-template-columns: repeat(20, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            color: $siteWhite;
+            background-color: black;
+
+            .Signup{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 20;
+    
+    
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+                font-family: myNeonFont;
+                font-size: 8vw;
+
+                .Signup-button{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    justify-self: center;
+                    align-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+
+
+
+            }
+
+            .Socials{
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 20;
+    
+    
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+                font-family: myNeonFont;
+                font-size: 8vw;
+
+                .Socials-twitter{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    align-self: center;
+                    justify-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+                
+                .Socials-instagram{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                    align-self: center;
+                    justify-self: center;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+
+            }
+
+            .Terms{
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 4;
+                grid-column-end: 18;
+    
+    
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(10, 1fr);
+                font-family: myNeonFont;
+                font-size: 6vw;
+    
+                .Terms-cookies{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    justify-self: start;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+    
+                .Terms-conditions{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 5;
+                    grid-column-end: 7;
+                    justify-self: center;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+    
+                .Terms-privacy{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 8;
+                    grid-column-end: 10;
+                    justify-self: end;
+                    align-self: start;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+    
+                .Terms-info{
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start: 1;
+                    grid-column-end: 11;
+                    justify-self: center;
+                    align-self: center;
+                    font-size: 4.3vw;
+                    transition: opacity 0.2s;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+    
+            }
+
+        }
+
+
+
+    }
+
 }
