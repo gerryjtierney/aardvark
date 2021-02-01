@@ -14,10 +14,6 @@ export const getStarters = () => dispatch =>{
 }
 
 
-
-
-
-
 export const setStartersLoading = () =>{
     return{
         type: STARTERS_LOADING
