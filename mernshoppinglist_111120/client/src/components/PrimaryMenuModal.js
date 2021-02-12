@@ -16,7 +16,7 @@ class PrimaryMenuModal extends Component {
         this.setState({
             toggled: !this.state.toggled
         })
-    } 
+    }
 
 
 
@@ -46,9 +46,9 @@ class PrimaryMenuModal extends Component {
                         <div className="starterSection"><StarterMenuModal /></div>
                         <div className="mainSection"><MainMenuModal /></div>
                         <div className="dessertSection"><DessertMenuModal /></div>
-                        
-                        
-                        
+
+
+
 
 
 

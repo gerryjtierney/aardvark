@@ -7,8 +7,8 @@ const Starter = require("../../models/Starter")
 router.get('/', (req, res) => {
 
     Starter.find()
-    .sort({name: 1})
-    .then(starters => res.json(starters))
+        .sort({ name: 1 })
+        .then(starters => res.json(starters))
 
 });
 
@@ -33,10 +33,10 @@ router.post('/', (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         await Starter.findByIdAndRemove(req.params.id)
-        res.json({success: true})
-      } catch (error) {
-        res.status(404).json({success: false})
-      }
+        res.json({ success: true })
+    } catch (error) {
+        res.status(404).json({ success: false })
+    }
 });
 
 

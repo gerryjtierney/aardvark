@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/" component={AppSub} />
           <Route exact path="/cookies" component={CookiesComponent} />
           <Route exact path="/terms" component={TermsComponent} />
-          <Route exact page="/privacy" component={PrivacyComponent} />
+          <Route exact path="/privacy" component={PrivacyComponent} />
         </Switch>
       </div>
     </Provider>
