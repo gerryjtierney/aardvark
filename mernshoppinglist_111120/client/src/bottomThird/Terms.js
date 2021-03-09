@@ -18,7 +18,7 @@ class Terms extends Component {
                 <div className="Terms-cookies" onClick={this.scrollUp}><Link to="/cookies"> Cookies </Link></div>
                 <div className="Terms-conditions" onClick={this.scrollUp}><Link to="/terms">Conditions</Link></div>
                 <div className="Terms-privacy" onClick={this.scrollUp}><Link to="/privacy">Privacy</Link></div>
-                <div className="Terms-info" > <a href="https://www.tierneywebdevelopment">2020 Katie's Place | Site by Tierney Web Development</a></div>
+                <div className="Terms-info" > <a href="https://www.tierneywebdevelopment.com">2020 Katie's Place | Site by Tierney Web Development</a></div>
             </div>
         )
     }
